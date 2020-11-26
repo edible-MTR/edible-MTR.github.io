@@ -1,0 +1,27 @@
+var data = {
+  "dishes": [{
+    "id": "", //integer for easy access to data
+    "dishName": "", //name of the dish
+    "dishPrice": "", // dishs price in integer
+    "dishRating": "", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "", //string of the description
+    "dishIngredients": ["", "", "", "", ""], //array of ingredients for filtering 
+    "dishImage": "Images/imageName.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  }, ],
+
+  "cooks": [{
+    "id": "", //integer for easy access to data
+    "cookName": "", //name of the cook
+    "cookIntro": "", // cooks short intro
+    "cookImage": "Images/imageName.jpg", //link to images folder with the image 
+    "cookVideoURL": "", //link to cook intro video on youtube
+    "cookLocation": "" //map URL for each cook
+  }],
+
+  "inBasket" [{
+    "id": "", //integer for easy access to data
+    "dishIds": ["", "", ""], //ID's of dishs that were added to basket
+  }]
+}

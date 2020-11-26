@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edible iPhone</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="Edible Theme/themes/Edible.css">
+<link rel="stylesheet" href="tairCSS.css">
+<link rel="stylesheet" href="https://use.typekit.net/jgl1fny.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script> 
+<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 51.520919, lng: -0.140126 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+		  title: "University of Westminster"
+        });
+      }
+    </script>
+</head>
+<body>
+<div data-role="page" id="dishPage">
+  <div data-role="header" data-position="fixed" them> <img src="Images/logo-06-06.png" alt="logo" class="logo"> </div>
+  <div role="main" class="ui-content"> <a href="#" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN" >No text</a>
+    <div class="square">
+      <div class="content"> <img src="Images/Lasagna.jpg" alt="Lasagna Image" class="dishIMG"> </div>
+    </div>
+    <div class="dishInfo">
+      <h1 class="dishName" data-theme>Lasagna</h1>
+      <p class="dishPrice">£12</p>
+      <div class="dishRatingDisplay"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> </div>
+      <div class="dishDes">Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.</div>
+      <hr class="dishLine">
+      <div class="dishIng">Italian sausage, ground beef, onion, garlic, tomatoes, tomato paste, tomato sauce, water, sugar, basil, fennel seeds, salt, pepper, parsley, <b>ricotta cheese, egg, mozzarella cheese, parmesan cheese, flour</b></div>
+      <div class="dishExtrasContainer"> <img src="Images/Tair.png" alt="Cook Image" class="cookIMG">
+        <p class="cookName">Made by Tair</p>
+        <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN" id="qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN" id="infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN" id="mapBTN">Anchor</a> <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN" id="reviewBTN">Anchor</a> </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="B">
+    <h1>Footer</h1>
+  </div>
+  <div data-role="popup" id="popupCook" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px;">     
+    <div role="main" class="ui-content"> <a href="#" class="ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
+      <div class="cookInfoPOP">
+        <h2 class="cookNamePOP">Tair</h2>
+        <p class="cookDesPOP">Hello, I have been cooking on Edible for the past 3 years. Both my parents are Italian so all my recipies come straight from Italy</p>
+        <img src="Images/Tair.png" alt="Cook Image" class="cookIMGPOP">
+        <hr class="cookLine">
+        <iframe class="cookVideo"  src="https://www.youtube.com/embed/dwV_fMfKUXQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px; min-width: 500px;">     
+    <div role="main" class="ui-content"> <a href="#" class="ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
