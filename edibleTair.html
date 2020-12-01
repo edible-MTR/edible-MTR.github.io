@@ -11,12 +11,20 @@
 <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<<<<<<< Updated upstream
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <link rel="stylesheet" href="Edible Theme/themes/Edible.css">
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script> 
+=======
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script>
+>>>>>>> Stashed changes
 <script>
       // Initialize and add the map
       function initMap() {
@@ -37,6 +45,7 @@
     </script>
 </head>
 <body>
+  <div role="main" class="ui-content"> 
 <div data-role="page" id="dishPage">
   <div data-role="header" data-position="fixed" them> <img src="Images/logo-06-06.png" alt="logo" class="logo"> </div>
   <div role="main" class="ui-content"> <a href="#" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN" >No text</a>
@@ -52,7 +61,7 @@
       <div class="dishIng"></div>
       <div class="dishExtrasContainer"> <img src="Images/Tair.png" alt="Cook Image" class="cookIMG">
         <p class="cookName">Made by Tair</p>
-        <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN" id="qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN" id="infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN" id="mapBTN">Anchor</a> <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN" id="reviewBTN">Anchor</a> </div>
+        <a href="ARpage_box.html" rel="external" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN" id="qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN" id="infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN" id="mapBTN">Anchor</a> <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN" id="reviewBTN">Anchor</a> </div>
     </div>
   </div>
   <div data-role="footer" data-position="fixed" data-theme="B">
@@ -75,6 +84,7 @@
     </div>
   </div>
 </div>
+<<<<<<< Updated upstream
 <script>
 	var data = {
   "dishes": [{
@@ -138,5 +148,11 @@
 		printDishInfo(i);
 	})	
 </script>
+=======
+
+	<!-- This is page AR-->
+		<div data-role="page" id="PageAR">
+		<!-- jQuery Mobile page content goes here -->
+>>>>>>> Stashed changes
 </body>
 </html>
