@@ -312,7 +312,7 @@
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "23", //integer for easy access to data
+    "id": "24", //integer for easy access to data
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Tortellini with Ham and Cream", //name of the dish
     "dishPrice": "11", // dishs price in integer
@@ -324,8 +324,305 @@
     "dishImage": "Images/Dishes/Tortellini with Ham and Cream.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
   },
-
-
+  {
+    "id": "25", //integer for easy access to data
+    "dishRegion":"Japanese", //for basic filtering
+    "dishName": "Tonkatsu", //name of the dish
+    "dishPrice": "13", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "If you’re like me who loves deep-fried foods, precisely panko coated crispy foods, you will love Japanese pork cutlet called Tonkatsu (豚カツ). And I’m here to make you the best possible Tonkatsu ", //string of the description
+    "dishIngredients": ["Pork Loin", "Salt", "Pepper", "Wheat Flour", "Egg", "Vegetable Oil", "Panko", "Ketchup", "Worcestershire Sauce", "Oyster Sauce", "Sugar"], //array of ingredients for filtering 
+    "dishAllergens": ["Pork", "Eggs", "Gluten", "Molluscs"],
+    "dishImage": "Images/Dishes/Tonkatsu.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "26", //integer for easy access to data
+    "dishRegion":"Japanese", //for basic filtering
+    "dishName": "Yakitori", //name of the dish
+    "dishPrice": "13", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Glazed in a savory-sweet sauce, these Japanese chicken and scallion skewers are hard to resist! ", //string of the description
+    "dishIngredients": ["Chicken", "Onion", "Vegetable Oil", "Soy Sauce", "Mirin", "Sake", "Water", "Brown Sugar"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Soya", "Eggs", "Gluten"],
+    "dishImage": "Images/Dishes/Yakitori.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "27", //integer for easy access to data
+    "dishRegion":"Japanese", //for basic filtering
+    "dishName": "Sushi and Nigiri", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables.", //string of the description
+    "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot" "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
+    "dishAllergens": ["Fish", "Soya"],
+    "dishImage": "Images/Dishes/Sushi and Nigiri.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "28", //integer for easy access to data
+    "dishRegion":"Japanese", //for basic filtering
+    "dishName": "Sushi and Nigiri", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables.", //string of the description
+    "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot" "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
+    "dishAllergens": ["Fish", "Soya"],
+    "dishImage": "Images/Dishes/Sushi and Nigiri.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "29", //integer for easy access to data
+    "dishRegion":"Japanese", //for basic filtering
+    "dishName": "Chicken Ramen", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "My version is on the table in less than an hour – and half that if you opt for store-bought chicken – and while it might not be completely authentic, it’s a flavorful, comforting soup just in time for the unmistakably crisp, chilly autumn weather that these first days of October have ushered in.", //string of the description
+    "dishIngredients": ["Butter", "Vegetable Oil", "Ginger", "Garlic", "Soy Sauce", "Mirin", "Chicken Broth", "Mushroom", "Salt", "Eggs", "Scallions", "Noodles", "Jalapeno"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Milk", "Eggs"],
+    "dishImage": "Images/Dishes/Chicken Ramen.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "30", //integer for easy access to data
+    "dishRegion":"Japanese", //for basic filtering
+    "dishName": "Chicken Ramen", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "My version is on the table in less than an hour – and half that if you opt for store-bought chicken – and while it might not be completely authentic, it’s a flavorful, comforting soup just in time for the unmistakably crisp, chilly autumn weather that these first days of October have ushered in.", //string of the description
+    "dishIngredients": ["Butter", "Vegetable Oil", "Ginger", "Garlic", "Soy Sauce", "Mirin", "Chicken Broth", "Mushroom", "Salt", "Eggs", "Scallions", "Noodles", "Jalapeno"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Milk", "Eggs"],
+    "dishImage": "Images/Dishes/Chicken Ramen.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "31", //integer for easy access to data
+    "dishRegion":"Japanese", //for basic filtering
+    "dishName": "Veggie Sushi 4 Ways", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Sushi is definitely a family favorite. When our kids were younger there was this hole-in-the-wall Japanese restaurant in town we loved. The only problem with taking our kids out for sushi was that they inhaled it. This homemade sushi will allow you to eat until you are full and then some!", //string of the description
+    "dishIngredients": ["Rice Vinegar", "Sugar", "Salt", "Sushi Rice", "Nori", "Sesame Oil", "Mushroom", "Garlic Powder", "Spinach", "Cucumber", "Carrot", "Vegetable Oil", "Wheat Flour", "Sweet Potato", "Avocado", "Mango", "Bell Pepper", "Tofu"], //array of ingredients for filtering 
+    "dishAllergens": ["Sesame", "Gluten", "Eggs"],
+    "dishImage": "Images/Dishes/Veggie sushi 4 ways.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "32", //integer for easy access to data
+    "dishRegion":"Lebanese", //for basic filtering
+    "dishName": "Kibbeh", //name of the dish
+    "dishPrice": "18", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A traditional dish made by bulgur wheat pounded together with meat into a fine paste and formed into balls, with toasted pine nuts and spices. You can have that one as a main dish or started.", //string of the description
+    "dishIngredients": ["Cat Meat", "Spices", "Nuts", "Wheat"], //array of ingredients for filtering 
+    "dishAllergens": ["Nut", "Gluten", "Cats"],
+    "dishImage": "Images/Dishes/Kibbeh.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "33", //integer for easy access to data
+    "dishRegion":"Lebanese", //for basic filtering
+    "dishName": "Manakish", //name of the dish
+    "dishPrice": "9", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Manakish, also called “Lebanese pizza” is made of thyme, sumac, olive oil and sesame seeds on bread. It is our traditional breakfast but if you like you can enjoy it during the whole day.", //string of the description
+    "dishIngredients": ["Thyme", "Sumac" , "Olive Oil", "Wheat Flour", "Sesame"], //array of ingredients for filtering 
+    "dishAllergens": ["Vegan", "Sesame", "Gluten"],
+    "dishImage": "Images/Dishes/", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "34", //integer for easy access to data
+    "dishRegion":"Lebanese", //for basic filtering
+    "dishName": "Fattoush", //name of the dish
+    "dishPrice": "9", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "This salad is made of fried pieces of khubz (Lebanese bread), tomatoes, radishes and mixed greens.You can have it as a starter before the main meal.", //string of the description
+    "dishIngredients": ["Wheat Flour", "Tomatoes", "Radishes", "Mixed Greens"], //array of ingredients for filtering 
+    "dishAllergens": ["Vegan", "Gluten"],
+    "dishImage": "Images/Dishes/Fattous.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "35", //integer for easy access to data
+    "dishRegion":"Lebanese", //for basic filtering
+    "dishName": "Baba Ghanoush", //name of the dish
+    "dishPrice": "6", // dishs price in integer
+    "dishRating": "5", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Baba ghanoush is an appetiser of tahini, olive oil and different seasonings mixed together in mashed cooked eggplant.",//string of the description
+    "dishIngredients": ["Eggplant", "Olive Oil", "Tahini"], //array of ingredients for filtering 
+    "dishAllergens": ["Vegan", "Sesame", "Gluten"],
+    "dishImage": "Images/Dishes/Baba ghanoush.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "36", //integer for easy access to data
+    "dishRegion":"Lebanese", //for basic filtering
+    "dishName": "Sfouf", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Sfouf is the perfect dessert. It is a cake made of semolina flour flavoured, turmeric, eggs, sugar, sesame paste, baking powder, aniseed and pine nuts. Perfect for birthdays.",//string of the description
+    "dishIngredients": ["Wheat Flour", "Turmeric", "Eggs", "Sugar", "Sesame Paste", "Baking Powder", "Aniseed", "Pine Nuts"], //array of ingredients for filtering 
+    "dishAllergens": ["Eggs", "Sesame", "Nuts", "Gluten"],
+    "dishImage": "Images/Dishes/", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "37", //integer for easy access to data
+    "dishRegion":"Lebanese", //for basic filtering
+    "dishName": "Sfouf", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Sfouf is the perfect dessert. It is a cake made of semolina flour flavoured, turmeric, eggs, sugar, sesame paste, baking powder, aniseed and pine nuts. Perfect for birthdays.",//string of the description
+    "dishIngredients": ["Wheat Flour", "Turmeric", "Eggs", "Sugar", "Sesame Paste", "Baking Powder", "Aniseed", "Pine Nuts"], //array of ingredients for filtering 
+    "dishAllergens": ["Eggs", "Sesame", "Nuts", "Gluten"],
+    "dishImage": "Images/Dishes/", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "38", //integer for easy access to data
+    "dishRegion":"South Korean", //for basic filtering
+    "dishName": "Samgyetang (Ginseng Chicken Soup)", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A common dish particularly during the summer, samgyetang is a traditional soup made of chicken, garlic, rice, scallion, Korean jujube, Korean ginseng, and spices. It is known to have a high nutritional value. Not only is it known for its healthy contents, but it also is popular simply for its creamy and meaty flavour.",//string of the description
+    "dishIngredients": ["Chicken", "Shrimp", "Water", "Lemongrass", "Chunk Of Galangal", "Kaffir Lime Leaves", "Thai Chilies", "Garlic", "Oyster Mushrooms", "Tomatoes", "White Onions", "Sugar", "Oyster Sauce", "Lime Juice", "Coriander"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Crustaceans", "Molluscs"],
+    "dishImage": "Images/Dishes/Samgyetang (ginseng chicken soup).jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "39", //integer for easy access to data
+    "dishRegion":"South Korean", //for basic filtering
+    "dishName": "Bulgogi (Marinated Beef Barbecue)", //name of the dish
+    "dishPrice": "7", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A juicy, savoury dish of grilled marinated beef, bulgogi is one of the most popular Korean meat dishes throughout the world, and was ranked as the 23rd most delicious food in the world according to CNN Travel’s reader’s poll in 2011. It is often grilled with garlic and sliced onions to add flavour to the meat. The meat is usually wrapped in lettuce and it is also traditionally eaten with ssamjang (a thick, red spicy paste).",//string of the description
+    "dishIngredients": ["Coconut Milk", "Bamboo Shoots", "Chicken", "Red Chilli", "Red Curry Paste", "Thai Sweet Basil", "Oyster Sauce", "Salt", "Palm Sugar"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Molluscs"],
+    "dishImage": "Images/Dishes/Bulgogi (marinated beef barbecue).jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "40", //integer for easy access to data
+    "dishRegion":"South Korean", //for basic filtering
+    "dishName": "Kimchi (Fermented Vegetables)", //name of the dish
+    "dishPrice": "4", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "One of the oldest and probably the most essential dishes in Korean cuisine, kimchi is a spicy and sour dish made up of fermented vegetables. It is prepared with various kinds of ingredients, but the most common main ingredient is cabbage. Kimchi is popular among foreigners for its unique flavour, as well as its high nutritional value, fibre content and low-calorie content. However, for Koreans, it is most popular due to its significant cultural value. Without kimchi, dinner is considered incomplete.",//string of the description
+    "dishIngredients": ["Tamarind Puree", "Sugar", "Peanuts", "Oyster Sauce", "Chilli Powder", "Onion", "Garlic", "Chicken", "Egg", "Beansprouts", "Rice Noodles", "Lime Wedges", "Cayenne Pepper", "Garlic Chives"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Molluscs", "Peanuts", "Eggs"],
+    "dishImage": "Images/Dishes/Kimchi (fermented vegetables).jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "41", //integer for easy access to data
+    "dishRegion":"South Korean", //for basic filtering
+    "dishName": "Bibimbap (Mixed Rice)", //name of the dish
+    "dishPrice": "13", // dishs price in integer
+    "dishRating": "5", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Bibimbap is essentially a bowl of mixed ingredients including, but not limited to, rice, namul (seasoned and sautéed vegetables), mushrooms, beef, soy sauce, gochujang (chili pepper paste), and a fried egg. The ingredients found in bibimbap vary by region, and the most famous versions of the dish are found in Jeonju, Tongyeong, and Jinju.",//string of the description
+    "dishIngredients": ["Egg", "Green Curry Paste", "Chicken", "Chilies", "Thai Eggplant", "Bamboo Shoot", "Thai Basil", "Coconut Milk", "Lemongrass", "Kaffir Lime Leaves", "Galangal", "Cumin", "Fish Sauce", "Soy Sauce", "Vegetable Oil", "Sugar", "Coriander", "Lime Juice"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Molluscs", "Soya", "Eggs", "Fish"],
+    "dishImage": "Images/Dishes/Bibimbap (mixed rice).jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "42", //integer for easy access to data
+    "dishRegion":"South Korean", //for basic filtering
+    "dishName": "Korean Dumplings (Mandoo or Mandu)", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Mandoo is a symbol of good luck when prepared as part of Korean Lunar New Year festivities. Korean dumplings (mandoo or mandu) can be added to a beef broth or anchovy broth (mandu guk) and served with a traditional cylindrical rice cake (tteok manu guk).",//string of the description
+    "dishIngredients": ["Cardamom", "Cumin", "Cloves", "White Peppercorn", "Dried Chilli", "Groundnut Oil", "Peanuts", "Garlic", "Lime Leaves", "Galangal", "Lemongrass", "Shrimp Paste", "Fish Sauce", "Nutmeg", "Palm Sugar", "Water", "Chicken Breast", "Red Onion", "Potato", "Fresh Chilli", "Chicken Stock", "Star Anise", "Fish Sauce", "Soy Sauce", "Lime", "Thai Sweet Basil", "Coconut Milk", "Vegetable Oil"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Molluscs", "Fish", "Soya", "Nuts"],
+    "dishImage": "Images/Dishes/Korean Dumplings (Mandoo or Mandu)", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "43", //integer for easy access to data
+    "dishRegion":"Thai", //for basic filtering
+    "dishName": "Tom Yum Goong (Spicy Shrimp Soup)", //name of the dish
+    "dishPrice": "7", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "The quintessential Thai aroma! A bold, refreshing blend of fragrant lemongrass, chili, galangal, lime leaves, shallots, lime juice and fish sauce shapes this classic soup, giving it its legendary herbal kick. Succulent fresh prawns and straw mushrooms lend it body. A versatile dish that can fit within virtually any meal, the distinctive smell reminds you of exotic perfume, while it’s invigorating sour-spicy-hot taste just screams ‘Thailand’!",//string of the description
+    "dishIngredients": ["Shrimp", "Water", "Lemongrass", "Chunk Of Galangal", "Kaffir Lime Leaves", "Thai Chilies", "Garlic", "Oyster Mushrooms", "Tomatoes", "White Onions", "Sugar", "Fish Sauce", "Lime Juice", "Coriander"], //array of ingredients for filtering 
+    "dishAllergens": ["Crustaceans", "Molluscs", "Fish"],
+    "dishImage": "Images/Dishes/Tom Yum Goong.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "44", //integer for easy access to data
+    "dishRegion":"Thai", //for basic filtering
+    "dishName": "Gaeng Daeng (Red Curry)", //name of the dish
+    "dishPrice": "12", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Made with morsels of meat, red curry paste, smooth coconut milk and topped off with a sprinkling of finely sliced kaffir lime leaves, this rich, aromatic curry always gets those taste buds tingling. At its best when the meat is stunningly tender, it could be likened to a beautiful woman: it’s mild, sweet and delicately fragrant. And like all true love affairs, absence makes the heart grow fonder.",//string of the description
+    "dishIngredients": ["Coconut Milk", "Bamboo Shoots", "Chicken", "Red Chilli", "Red Curry Paste", "Thai Sweet Basil", "Fish Sauce", "Salt", "Palm Sugar"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Fish"],
+    "dishImage": "Images/Dishes/Thai Red Curry.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "45", //integer for easy access to data
+    "dishRegion":"Thai", //for basic filtering
+    "dishName": "Pad Thai (Thai style Fried Noodles)", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "The default international Thai dish! Dropped in a searing hot wok, fistfuls of small, thin or wide noodles (you choose) do a steamy minute-long dance alongside crunchy beansprouts, onion and egg, before disembarking for the nearest plate. A truly interactive eating experience.",//string of the description
+    "dishIngredients": ["Tamarind Puree", "Sugar", "Peanuts", "Fish Sauce", "Chilli Powder", "Oyster Sauce", "Onion", "Garlic", "Chicken", "Eggs", "Beansprouts", "Rice Noodles", "Lime wedges", "Cayenne Pepper", "Garlic Chives"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Fish", "Peanuts", "Molluscs"],
+    "dishImage": "Images/Dishes/Chicken-Pad-Thai.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "46", //integer for easy access to data
+    "dishRegion":"Thai", //for basic filtering
+    "dishName": "Gaeng Keow Wan (Green Curry)", //name of the dish
+    "dishPrice": "14", // dishs price in integer
+    "dishRating": "5", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Originating from central Thailand, green curry is the spiciest of them all, with a perfect balance of sweet from the added coconut milk. Green curry is made from some of the most mouth-watering ingredients, including fresh green chillies, ginger, eggplant, and, of course, plenty coconut milk. Eat with lots of steamed rice to bring down the spice level.",//string of the description
+    "dishIngredients": ["Coconut Milk", "Bamboo Shoots", "Chicken", "Red Chilli", "Green Curry Paste", "Thai Eggplant", "Thai Sweet Basil", "Fish Sauce", "Salt", "Palm Sugar", "Coriander"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Fish"],
+    "dishImage": "Images/Dishes/green-curry.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "47", //integer for easy access to data
+    "dishRegion":"Thai", //for basic filtering
+    "dishName": "Thai Massaman Curry", //name of the dish
+    "dishPrice": "16", // dishs price in integer
+    "dishRating": "5", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Massaman curry is a fusion of Thai- and Indian-style curries, utilizing both a red-style curry paste (Thai influence) and dry whole spices like cumin, coriander, cinnamon, and nutmeg (Indian influence). Another essential ingredient is roasted peanuts, which add an extra layer of richness and texture to the curry.",//string of the description
+    "dishIngredients": ["Cardamom", "Cumin", "Cloves", "White Peppercorn", "Dried Chilli", "Groundnut Oil", "Peanuts", "Garlic", "Lime Leaves", "Galangal", "Lemongrass", "Shrimp Paste", "Fish Sauce", "Nutmeg", "Palm Sugar", "Water", "Chicken Breast", "Red Onion", "Potato", "Fresh Chilli", "Chicken Stock", "Star Anise", "Fish Sauce", "Soy Sauce", "Lime", "Thai Sweet Basil", "Coconut Milk", "Vegetable Oil"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Molluscs", "Fish", "Soya", "Nuts"],
+    "dishImage": "Images/Dishes/Massaman-Curry.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
   
 
 ],
@@ -334,7 +631,7 @@
     "id": "", //integer for easy access to data
     "cookName": "", //name of the cook
     "cookIntro": "", // cooks short intro
-    "cookImage": "Images/imageName.jpg", //link to images folder with the image 
+    "cookImage": "Images/Cooks/imageName.jpg", //link to images folder with the image 
     "cookVideoURL": "", //link to cook intro video on youtube
     "cookLocation": "" //map URL for each cook
   }],
