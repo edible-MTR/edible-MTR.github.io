@@ -1,25 +1,203 @@
 {
   "dishes": [{
     "id": "0", //integer for easy access to data
-    "dishName": "Lasagna", //name of the dish
-    "dishPrice": "12", // dishs price in integer
-    "dishRating": "4", //int between 0-5
-    "dishFav": "0", //0 or 1 to specify if its a favorite
-    "dishDescription": "Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.", //string of the description
-    "dishIngredients": ["Italian sausage", "ground beef", "onion", "garlic", "tomatoes", "tomato paste", "water", "sugar", "basil", "salt", "pepper", "ricotta cheese", "egg", "mozzarella cheese", "parmesn cheese", "flour"], //array of ingredients for filtering 
-    "dishImage": "Images/Lasagna.jpg", //link to images folder with the image 
+    "dishRegion":"U.S.A", //for basic filtering
+    "dishName": "Apple Pie", //name of the dish
+    "dishPrice": "", // dishs price in integer
+    "dishRating": "", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.", //string of the description
+    "dishIngredients": ["Apple", "Sugar", "Cinnamon", "Nutmeg", "Milk", "Wheat"], //array of ingredients for filtering 
+    "dishAllergens": ["Gluten", "Milk"],
+    "dishImage": "Images/Dishes/applePie.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },{
-    "id": "", //integer for easy access to data
+  }, 
+  {
+    "id": "1", //integer for easy access to data
+    "dishRegion":"U.S.A", //for basic filtering
+    "dishName": "Caramel Candy Apple", //name of the dish
+    "dishPrice": "", // dishs price in integer
+    "dishRating": "", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "These apples are tradition in America because they are so easy and tasty. Suitable for Halloween and children’s parties. The apples are covered in sugar candy coating or caramel.", //string of the description
+    "dishIngredients": ["Caramel", "Sugar", "Apple"], //array of ingredients for filtering 
+    "dishAllergens": ["None"],
+    "dishImage": "Images/Dishes/caramel_candyApples.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "2", //integer for easy access to data
+    "dishRegion":"U.S.A", //for basic filtering
+    "dishName": "The Humble Hamburger", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "The hamburger is made of a bun between in which is the lettuce, a patty of ground beef meet on top of which there are cheese, lettuce and tomato. It is perfect for dinner or lunch. You can have it on birthday parties, reunions with family and friends or simply by yourself.", //string of the description
+    "dishIngredients": ["Beef", "Cheese", "Lettuce", "Tomatoes", "Gerkins", "Wheat Burger Bun"], //array of ingredients for filtering 
+    "dishAllergens": ["Gluten", "Milk"],
+    "dishImage": "Images/Dishes/hamburger.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  }, 
+  {
+    "id": "3", //integer for easy access to data
+    "dishRegion":"U.S.A", //for basic filtering
+    "dishName": "Hot Dog", //name of the dish
+    "dishPrice": "9", // dishs price in integer
+    "dishRating": "", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "The hot dog is made with steamed sausage inside of a sliced bun. The possible toppings you can add are mustard, ketchup or mayonnaise. It is the perfect food when you are running late, you have party or birthday.", //string of the description
+    "dishIngredients": ["Pork Frankfurter", "Wheat Burger Bun", "Mustard", "Mayonnaise", "Ketchup"],//array of ingredients for filtering
+    "dishAllergens": ["Gluten", "Pork", "Eggs", "Mustard"],
+    "dishImage": "Images/Dishes/hotDog.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  }, 
+  {
+    "id": "4", //integer for easy access to data
+    "dishRegion":"U.S.A", //for basic filtering
     "dishName": "", //name of the dish
     "dishPrice": "", // dishs price in integer
     "dishRating": "", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "", //string of the description
-    "dishIngredients": ["", "", "", "", ""], //array of ingredients for filtering 
-    "dishImage": "Images/imageName.jpg", //link to images folder with the image 
+    "dishDescription": "A dessert with a spiced, pumpkin filling. It is made of eggs, butter and milk which are added to the pumpkin puree. It is perfect for Thanksgiving, Halloween or in general the fall and winter time.", //string of the description
+    "dishIngredients": ["Pumpkin", "Nutmeg", "Cinnamon", "Star Anise", "Cloves", "Eggs", "Milk", "Butter"], //array of ingredients for filtering 
+    "dishAllergens": ["Milk", "Eggs"],
+    "dishImage": "Images/Dishes/pumpkinPie.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  }, ],
+  }, 
+  {
+    "id": "5", //integer for easy access to data
+    "dishRegion":"Chinese", //for basic filtering
+    "dishName": "Peking duck", //name of the dish
+    "dishPrice": "18", // dishs price in integer
+    "dishRating": "5", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Peking duck is a famous, centuries-old dish hailing from Beijing. Whole ducks are roasted in wood-fired ovens, rendering out fat and leaving behind perfectly crisp skin. Thin shavings of the crispy skin and meat are skillfully carved from the duck and served for maximum enjoyment.", //string of the description
+    "dishIngredients": ["Duck", "Cinnamon", "Ginger", "Nutmeg", "White Pepper", "Cloves", "Soy Sauce", "Honey", "Orange", "Parsley", "Onion", "Plum Jam", "Sugar", "White Vinegar", "Chutney"], //array of ingredients for filtering 
+    "dishAllergens": ["Soya"],
+    "dishImage": "Images/Dishes/peking duck.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  }, 
+  {
+    "id": "6", //integer for easy access to data
+    "dishRegion":"Chinese", //for basic filtering
+    "dishName": "Wonton Soup", //name of the dish
+    "dishPrice": "7", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Homemade wonton soup! These wontons are filled with a juicy pork and prawn / shrimp filling and will knock your socks off", //string of the description
+    "dishIngredients": ["Wheat Flour", "Water", "Pork Mince", "Shrimp", "Ginger", "Shallots", "Soy Sauce", "Chinese Cooking Wine", "Salt", "Sesame Oil", "Chicken Broth", "Garlic", "Sugar", "Bok Choy", "Egg Noodles"], //array of ingredients for filtering 
+    "dishAllergens": ["Soya", "Sesame", "Crustaceans", "Eggs"],
+    "dishImage": "Images/Dishes/wonton soup.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  }, 
+  {
+    "id": "7", //integer for easy access to data
+    "dishRegion":"Chinese", //for basic filtering
+    "dishName": "Veggie Egg Rolls", //name of the dish
+    "dishPrice": "7", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "These homemade vegetable egg rolls are stuffed full of cabbage, mushrooms, carrots, and more.", //string of the description
+    "dishIngredients": ["Glass Noodles", "Cabbage", "Carrot", "Mushroom", "Onion Powder", "Garlic Powder", "Soy Sauce", "Sesame Oil", "Water", "Vegetable Oil", "Wheat Flour", "Egg", "Cornstarch"], //array of ingredients for filtering 
+    "dishAllergens": ["Soya", "Sesame", "Eggs", "Gluten"],
+    "dishImage": "Images/Dishes/Veggie Egg rolls.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  }, 
+  {
+    "id": "8", //integer for easy access to data
+    "dishRegion":"Chinese", //for basic filtering
+    "dishName": "Pork Dumplings", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "In China, when we talk about dumplings, we’re usually referring to boiled dumplings. Not potstickers, not steamed dumplings, but boiled ones. We consider it a staple, a delicious alternative to rice and noodles. You might think boiled dumplings are not as tasty as potstickers. After all, potstickers have a nicely charred surface and crispy texture and look great, right? But to us, boiled dumplings are the ultimate comfort food that we eat every week.", //string of the description
+    "dishIngredients": ["Wheat Flour", "Salt", "Water", "Red Cabbage", "Green Onion", "Garlic", "Ginger", "Soy Sauce", "Sesame Oil", "Ground Pork", "Pepper", "Mushroom", "Carrot", "Shrimp"], //array of ingredients for filtering 
+    "dishAllergens": ["Soya", "Sesame", "Crustaceans", "Gluten"],
+    "dishImage": "Images/Dishes/Pork Dumplings.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "9", //integer for easy access to data
+    "dishRegion":"Chinese", //for basic filtering
+    "dishName": "Har Gow – Shrimp Dumpling", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "At dim sum houses, the server with the steamed crystal shrimp dumplings, commonly known as “xia jiao” or “har gow” in Cantonese, is always the most popular person on the floor. I’ll even dare to stick my neck out and claim that har gow might be the #1 dim sum item of all time. At least, I wouldn’t be surprised if they were.", //string of the description
+    "dishIngredients": ["Shrimp", "Oyster Sauce", "Vegetable Oil", "White Pepper", "Sesame Oil", "Salt", "Sugar", "Ginger", "Bamboo Shoots"], //array of ingredients for filtering 
+    "dishAllergens": ["Soya", "Sesame", "Crustaceans", "Molluscs", "Gluten"],
+    "dishImage": "Images/Dishes/HAR GOW - shrimp dumpling.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "10", //integer for easy access to data
+    "dishRegion":"French", //for basic filtering
+    "dishName": "Beef Bourguignon", //name of the dish
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Tender chunks of beef simmered in a rich red wine gravy served over rice. It is a dish that originates from the Provence of Burgundy and should always be cook in a Pinot Noir red wine sauce if you are to maintain the authentic flavour of the region. It was a medieval dish that was cheap filling and could feed many. It will certainly make your mouth water as the chunks of beef fall apart in your mouth and the rich flavour ignite you with joy.", //string of the description
+    "dishIngredients": ["Bacon", "Beef Brisket", "Carrot Onion", "Garlic", "Salt", "Wheat Flour", "Red wine", "Beef Stock", "Tomato Paste", "Stock Cube", "Thyme", "Parsley", "Bay leaves" "Mushrooms","Butter", "Rice"], //array of ingredients for filtering 
+    "dishAllergens": ["Pork", "Milk", "Gluten"],
+    "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },  
+  {
+    "id": "11", //integer for easy access to data
+    "dishRegion":"French", //for basic filtering
+    "dishName": "Terrine du Foie Gras on Brioche", //name of the dish
+    "dishPrice": "15", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A simple dish with a decadent and controversial origin. Foie Gras is the liver of a goose or a duck fattened by gavage (force feeding) which produces a rich buttery taste to the liver. In this dish it is prepared into a pate and served over Brioche.", //string of the description
+    "dishIngredients": ["Grade A duck or goose foie gras", "Salt", "Wheat Flour", "Armagnac", "White Pepper"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry"],
+    "dishImage": "Images/Dishes/foieGrasBrioche.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },  
+  {
+    "id": "12", //integer for easy access to data
+    "dishRegion":"French", //for basic filtering
+    "dishName": "Jerusalem Artichoke Velouté", //name of the dish
+    "dishPrice": "7", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A velouté is creamy soup produced by the combination of the creamy texture of the Jerusalem artichokes truffle oil and onion.", //string of the description
+    "dishIngredients": ["Butter", "Onions", "Chicken Stock" "Jerusalem Artichokes" "Truffle Oil" "Chives" "Black Pepper"], //array of ingredients for filtering 
+    "dishAllergens": ["Milk"],
+    "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },   
+  {
+    "id": "13", //integer for easy access to data
+    "dishRegion":"French", //for basic filtering
+    "dishName": "Duck a l’orange", //name of the dish
+    "dishPrice": "14", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A modern French duck a l’orange is a quasi-modern interpretation of a very old recipe that combines duck and orange, and one called duck bigarade first modernised by Julia Child. The dish embalms the duck in a slightly sweet but rich orange sauce that salivates the senses. Gently rested over celery leaves and served with orange supreme and mash potatoes.", //string of the description
+    "dishIngredients": ["Duck", "Salt", "Oranges", "Cornstarch", "Liqueur", "Orange Bitters", "Butter", "Potatoes", "Celery"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Milk", "Celery"],
+    "dishImage": "Images/Dishes/duck-a-l-orange.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },    
+  {
+    "id": "14", //integer for easy access to data
+    "dishRegion":"French", //for basic filtering
+    "dishName": "Vegan Ratatouille", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A classic end of summer French strew packed full of the goodness of fresh veg typical of the end of summer harvests. Served with a drizzle of olive oil and delicious crusty French baguette. ", //string of the description
+    "dishIngredients": ["Tomatoes" "Peppers" "Eggplant" "Courgette" "Squash" "Olive Oil" "Salt"
+"Garlic" "Red Peppercorn" "Black Pepper" "Organum"], //array of ingredients for filtering 
+    "dishAllergens": ["Vegan"],
+    "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  }, 
+  
+
+],
 
   "cooks": [{
     "id": "", //integer for easy access to data
