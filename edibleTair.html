@@ -11,12 +11,12 @@
 <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <link rel="stylesheet" href="Edible Theme/themes/Edible.css">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script> 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script>
 <script>
       // Initialize and add the map
       function initMap() {
@@ -37,6 +37,7 @@
     </script>
 </head>
 <body>
+  <div role="main" class="ui-content">
 <div data-role="page" id="dishPage">
   <div data-role="header" data-position="fixed" them> <img src="Images/logo-06-06.png" alt="logo" class="logo"> </div>
   <div role="main" class="ui-content"> <a href="#" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN" >No text</a>
@@ -52,7 +53,10 @@
       <div class="dishIng"></div>
       <div class="dishExtrasContainer"> <img src="Images/Tair.png" alt="Cook Image" class="cookIMG">
         <p class="cookName">Made by Tair</p>
-        <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN" id="qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN" id="infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN" id="mapBTN">Anchor</a> <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN" id="reviewBTN">Anchor</a> </div>
+        <a href="ARpage_text.html" rel="external" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN" id="qrBTN">Anchor</a>
+        <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN" id="infoBTN">Anchor</a>
+        <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN" id="mapBTN">Anchor</a>
+        <a href="#" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN" id="reviewBTN">Anchor</a> </div>
     </div>
   </div>
   <div data-role="footer" data-position="fixed" data-theme="B">
@@ -84,8 +88,8 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "0", //0 or 1 to specify if its a favorite
     "dishDescription": "Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.", //string of the description
-    "dishIngredients": ["Italian sausage", "ground beef", "onion", "garlic", "tomatoes", "tomato paste", "water", "sugar", "basil", "salt", "pepper", "<b>ricotta cheese</b>", "<b>egg</b>", "<b>mozzarella cheese</b>", "<b>parmesn cheese</b>", "<b>flour</b>"], //array of ingredients for filtering 
-    "dishImage": "Images/Lasagna.jpg", //link to images folder with the image 
+    "dishIngredients": ["Italian sausage", "ground beef", "onion", "garlic", "tomatoes", "tomato paste", "water", "sugar", "basil", "salt", "pepper", "<b>ricotta cheese</b>", "<b>egg</b>", "<b>mozzarella cheese</b>", "<b>parmesn cheese</b>", "<b>flour</b>"], //array of ingredients for filtering
+    "dishImage": "Images/Lasagna.jpg", //link to images folder with the image
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
   },{
     "id": "", //integer for easy access to data
@@ -94,19 +98,19 @@
     "dishRating": "", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "", //string of the description
-    "dishIngredients": ["", "", "", "", ""], //array of ingredients for filtering 
-    "dishImage": "Images/imageName.jpg", //link to images folder with the image 
+    "dishIngredients": ["", "", "", "", ""], //array of ingredients for filtering
+    "dishImage": "Images/imageName.jpg", //link to images folder with the image
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
   }, ],
 }
 
-	</script> 
-<!--Tairs Javasciprt--> 
-<script>	
+	</script>
+<!--Tairs Javasciprt-->
+<script>
 	$(document).ready(function(){
 		//$.getJSON("edibleData.json", function(data){
-		
-	function printDishInfo(i){	
+
+	function printDishInfo(i){
 			var imageOutput ="<img src='";
 			imageOutput += data.dishes[i].dishImage;
 			imageOutput += "' alt='";
@@ -124,7 +128,7 @@
 			//add an empty star to reach 5
 			for(k=0; k<emptyStarNumbers ; k++){
 			ratingOutput+="&#9734;";}}
-			
+
 			$(".dishRatingDisplay").append(ratingOutput);
 			$(".dishDes").append(data.dishes[i].dishDescription);
 		    var ingredients = ""
@@ -136,7 +140,7 @@
 		};
 		var i =0;
 		printDishInfo(i);
-	})	
+	})
 </script>
 </body>
 </html>
