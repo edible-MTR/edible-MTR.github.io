@@ -1,5 +1,15 @@
-var data = {
+{
   "dishes": [{
+    "id": "0", //integer for easy access to data
+    "dishName": "Lasagna", //name of the dish
+    "dishPrice": "12", // dishs price in integer
+    "dishRating": "4", //int between 0-5
+    "dishFav": "0", //0 or 1 to specify if its a favorite
+    "dishDescription": "Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.", //string of the description
+    "dishIngredients": ["Italian sausage", "ground beef", "onion", "garlic", "tomatoes", "tomato paste", "water", "sugar", "basil", "salt", "pepper", "ricotta cheese", "egg", "mozzarella cheese", "parmesn cheese", "flour"], //array of ingredients for filtering 
+    "dishImage": "Images/Lasagna.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },{
     "id": "", //integer for easy access to data
     "dishName": "", //name of the dish
     "dishPrice": "", // dishs price in integer
