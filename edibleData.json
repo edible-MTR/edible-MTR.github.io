@@ -189,12 +189,77 @@
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A classic end of summer French strew packed full of the goodness of fresh veg typical of the end of summer harvests. Served with a drizzle of olive oil and delicious crusty French baguette. ", //string of the description
-    "dishIngredients": ["Tomatoes" "Peppers" "Eggplant" "Courgette" "Squash" "Olive Oil" "Salt"
-"Garlic" "Red Peppercorn" "Black Pepper" "Organum"], //array of ingredients for filtering 
+    "dishIngredients": ["Tomatoes","Peppers", "Eggplant", "Courgette", "Squash", "Olive Oil", "Salt", "Garlic", "Red Peppercorn", "Black Pepper", "Organum"], //array of ingredients for filtering 
     "dishAllergens": ["Vegan"],
-    "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
+    "dishImage": "Images/Dishes/Vegan-ratatouille.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  }, 
+  },    
+  {
+    "id": "15", //integer for easy access to data
+    "dishRegion":"Indian", //for basic filtering
+    "dishName": "Kulfi", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "The traditional Indian ice cream is perfect for the summer, light and also delicious. It can be made with a lot of flavours such as cardamon, saffron, almond, strawberry and more.", //string of the description
+    "dishIngredients": ["Milk", "Cream", "Nuts", "Fruit"], //array of ingredients for filtering 
+    "dishAllergens": ["Nuts", "Milk"],
+    "dishImage": "Images/Dishes/kulfi.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "16", //integer for easy access to data
+    "dishRegion":"Indian", //for basic filtering
+    "dishName": "Shahi Paneer", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "A tradition dish prepared with tomatoes, ground cashews, clarified butter, onions and cream into a curry. You can have that dish for lunch or dinner.", //string of the description
+    "dishIngredients": ["Tomatoes", "Ground Cashews", "Clarified Butter", "Onions", "Cream"], //array of ingredients for filtering 
+    "dishAllergens": ["Nuts", "Milk"],
+    "dishImage": "Images/Dishes/", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "17", //integer for easy access to data
+    "dishRegion":"Indian", //for basic filtering
+    "dishName": "Kheer", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Kheer is the traditional pudding. It is made by sugar, rice, milk and almonds. It is the perfect dessert. You can share it with family and friends or simply to have it on your own.", //string of the description
+    "dishIngredients": ["Sugar", "Milk", "Almonds", "Rice", "Wheat", "Millet", "Tapioca"], //array of ingredients for filtering 
+    "dishAllergens": ["Nuts", "Milk", "Gluten"],
+    "dishImage": "Images/Dishes/", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "18", //integer for easy access to data
+    "dishRegion":"Indian", //for basic filtering
+    "dishName": "Chicken Tikka Masala", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "That dish is made of chunks of roasted chicken in spicy curry. It’s one of the most popular and tasty dishes. It can be eaten at lunch or dinner. ", //string of the description
+    "dishIngredients": ["Yogurt", "Cream", "Chicken", "Ginger", "Coconut Milk", "Spices"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Milk"],
+    "dishImage": "Images/Dishes/tikka-masala.jpg", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+  {
+    "id": "19", //integer for easy access to data
+    "dishRegion":"Indian", //for basic filtering
+    "dishName": "Malai Kofta", //name of the dish
+    "dishPrice": "10", // dishs price in integer
+    "dishRating": "3", //int between 0-5
+    "dishFav": "", //0 or 1 to specify if its a favorite
+    "dishDescription": "Malai Kofta is a vegetarian dish. It is made of potato and paneer balls in curry. The curry is creamy and spiced tomato sauce.", //string of the description
+    "dishIngredients": ["Cream", "Paneer", "Potatoe", "Tomato"], //array of ingredients for filtering 
+    "dishAllergens": ["Poultry", "Milk"],
+    "dishImage": "Images/Dishes/", //link to images folder with the image 
+    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  },
+
   
 
 ],
