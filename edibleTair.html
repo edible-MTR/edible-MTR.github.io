@@ -43,7 +43,7 @@
       <div class="content"> <img src="Images/Lasagna.jpg" alt="Lasagna Image" class="dishIMG"> </div>
     </div>
     <div class="dishInfo">
-      <h1 class="dishName" data-theme></h1>
+      <h1 class="dishName" id="dishName" data-theme></h1>
       <p class="dishPrice">£12</p>
       <div class="dishRatingDisplay"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> </div>
       <div class="dishDes">Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.</div>
@@ -81,7 +81,7 @@
 		$.getJSON("edibleData.json", function(data){
 			
 			var output = data.dishes[0].dishName;
-			$(".dishName").append(output);
+			$("#dishName").append(output);
 		});		
 	})	
 </script>
