@@ -4,8 +4,8 @@
     "id": "0", //integer for easy access to data
     "dishRegion":"U.S.A", //for basic filtering
     "dishName": "Apple Pie", //name of the dish
-    "dishPrice": "", // dishs price in integer
-    "dishRating": "", //int between 0-5
+    "dishPrice": "14", // dishs price in integer
+    "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.", //string of the description
     "dishIngredients": ["Apple", "Sugar", "Cinnamon", "Nutmeg", "Milk", "Wheat"], //array of ingredients for filtering 
@@ -17,8 +17,8 @@
     "id": "1", //integer for easy access to data
     "dishRegion":"U.S.A", //for basic filtering
     "dishName": "Caramel Candy Apple", //name of the dish
-    "dishPrice": "", // dishs price in integer
-    "dishRating": "", //int between 0-5
+    "dishPrice": "8", // dishs price in integer
+    "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "These apples are tradition in America because they are so easy and tasty. Suitable for Halloween and children’s parties. The apples are covered in sugar candy coating or caramel.", //string of the description
     "dishIngredients": ["Caramel", "Sugar", "Apple"], //array of ingredients for filtering 
@@ -44,7 +44,7 @@
     "dishRegion":"U.S.A", //for basic filtering
     "dishName": "Hot Dog", //name of the dish
     "dishPrice": "9", // dishs price in integer
-    "dishRating": "", //int between 0-5
+    "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The hot dog is made with steamed sausage inside of a sliced bun. The possible toppings you can add are mustard, ketchup or mayonnaise. It is the perfect food when you are running late, you have party or birthday.", //string of the description
     "dishIngredients": ["Pork Frankfurter", "Wheat Burger Bun", "Mustard", "Mayonnaise", "Ketchup"],//array of ingredients for filtering
@@ -56,8 +56,8 @@
     "id": "4", //integer for easy access to data
     "dishRegion":"U.S.A", //for basic filtering
     "dishName": "", //name of the dish
-    "dishPrice": "", // dishs price in integer
-    "dishRating": "", //int between 0-5
+    "dishPrice": "13", // dishs price in integer
+    "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A dessert with a spiced, pumpkin filling. It is made of eggs, butter and milk which are added to the pumpkin puree. It is perfect for Thanksgiving, Halloween or in general the fall and winter time.", //string of the description
     "dishIngredients": ["Pumpkin", "Nutmeg", "Cinnamon", "Star Anise", "Cloves", "Eggs", "Milk", "Butter"], //array of ingredients for filtering 
@@ -265,7 +265,7 @@
     "id": "20", //integer for easy access to data
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Spaghetti Carbonara", //name of the dish
-    "dishPrice": "120", // dishs price in integer
+    "dishPrice": "12", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a simple Sunday night dinner on the couch yet works just as well as a classy dish to pull out when you really want to impress someone special.", //string of the description
@@ -279,7 +279,7 @@
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Prosciutto and Arugula Pizza", //name of the dish
     "dishPrice": "15", // dishs price in integer
-    "dishRating": "3", //int between 0-5
+    "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The combination of fatty, salty prosciutto and spicy arugula is a classic, which is why I’ve been making this particular pizza for years. Hot out of the oven, the pizza is scattered with a generous amount of arugula, which softens a little at the edges but doesn’t wilt, lending a spicy bite that cuts through the salty porkiness of the prosciutto.", //string of the description
     "dishIngredients": ["Olive Oil", "Tomato", "Mozzarella Cheese", "Prosciutto", "Arugula", "Wheat Flour", "Yeast", "Sugar", "Salt", "Garlic", "Basil", "Water"], //array of ingredients for filtering 
@@ -292,7 +292,7 @@
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Lasagna", //name of the dish
     "dishPrice": "15", // dishs price in integer
-    "dishRating": "3", //int between 0-5
+    "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.", //string of the description
     "dishIngredients": ["Italian Sausage", "Ground Beef", "Onion", "Garlic", "Tomatoes", "Tomato Paste", "Water", "Sugar", "Basil", "Salt", "Pepper", "Ricotta Cheese", "Egg", "Mozzarella Cheese", "Parmesn Cheese", "Wheat Flour"], //array of ingredients for filtering 
@@ -318,7 +318,7 @@
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Tortellini with Ham and Cream", //name of the dish
     "dishPrice": "11", // dishs price in integer
-    "dishRating": "3", //int between 0-5
+    "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Whether you want a hot appetizer for a party or a tasty, comforting weeknight meal option, double the order because everyone is going to love it!", //string of the description
     "dishIngredients": ["Butter", "Ham", "Heavy Cream", "Pepper", "Parmigiano Reggiano Cheese", "Wheat Flour", "Eggs", "Salt", "Olive Oil", "Ricotta"], //array of ingredients for filtering 
