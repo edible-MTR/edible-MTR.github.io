@@ -1,5 +1,6 @@
-{
-  "dishes": [{
+	var data = {
+  "dishes": [
+  {
     "id": "0", //integer for easy access to data
     "dishRegion":"U.S.A", //for basic filtering
     "dishName": "Apple Pie", //name of the dish
@@ -138,7 +139,7 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Tender chunks of beef simmered in a rich red wine gravy served over rice. It is a dish that originates from the Provence of Burgundy and should always be cook in a Pinot Noir red wine sauce if you are to maintain the authentic flavour of the region. It was a medieval dish that was cheap filling and could feed many. It will certainly make your mouth water as the chunks of beef fall apart in your mouth and the rich flavour ignite you with joy.", //string of the description
-    "dishIngredients": ["Bacon", "Beef Brisket", "Carrot Onion", "Garlic", "Salt", "Wheat Flour", "Red wine", "Beef Stock", "Tomato Paste", "Stock Cube", "Thyme", "Parsley", "Bay leaves" "Mushrooms","Butter", "Rice"], //array of ingredients for filtering 
+    "dishIngredients": ["Bacon", "Beef Brisket", "Carrot Onion", "Garlic", "Salt", "Wheat Flour", "Red wine", "Beef Stock", "Tomato Paste", "Stock Cube", "Thyme", "Parsley", "Bay leaves", "Mushrooms","Butter", "Rice"], //array of ingredients for filtering 
     "dishAllergens": ["Pork", "Milk", "Gluten"],
     "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
@@ -164,7 +165,7 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A velouté is creamy soup produced by the combination of the creamy texture of the Jerusalem artichokes truffle oil and onion.", //string of the description
-    "dishIngredients": ["Butter", "Onions", "Chicken Stock" "Jerusalem Artichokes" "Truffle Oil" "Chives" "Black Pepper"], //array of ingredients for filtering 
+    "dishIngredients": ["Butter", "Onions", "Chicken Stock", "Jerusalem Artichokes", "Truffle Oil", "Chives", "Black Pepper"], //array of ingredients for filtering 
     "dishAllergens": ["Milk"],
     "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
@@ -359,7 +360,7 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables.", //string of the description
-    "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot" "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
+    "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot", "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
     "dishAllergens": ["Fish", "Soya"],
     "dishImage": "Images/Dishes/Sushi and Nigiri.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
@@ -372,7 +373,7 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables.", //string of the description
-    "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot" "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
+    "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot", "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
     "dishAllergens": ["Fish", "Soya"],
     "dishImage": "Images/Dishes/Sushi and Nigiri.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
@@ -624,68 +625,74 @@
     "dishImage": "Images/Dishes/Massaman-Curry.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
   },
-  
-
 ],
-
-  "cooks": [{
+  "cooks": [
+	  {
     "id": "0", //integer for easy access to data
     "cookName": "Dom", //name of the cook
     "cookIntro": "Expect my dish to be Big, Bold and Delicious!", // cooks short intro (U.S.A)
     "cookImage": "Images/Cooks/imageName.jpg", //link to images folder with the image 
-    "cookVideoURL": "", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "" //link to cook intro video on youtube
+  },
+	{
     "id": "1", //integer for easy access to data
     "cookName": "Phoebe", //name of the cook
     "cookIntro": "Chinese food has always been my passion and I can't wait to share it with you", // cooks short intro (Chinese)
     "cookImage": "Images/Cooks/imageName.jpg", //link to images folder with the image 
-    "cookVideoURL": "", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "" //link to cook intro video on youtube
+  },
+			{
     "id": "2", //integer for easy access to data
     "cookName": "Matt", //name of the cook
     "cookIntro": "French flavours from my kitchen to yours", // cooks short intro (French)
     "cookImage": "Images/Cooks/Matt.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/ipugTQxZ1_8", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "https://youtu.be/ipugTQxZ1_8" //link to cook intro video on youtube
+  },
+			{
     "id": "3", //integer for easy access to data
     "cookName": "Shiraz", //name of the cook
     "cookIntro": "Love making all these colorful and fragrant dishes for you", // cooks short intro (Indian)
     "cookImage": "Images/Cooks/Shiraz.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/R-B_jfb8l10", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "https://youtu.be/R-B_jfb8l10" //link to cook intro video on youtube
+  },
+			{
     "id": "4", //integer for easy access to data
     "cookName": "Elisa", //name of the cook
     "cookIntro": "Hello, I enjoy brining you the food of my native country with an added pinch of love", // cooks short intro (Italian)
     "cookImage": "Images/Cooks/Elisa.jpg", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/zsjYJOwpsZ8", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "https://youtu.be/zsjYJOwpsZ8" //link to cook intro video on youtube
+  },
+			{
     "id": "5", //integer for easy access to data
     "cookName": "Rosie", //name of the cook
     "cookIntro": "Bringing the flavours of Japan from my kitchen to yours", // cooks short intro (Japanese)
     "cookImage": "Images/Cooks/Rosie.png", //link to images folder with the image 
-    "cookVideoURL": "", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "" //link to cook intro video on youtube
+  },
+			{
     "id": "6", //integer for easy access to data
     "cookName": "Aviv", //name of the cook
     "cookIntro": "I love being able to bring the food of my native home land to all of you here on edible", // cooks short intro (Lebanese)
     "cookImage": "Images/Cooks/Aviv.jpg", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/lIEL2pai4lM", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "https://youtu.be/lIEL2pai4lM" //link to cook intro video on youtube
+  },
+			{
     "id": "7", //integer for easy access to data
     "cookName": "Merav", //name of the cook
     "cookIntro": "After living in South Korea for many years im excited to be sharing their cuisine with you", // cooks short intro (South Korean)
     "cookImage": "Images/Cooks/Merav.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/9VYb7KOLJfc", //link to cook intro video on youtube
-  },{
+    "cookVideoURL": "https://youtu.be/9VYb7KOLJfc" //link to cook intro video on youtube
+  },
+			{
     "id": "8", //integer for easy access to data
     "cookName": "Tair", //name of the cook
     "cookIntro": "Happy to bring you this delicious fragrant food fresh from my kitchen", // cooks short intro (Thai)
     "cookImage": "Images/Cooks/Tair.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/6xHMKc7g4Cg", //link to cook intro video on youtube
+    "cookVideoURL": "https://youtu.be/6xHMKc7g4Cg" //link to cook intro video on youtube
   }],
 
-  "inBasket" [{
+  "inBasket": [{
     "id": "", //integer for easy access to data
-    "dishIds": ["", "", ""], //ID's of dishs that were added to basket
+    "dishIds": ["", "", ""] //ID's of dishs that were added to basket
   }]
 }
