@@ -271,7 +271,7 @@
     "dishDescription": "A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a simple Sunday night dinner on the couch yet works just as well as a classy dish to pull out when you really want to impress someone special.", //string of the description
     "dishIngredients": ["Pancetta", "Pecorino Cheese", "Parmesan", "Eggs", "Wheat Flour", "Water", "Garlic", "Butter", "Chive", "Salt", "Pepper"], //array of ingredients for filtering 
     "dishAllergens": ["Eggs", "Milk", "Gluten"],
-    "dishImage": "Images/Dishes/Lasagna.jpg", //link to images folder with the image 
+    "dishImage": "Images/Dishes/Spaghetti carbonara.jpg", //link to images folder with the image 
     "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
   },
   {
@@ -646,21 +646,21 @@
     "cookName": "Matt", //name of the cook
     "cookIntro": "French flavours from my kitchen to yours", // cooks short intro (French)
     "cookImage": "Images/Cooks/Matt.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/ipugTQxZ1_8" //link to cook intro video on youtube
+    "cookVideoURL": "https://www.youtube.com/embed/ipugTQxZ1_8" //link to cook intro video on youtube
   },
 			{
     "id": "3", //integer for easy access to data
     "cookName": "Shiraz", //name of the cook
     "cookIntro": "Love making all these colorful and fragrant dishes for you", // cooks short intro (Indian)
     "cookImage": "Images/Cooks/Shiraz.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/R-B_jfb8l10" //link to cook intro video on youtube
+    "cookVideoURL": "https://www.youtube.com/embed/R-B_jfb8l10" //link to cook intro video on youtube
   },
 			{
     "id": "4", //integer for easy access to data
     "cookName": "Elisa", //name of the cook
     "cookIntro": "Hello, I enjoy brining you the food of my native country with an added pinch of love", // cooks short intro (Italian)
     "cookImage": "Images/Cooks/Elisa.jpg", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/zsjYJOwpsZ8" //link to cook intro video on youtube
+    "cookVideoURL": "https://www.youtube.com/embed/zsjYJOwpsZ8" //link to cook intro video on youtube
   },
 			{
     "id": "5", //integer for easy access to data
@@ -674,23 +674,22 @@
     "cookName": "Aviv", //name of the cook
     "cookIntro": "I love being able to bring the food of my native home land to all of you here on edible", // cooks short intro (Lebanese)
     "cookImage": "Images/Cooks/Aviv.jpg", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/lIEL2pai4lM" //link to cook intro video on youtube
+    "cookVideoURL": "https://www.youtube.com/embed/lIEL2pai4lM" //link to cook intro video on youtube
   },
 			{
     "id": "7", //integer for easy access to data
     "cookName": "Merav", //name of the cook
     "cookIntro": "After living in South Korea for many years im excited to be sharing their cuisine with you", // cooks short intro (South Korean)
     "cookImage": "Images/Cooks/Merav.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/9VYb7KOLJfc" //link to cook intro video on youtube
+    "cookVideoURL": "https://www.youtube.com/embed/9VYb7KOLJfc" //link to cook intro video on youtube
   },
 			{
     "id": "8", //integer for easy access to data
     "cookName": "Tair", //name of the cook
     "cookIntro": "Happy to bring you this delicious fragrant food fresh from my kitchen", // cooks short intro (Thai)
     "cookImage": "Images/Cooks/Tair.png", //link to images folder with the image 
-    "cookVideoURL": "https://youtu.be/6xHMKc7g4Cg" //link to cook intro video on youtube
+    "cookVideoURL": "https://www.youtube.com/embed/6xHMKc7g4Cg" //link to cook intro video on youtube
   }],
-
   "inBasket": [{
     "id": "", //integer for easy access to data
     "dishIds": ["", "", ""] //ID's of dishs that were added to basket
