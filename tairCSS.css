@@ -197,3 +197,10 @@ padding-right: 20px;
   margin: 0;
   padding: 0;
 }
+
+.submitBTN{
+	background: #EC6F61;
+box-shadow: 4px 4px 4px rgba(21, 70, 115, 0.25);
+border-radius: 10px;
+	width: 100px !important;
+}
