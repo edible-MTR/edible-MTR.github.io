@@ -6,6 +6,7 @@ body {
   font-style: normal;
   font-size: 16px;
   color: #05223D;
+  text-shadow: 0px 0px !important;
 }
 h1 {
   font-family: agenda, sans-serif;
@@ -14,17 +15,15 @@ h1 {
   font-size: 24px;
   color: #05223D;
 }
-
-.logo{
-	height: 80px;
-	padding-left: 1%;
+.logo {
+  height: 80px;
+  padding-left: 1%;
 }
-
 .dishIMG {
   position: absolute;
   width: 320px;
   height: 320px;
-object-fit:cover;
+  object-fit: cover;
   /*background: url(Lasagna.jpg);*/
   filter: drop-shadow(0px 4px 4px rgba(5, 34, 61, 0.5));
   border-radius: 45px;
@@ -165,7 +164,7 @@ object-fit:cover;
   grid-column: 1;
 }
 .cookDesPOP {
-padding-right: 20px;
+  padding-right: 20px;
   grid-row: 2;
   grid-column: 1;
 }
@@ -197,10 +196,133 @@ padding-right: 20px;
   margin: 0;
   padding: 0;
 }
+.submitBTN {
+  background: #EC6F61;
+  box-shadow: 4px 4px 4px rgba(21, 70, 115, 0.25);
+  border-radius: 10px;
+  width: 100px !important;
+}
+.cuisineBTNS {
+  margin-left: 10% !important;
+  margin-bottom: 0px !important;
+  background: rgba(85, 188, 155, 0.5);
+  width: 560px;
+  padding: 4px !important;
+}
+label.cuisinesLabels {
+  width: 40px;
+  height: 40px;
+  padding: 5px !important;
+  margin: 5px !important;
+  box-shadow: 4px 4px 4px rgba(21, 70, 115, 0.25) !important;
+  border-radius: 10px !important;
+}
+label.cuisinesLabels:checked {
+  background-color: #05223D;
+}
+label.cuisinesLabels img {
+  height: 40px;
+  width: 40px;
+  filter: drop-shadow(2px 2px 2px rgba(85, 68, 102, 0.25));
+}
+.dietaryBTNS {
+  margin-left: 16% !important;
+  margin-top: 0px !important;
+  background: rgba(85, 188, 155, 0.5);
+  border-radius: 0px 0px 20px 20px !important;
+  width: 465px;
+  padding: 0px 4px 4px !important;
+}
+label.dietaryLabels {
+  width: 35px;
+  height: 35px;
+  padding: 5px !important;
+  margin: 5px !important;
+  box-shadow: 4px 4px 4px rgba(21, 70, 115, 0.25) !important;
+  border-radius: 10px !important;
+}
+label.dietaryLabels:checked {
+  background-color: #05223D;
+}
+label.dietaryLabels img {
+  height: 38px;
+  width: 38px;
+  filter: drop-shadow(2px 2px 2px rgba(85, 68, 102, 0.25));
+}
+.dishContainer {
+  display: grid;
+  grid-template-rows: 25px, 15px, 25px;
+  align-items: center;
+  width: 608px;
+  height: 135px;
+  background: rgba(5, 34, 61, 0.9);
+  border-radius: 26px;
+  padding: 0px;
+  padding-left: 10px;
+	margin-left: 8%;
+	margin-top: 20px;
+}
+.dishImageInSearch {
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  margin-left: 15px;
+  width: 93px;
+  height: 93px;
+  filter: drop-shadow(0px 4px 4px rgba(5, 34, 61, 0.5));
+  border-radius: 23px;
+}
+.dishTitleInSearch {
+  grid-column: 2;
+  grid-row: 1;
+  color: #f7f7f7;
+  font-size: 24px !important;
+  margin: 0px;
+	
+  margin-left: 10px;
+}
+.dishRatingInSearch {
+  grid-column: 2;
+  grid-row: 2;
+  color: #99D7C2;
+  margin: 0px;
+	
+  margin-left: 10px;
+}
+.dishDesInSearch {
+  grid-column: 2;
+  grid-row: 3;
+  color: #f7f7f7;
+  font-size: 14px;
+  margin: 0px;
+  margin-left: 10px;
+  text-shadow: 0px 0px !important;
+}
+.favBTNInSearch {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: center;
+	
+}
 
-.submitBTN{
-	background: #EC6F61;
-box-shadow: 4px 4px 4px rgba(21, 70, 115, 0.25);
-border-radius: 10px;
-	width: 100px !important;
+.dishPriceInSearch {
+  grid-column: 3;
+  grid-row: 2;
+  color: #EC6F61;
+  font-size: 24px;
+  text-shadow: 0px 0px !important;
+  justify-self: center;
+}
+.addBTNInSearch {
+  grid-column: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  height: 135px;
+  border-radius: 0px 26px 26px 0px;
+  background-color: #99D7C2;
+  justify-self: center;
+}
+.plusBTNinSearch {
+  margin-top: 50px !important;
+  margin-left: 5px !important;
 }
