@@ -370,7 +370,7 @@
 	    "shortDescription":"A velouté is creamy soup produced by the combination of the creamy texture of the Jerusalem artichokes truffle oil and onion.",
     "dishIngredients": ["Butter", "Onions", "Chicken Stock", "Jerusalem Artichokes", "Truffle Oil", "Chives", "Black Pepper"], //array of ingredients for filtering 
     "dishAllergens": ["Milk"],
-    "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
+    "dishImage": "Images/Dishes/jerusalem_artichoke_soup.jpg", //link to images folder with the image 
     "dishTopReviews": ["Amazing dish.", "Great for the money.", "The delivery was slow and my food arrived cold."] //3 top comments for that dish (a few words each)
   },   
   {
@@ -879,10 +879,7 @@
 			return output;
 		}
 		
-		
-		
-		
-		
+
 		
 		//////////////////////////////////////
 		var dishID = 12;
@@ -960,30 +957,39 @@
 
 	function setCookId(dishID){
 		if (dishID>=0 && dishID<=4){
+			//USA
 			cookID = 0;
 		}
 		else if (dishID>=5 && dishID<=9){
+			//China
 			cookID = 1;
 		}
 		else if (dishID>=10 && dishID<=14){
+			//France
 			cookID = 2;
 		}
-		else if (dishID>=15 && dishID<=19){
+		else if (dishID>=15 && dishID<=16){
+			//India
 			cookID = 3;
 		}
-		else if (dishID>=20 && dishID<=24){
+		else if (dishID>=17 && dishID<=21){
+			//Italy
 			cookID = 4;
 		}
-		else if (dishID>=25 && dishID<=31){
+		else if (dishID>=22 && dishID<=26){
+			//Japan
 			cookID = 5;
 		}
-		else if (dishID>=32 && dishID<=37){
+		else if (dishID>=27 && dishID<=29){
+			//Lebanon
 			cookID = 6;
 		}
-		else if (dishID>=38 && dishID<=42){
+		else if (dishID>=30 && dishID<=34){
+			//South Korea
 			cookID = 7;
 		}
-		else if (dishID>=43 && dishID<=47){
+		else if (dishID>=35 && dishID<=39){
+			//Thai
 			cookID = 8;
 		}
 	}

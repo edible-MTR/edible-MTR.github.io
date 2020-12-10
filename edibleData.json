@@ -180,7 +180,7 @@
 	    "shortDescription":"A velouté is creamy soup produced by the combination of the creamy texture of the Jerusalem artichokes truffle oil and onion.",
     "dishIngredients": ["Butter", "Onions", "Chicken Stock", "Jerusalem Artichokes", "Truffle Oil", "Chives", "Black Pepper"], //array of ingredients for filtering 
     "dishAllergens": ["Milk"],
-    "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
+    "dishImage": "Images/Dishes/jerusalem_artichoke_soup.jpg", //link to images folder with the image 
     "dishTopReviews": ["Amazing dish.", "Great for the money.", "The delivery was slow and my food arrived cold."] //3 top comments for that dish (a few words each)
   },   
   {
@@ -225,7 +225,6 @@
     "dishImage": "Images/Dishes/kulfi.jpg", //link to images folder with the image 
    "dishTopReviews": ["Lovely.", "The food wasn't anything special. The delivery guy was rude and my food arrived cold. I wouldn't recommend it.", "It is my favourite. I would definitely buy it again."] //3 top comments for that dish (a few words each)
   },
-
   {
     "id": "16", //integer for easy access to data
     "dishRegion":"Indian", //for basic filtering
