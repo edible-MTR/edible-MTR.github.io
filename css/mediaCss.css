@@ -1,0 +1,148 @@
+/*Font imports and Application*/
+@import url("https://use.typekit.net/pxb0mzl.css");
+
+h1, h2, h3, h4, h5, h6{
+	font-family: agenda, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+#badgeTitle{
+	font-family: agenda-condensed, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 24px;
+}
+/*Color Swatch Classes*/
+.clrContrast{
+	color:#f7f7f7 !important;
+	background-color:#05223D !important; 
+
+}
+.clrBackground{
+	color:#05223D !important; 
+	background-color:#f7f7f7 !important; 
+}
+body, p{
+	font-family: agenda, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+}
+.description{
+	font-family: agenda, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #05223D;
+}
+.btnIcText{
+	font-family: agenda-condensed, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #05223D;
+}
+.
+/*Browser Compatability*/
+article, aside, footer, header, nav, section {
+	display: block;
+}
+body{
+	m
+}
+.homeContent{
+	display: block;
+}
+
+footer{
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	background-color: #f7f7f7;
+	box-shadow: 0px -2px 10px rgba(5, 34, 61, 0.25);
+
+}
+.portraitDevice{
+	display: none;
+}
+.logo{
+	display: block;
+	left: 6.42%;
+	top: 0.52%;
+	content: url(../Images/logo-06-06.png);
+}
+#keywordSearch{
+	width: 60%;
+	margin: 0% 25% 0 20%;
+}
+#welcomeBanner{
+	background-color:#EC6F61;
+	color: #F7F7F7;
+	width: 60%;
+	margin: 0% 20% 0 15%;
+}	
+.pageTitle{
+	text-align: center;
+}
+.pageTitleHR{
+	border-bottom: 2px solid #05223D;
+	width: 60%;
+	margin: 0% 20% 0 20%;
+}
+
+
+/*Media Queries*/
+/*Common to both orientations and all devices */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 2048px)  { 
+	.landscapeDevice{
+		display:block;
+	}
+	.ui-content{
+		padding: 0;
+	}
+	.ui-grid-a> .sideBar {
+		width: 27%;
+		height: 100vh;
+		border-radius: 0px 32px 0px 0px;
+
+	}
+	.ui-grid-a> .contentArea{
+		width: 73%;
+	}
+	.logo{
+		height: 110px;
+	}
+
+}
+/*Mobile Landscape only css*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	.portraitDevice{
+		display: none;
+	}
+	.landscapeDevice{
+		display: block;
+	}
+	.logo{
+		height: 110px;
+	}
+
+}
+
+/*Mobile Portrait only css*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.portraitDevice{
+		display: block;
+	}
+	.landscapeDevice{
+		display: none;
+	}
+	.logo{
+		height: 80px;
+	}
+}
