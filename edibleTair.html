@@ -163,8 +163,8 @@
           </label>
         </fieldset>
       </form>
-      <div id="foundDishes">
-      <!--  <div class="dishContainer"> 
+      <div id="foundDishes"> 
+        <!--  <div class="dishContainer"> 
 		<img src="Images/Dishes/applePie.jpg" alt="ApplepieImage" class="dishImageInSearch">
           <p class="dishTitleInSearch">Apple Pie</p>
           <div class="dishRatingInSearch">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -172,7 +172,7 @@
           <div class="favBTNInSearch"><a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-c " >No text</a></div>
           <div class="dishPriceInSearch">£12</div>
           <div class="addBTNInSearch"><a href="#" class="ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext  ui-btn-b ui-corner-all plusBTNinSearch" >No text</a></div>
-        </div> -->
+        </div> --> 
       </div>
     </div>
     <div data-role="footer" data-position="fixed" data-theme="B">
@@ -197,11 +197,12 @@
     "dishPrice": "14", // dishs price in integer
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.", //string of the description
+    "dishDescription": "The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.",//string of the description
+	  "shortDescription":"The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.",
     "dishIngredients": ["Apple", "Sugar", "Cinnamon", "Nutmeg", "Milk", "Wheat"], //array of ingredients for filtering 
     "dishAllergens": ["Gluten", "Milk"],
-    "dishImage": "Images'/'Dishes'/'applePie.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishImage": "Images/Dishes/applePie.jpg", //link to images folder with the image 
+   "dishTopReviews": ["The meal was delivered warm.", "The food was okay.", "Slow delivery, cold pie. Wouldn't recommend. "] //3 top comments for that dish (a few words each)
   }, 
   {
     "id": "1", //integer for easy access to data
@@ -211,10 +212,11 @@
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "These apples are tradition in America because they are so easy and tasty. Suitable for Halloween and children’s parties. The apples are covered in sugar candy coating or caramel.", //string of the description
+	  "shortDescription":"These apples are tradition in America because they are so easy and tasty. Suitable for Halloween and children’s parties. The apples are covered in sugar candy coating or caramel.",
     "dishIngredients": ["Caramel", "Sugar", "Apple"], //array of ingredients for filtering 
     "dishAllergens": ["None"],
     "dishImage": "Images/Dishes/caramel_candyApples.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+     "dishTopReviews": ["I loved it. It reminded me of my childhood.", "Fast delivery, great food.", "Me and my kids loved it. Amazing."] //3 top comments for that dish (a few words each)
   },
   {
     "id": "2", //integer for easy access to data
@@ -224,10 +226,11 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The hamburger is made of a bun between in which is the lettuce, a patty of ground beef meet on top of which there are cheese, lettuce and tomato. It is perfect for dinner or lunch. You can have it on birthday parties, reunions with family and friends or simply by yourself.", //string of the description
+	   "shortDescription":"The hamburger is made of a bun between in which is the lettuce, a patty of ground beef meet on top of which there are cheese, lettuce and tomato. It is perfect for dinner or lunch...",
     "dishIngredients": ["Beef", "Cheese", "Lettuce", "Tomatoes", "Gerkins", "Wheat Burger Bun"], //array of ingredients for filtering 
     "dishAllergens": ["Gluten", "Milk"],
     "dishImage": "Images/Dishes/hamburger.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["The Hamburger was okay.", "Fast delivery but not great for the money.", "Great Hamburger. The best one."] //3 top comments for that dish (a few words each)
   }, 
   {
     "id": "3", //integer for easy access to data
@@ -237,23 +240,25 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The hot dog is made with steamed sausage inside of a sliced bun. The possible toppings you can add are mustard, ketchup or mayonnaise. It is the perfect food when you are running late, you have party or birthday.", //string of the description
+	   "shortDescription":"The hot dog is made with steamed sausage inside of a sliced bun. The possible toppings you can add are mustard, ketchup or mayonnaise. It is the perfect food when you are running late,...",
     "dishIngredients": ["Pork Frankfurter", "Wheat Burger Bun", "Mustard", "Mayonnaise", "Ketchup"],//array of ingredients for filtering
     "dishAllergens": ["Gluten", "Pork", "Eggs", "Mustard"],
     "dishImage": "Images/Dishes/hotDog.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+     "dishTopReviews": ["I liked it. It was delivered warm.", "It tasted like the ones I had when I was a kid.", "You can't go wrong with a hot dog."] //3 top comments for that dish (a few words each)
   }, 
   {
     "id": "4", //integer for easy access to data
     "dishRegion":"U.S.A", //for basic filtering
-    "dishName": "", //name of the dish
+    "dishName": "Pumpkin Pie", //name of the dish
     "dishPrice": "13", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A dessert with a spiced, pumpkin filling. It is made of eggs, butter and milk which are added to the pumpkin puree. It is perfect for Thanksgiving, Halloween or in general the fall and winter time.", //string of the description
+	  "shortDescription":"A dessert with a spiced, pumpkin filling. It is made of eggs, butter and milk which are added to the pumpkin puree. It is perfect for Thanksgiving, Halloween or in general the fall and winter time....",
     "dishIngredients": ["Pumpkin", "Nutmeg", "Cinnamon", "Star Anise", "Cloves", "Eggs", "Milk", "Butter"], //array of ingredients for filtering 
     "dishAllergens": ["Milk", "Eggs"],
     "dishImage": "Images/Dishes/pumpkinPie.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["It is my first time trying this pie and I love it.", "Lovely. I'm going to buy again.", "I've recommended this pie to my friends. We all loved it."] //3 top comments for that dish (a few words each)
   }, 
   {
     "id": "5", //integer for easy access to data
@@ -263,10 +268,11 @@
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Peking duck is a famous, centuries-old dish hailing from Beijing. Whole ducks are roasted in wood-fired ovens, rendering out fat and leaving behind perfectly crisp skin. Thin shavings of the crispy skin and meat are skillfully carved from the duck and served for maximum enjoyment.", //string of the description
+	   "shortDescription":"Peking duck is a famous, centuries-old dish hailing from Beijing. Whole ducks are roasted in wood-fired ovens, rendering out fat and leaving behind perfectly crisp skin. Thin shavings of the crispy skin and....",
     "dishIngredients": ["Duck", "Cinnamon", "Ginger", "Nutmeg", "White Pepper", "Cloves", "Soy Sauce", "Honey", "Orange", "Parsley", "Onion", "Plum Jam", "Sugar", "White Vinegar", "Chutney"], //array of ingredients for filtering 
     "dishAllergens": ["Soya"],
     "dishImage": "Images/Dishes/peking duck.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["It was so tasty. I would definitely buy again.", "I would highly recommend it. You won't regret.", "Everything was amazing. The food, the delivery, everything."] //3 top comments for that dish (a few words each)
   }, 
   {
     "id": "6", //integer for easy access to data
@@ -276,10 +282,11 @@
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Homemade wonton soup! These wontons are filled with a juicy pork and prawn / shrimp filling and will knock your socks off", //string of the description
+	    "shortDescription":"Homemade wonton soup! These wontons are filled with a juicy pork and prawn / shrimp filling and will knock your socks off",
     "dishIngredients": ["Wheat Flour", "Water", "Pork Mince", "Shrimp", "Ginger", "Shallots", "Soy Sauce", "Chinese Cooking Wine", "Salt", "Sesame Oil", "Chicken Broth", "Garlic", "Sugar", "Bok Choy", "Egg Noodles"], //array of ingredients for filtering 
     "dishAllergens": ["Soya", "Sesame", "Crustaceans", "Eggs"],
     "dishImage": "Images/Dishes/wonton soup.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["Amazing services.", "The meal was alright. However, I don't think I would order again.", "The delivery was slow and my food arrived cold."] //3 top comments for that dish (a few words each)
   }, 
   {
     "id": "7", //integer for easy access to data
@@ -289,10 +296,11 @@
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "These homemade vegetable egg rolls are stuffed full of cabbage, mushrooms, carrots, and more.", //string of the description
+	   "shortDescription":"These homemade vegetable egg rolls are stuffed full of cabbage, mushrooms, carrots, and more.",
     "dishIngredients": ["Glass Noodles", "Cabbage", "Carrot", "Mushroom", "Onion Powder", "Garlic Powder", "Soy Sauce", "Sesame Oil", "Water", "Vegetable Oil", "Wheat Flour", "Egg", "Cornstarch"], //array of ingredients for filtering 
     "dishAllergens": ["Soya", "Sesame", "Eggs", "Gluten"],
     "dishImage": "Images/Dishes/Veggie Egg rolls.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["Fast delivery but not great for the money.", "The meal was fine. However, the delivery took way too long and the guy who delivered my food was rude.", "Great for the money."] //3 top comments for that dish (a few words each)
   }, 
   {
     "id": "8", //integer for easy access to data
@@ -302,10 +310,11 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "In China, when we talk about dumplings, we’re usually referring to boiled dumplings. Not potstickers, not steamed dumplings, but boiled ones. We consider it a staple, a delicious alternative to rice and noodles. You might think boiled dumplings are not as tasty as potstickers. After all, potstickers have a nicely charred surface and crispy texture and look great, right? But to us, boiled dumplings are the ultimate comfort food that we eat every week.", //string of the description
+	  "shortDescription":"In China, when we talk about dumplings, we’re usually referring to boiled dumplings. Not potstickers, not steamed dumplings, but boiled ones. We consider it a staple, a delicious alternative to rice and noodles...",
     "dishIngredients": ["Wheat Flour", "Salt", "Water", "Red Cabbage", "Green Onion", "Garlic", "Ginger", "Soy Sauce", "Sesame Oil", "Ground Pork", "Pepper", "Mushroom", "Carrot", "Shrimp"], //array of ingredients for filtering 
     "dishAllergens": ["Soya", "Sesame", "Crustaceans", "Gluten"],
     "dishImage": "Images/Dishes/Pork Dumplings.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["I loved it. It was just the way I like it.", "It was so tasty. I would definitely tell my friends about your cooking skills.", "The food wasn't anything special. The delivery guy was rude and my food arrived cold. I wouldn't recommend it."] //3 top comments for that dish (a few words each)
   },
   {
     "id": "9", //integer for easy access to data
@@ -315,10 +324,11 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "At dim sum houses, the server with the steamed crystal shrimp dumplings, commonly known as “xia jiao” or “har gow” in Cantonese, is always the most popular person on the floor. I’ll even dare to stick my neck out and claim that har gow might be the #1 dim sum item of all time. At least, I wouldn’t be surprised if they were.", //string of the description
+	  "shortDescription":"At dim sum houses, the server with the steamed crystal shrimp dumplings, commonly known as “xia jiao” or “har gow” in Cantonese, is always the most popular person on the floor...",
     "dishIngredients": ["Shrimp", "Oyster Sauce", "Vegetable Oil", "White Pepper", "Sesame Oil", "Salt", "Sugar", "Ginger", "Bamboo Shoots"], //array of ingredients for filtering 
     "dishAllergens": ["Soya", "Sesame", "Crustaceans", "Molluscs", "Gluten"],
     "dishImage": "Images/Dishes/HAR GOW - shrimp dumpling.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+     "dishTopReviews": ["It was fast and tasty.", "The meal was amazing.", "Lovely. I'm going to buy again."] //3 top comments for that dish (a few words each)
   },
   {
 	  
@@ -329,10 +339,11 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Tender chunks of beef simmered in a rich red wine gravy served over rice. It is a dish that originates from the Provence of Burgundy and should always be cook in a Pinot Noir red wine sauce if you are to maintain the authentic flavour of the region. It was a medieval dish that was cheap filling and could feed many. It will certainly make your mouth water as the chunks of beef fall apart in your mouth and the rich flavour ignite you with joy.", //string of the description
+	  "shortDescription":"Tender chunks of beef simmered in a rich red wine gravy served over rice. It is a dish that originates from the Provence of Burgundy and should always be cook in a Pinot Noir red wine sauce if you ...",
     "dishIngredients": ["Bacon", "Beef Brisket", "Carrot Onion", "Garlic", "Salt", "Wheat Flour", "Red wine", "Beef Stock", "Tomato Paste", "Stock Cube", "Thyme", "Parsley", "Bay leaves", "Mushrooms","Butter", "Rice"], //array of ingredients for filtering 
     "dishAllergens": ["Pork", "Milk", "Gluten"],
     "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["Everything was amazing. The food, the delivery, everything.", "Fast delivery but not great for the money.", "Amazing."] //3 top comments for that dish (a few words each)
   },  
   {
     "id": "11", //integer for easy access to data
@@ -342,10 +353,11 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A simple dish with a decadent and controversial origin. Foie Gras is the liver of a goose or a duck fattened by gavage (force feeding) which produces a rich buttery taste to the liver. In this dish it is prepared into a pate and served over Brioche.", //string of the description
+	  "shortDescription":"A simple dish with a decadent and controversial origin. Foie Gras is the liver of a goose or a duck fattened by gavage (force feeding) which produces a rich buttery taste to the liver....",
     "dishIngredients": ["Grade A duck or goose foie gras", "Salt", "Wheat Flour", "Armagnac", "White Pepper"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry"],
     "dishImage": "Images/Dishes/foieGrasBrioche.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["It was very delicious.", "Great.", "Amazing services and great dish."] //3 top comments for that dish (a few words each)
   },  
   {
     "id": "12", //integer for easy access to data
@@ -355,10 +367,11 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A velouté is creamy soup produced by the combination of the creamy texture of the Jerusalem artichokes truffle oil and onion.", //string of the description
+	    "shortDescription":"A velouté is creamy soup produced by the combination of the creamy texture of the Jerusalem artichokes truffle oil and onion.",
     "dishIngredients": ["Butter", "Onions", "Chicken Stock", "Jerusalem Artichokes", "Truffle Oil", "Chives", "Black Pepper"], //array of ingredients for filtering 
     "dishAllergens": ["Milk"],
     "dishImage": "Images/Dishes/Beef-Bourgignon.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["Amazing dish.", "Great for the money.", "The delivery was slow and my food arrived cold."] //3 top comments for that dish (a few words each)
   },   
   {
     "id": "13", //integer for easy access to data
@@ -368,10 +381,11 @@
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A modern French duck a l’orange is a quasi-modern interpretation of a very old recipe that combines duck and orange, and one called duck bigarade first modernised by Julia Child. The dish embalms the duck in a slightly sweet but rich orange sauce that salivates the senses. Gently rested over celery leaves and served with orange supreme and mash potatoes.", //string of the description
+	   "shortDescription":"A modern French duck a l’orange is a quasi-modern interpretation of a very old recipe that combines duck and orange, and one called duck bigarade first modernised by Julia Child...",
     "dishIngredients": ["Duck", "Salt", "Oranges", "Cornstarch", "Liqueur", "Orange Bitters", "Butter", "Potatoes", "Celery"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Milk", "Celery"],
     "dishImage": "Images/Dishes/duck-a-l-orange.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["The meal was tasty but it arrived 1h after the estimated delivery", "The delivery was slow and my food arrived cold.", "The meal was okay."] //3 top comments for that dish (a few words each)
   },    
   {
     "id": "14", //integer for easy access to data
@@ -381,10 +395,11 @@
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A classic end of summer French strew packed full of the goodness of fresh veg typical of the end of summer harvests. Served with a drizzle of olive oil and delicious crusty French baguette. ", //string of the description
+	  	   "shortDescription":"A classic end of summer French strew packed full of the goodness of fresh veg typical of the end of summer harvests. Served with a drizzle of olive oil and delicious crusty French baguette.",
     "dishIngredients": ["Tomatoes","Peppers", "Eggplant", "Courgette", "Squash", "Olive Oil", "Salt", "Garlic", "Red Peppercorn", "Black Pepper", "Organum"], //array of ingredients for filtering 
     "dishAllergens": ["Vegan"],
     "dishImage": "Images/Dishes/Vegan-ratatouille.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["Great for the money.", "I like the vegan ratatouille. It is my favourite.", "The delivery was slow and my food arrived cold.However it was tasty."] //3 top comments for that dish (a few words each)
   },    
   {
     "id": "15", //integer for easy access to data
@@ -394,426 +409,348 @@
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The traditional Indian ice cream is perfect for the summer, light and also delicious. It can be made with a lot of flavours such as cardamon, saffron, almond, strawberry and more.", //string of the description
+	   "shortDescription":"The traditional Indian ice cream is perfect for the summer, light and also delicious. It can be made with a lot of flavours such as cardamon, saffron, almond, strawberry and more.",
     "dishIngredients": ["Milk", "Cream", "Nuts", "Fruit"], //array of ingredients for filtering 
     "dishAllergens": ["Nuts", "Milk"],
     "dishImage": "Images/Dishes/kulfi.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["Lovely.", "The food wasn't anything special. The delivery guy was rude and my food arrived cold. I wouldn't recommend it.", "It is my favourite. I would definitely buy it again."] //3 top comments for that dish (a few words each)
   },
+
   {
     "id": "16", //integer for easy access to data
-    "dishRegion":"Indian", //for basic filtering
-    "dishName": "Shahi Paneer", //name of the dish
-    "dishPrice": "10", // dishs price in integer
-    "dishRating": "3", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "A tradition dish prepared with tomatoes, ground cashews, clarified butter, onions and cream into a curry. You can have that dish for lunch or dinner.", //string of the description
-    "dishIngredients": ["Tomatoes", "Ground Cashews", "Clarified Butter", "Onions", "Cream"], //array of ingredients for filtering 
-    "dishAllergens": ["Nuts", "Milk"],
-    "dishImage": "Images/Dishes/", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "17", //integer for easy access to data
-    "dishRegion":"Indian", //for basic filtering
-    "dishName": "Kheer", //name of the dish
-    "dishPrice": "10", // dishs price in integer
-    "dishRating": "3", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "Kheer is the traditional pudding. It is made by sugar, rice, milk and almonds. It is the perfect dessert. You can share it with family and friends or simply to have it on your own.", //string of the description
-    "dishIngredients": ["Sugar", "Milk", "Almonds", "Rice", "Wheat", "Millet", "Tapioca"], //array of ingredients for filtering 
-    "dishAllergens": ["Nuts", "Milk", "Gluten"],
-    "dishImage": "Images/Dishes/", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "18", //integer for easy access to data
     "dishRegion":"Indian", //for basic filtering
     "dishName": "Chicken Tikka Masala", //name of the dish
     "dishPrice": "10", // dishs price in integer
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "That dish is made of chunks of roasted chicken in spicy curry. It’s one of the most popular and tasty dishes. It can be eaten at lunch or dinner. ", //string of the description
+	  "shortDescription":"That dish is made of chunks of roasted chicken in spicy curry. It’s one of the most popular and tasty dishes. It can be eaten at lunch or dinner.",
     "dishIngredients": ["Yogurt", "Cream", "Chicken", "Ginger", "Coconut Milk", "Spices"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Milk"],
     "dishImage": "Images/Dishes/tikka-masala.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["It wasn't anything special. But it was good for that price.", "Great meal. Fast delivery.", "Lovely. It is my favourite."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "19", //integer for easy access to data
-    "dishRegion":"Indian", //for basic filtering
-    "dishName": "Malai Kofta", //name of the dish
-    "dishPrice": "10", // dishs price in integer
-    "dishRating": "3", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "Malai Kofta is a vegetarian dish. It is made of potato and paneer balls in curry. The curry is creamy and spiced tomato sauce.", //string of the description
-    "dishIngredients": ["Cream", "Paneer", "Potatoe", "Tomato"], //array of ingredients for filtering 
-    "dishAllergens": ["Poultry", "Milk"],
-    "dishImage": "Images/Dishes/", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "20", //integer for easy access to data
+    "id": "17", //integer for easy access to data
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Spaghetti Carbonara", //name of the dish
     "dishPrice": "12", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a simple Sunday night dinner on the couch yet works just as well as a classy dish to pull out when you really want to impress someone special.", //string of the description
+	    "shortDescription":"A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a simple Sunday night dinner on the couch yet works just as well as a classy dish to pull out when you really want to impress someone special.",
     "dishIngredients": ["Pancetta", "Pecorino Cheese", "Parmesan", "Eggs", "Wheat Flour", "Water", "Garlic", "Butter", "Chive", "Salt", "Pepper"], //array of ingredients for filtering 
     "dishAllergens": ["Eggs", "Milk", "Gluten"],
     "dishImage": "Images/Dishes/Spaghetti carbonara.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["I would highly recommend. The dish was warm, the delivery fast and everyone was friendly. ", "Lovely. It is my favourite.", "The meal was tasty but it arrived 1h after the estimated delivery"] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "21", //integer for easy access to data
+    "id": "18", //integer for easy access to data
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Prosciutto and Arugula Pizza", //name of the dish
     "dishPrice": "15", // dishs price in integer
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The combination of fatty, salty prosciutto and spicy arugula is a classic, which is why I’ve been making this particular pizza for years. Hot out of the oven, the pizza is scattered with a generous amount of arugula, which softens a little at the edges but doesn’t wilt, lending a spicy bite that cuts through the salty porkiness of the prosciutto.", //string of the description
+	   "shortDescription":"The combination of fatty, salty prosciutto and spicy arugula is a classic, which is why I’ve been making this particular pizza for years. Hot out of the oven, the pizza is scattered with a generous amount of arugula...",
     "dishIngredients": ["Olive Oil", "Tomato", "Mozzarella Cheese", "Prosciutto", "Arugula", "Wheat Flour", "Yeast", "Sugar", "Salt", "Garlic", "Basil", "Water"], //array of ingredients for filtering 
     "dishAllergens": ["Gluten", "Milk"],
-    "dishImage": "Images/Dishes/Spaghetti carbonara.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishImage": "Images/Dishes/Prosciutto and Arugula Pizza.jpg", //link to images folder with the image 
+    "dishTopReviews": ["I loved it. The food was amazing.", "It was delivered warm.", "The food wasn't anything special. The delivery guy was rude and my food arrived cold. I wouldn't recommend it."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "22", //integer for easy access to data
+    "id": "19", //integer for easy access to data
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Lasagna", //name of the dish
     "dishPrice": "15", // dishs price in integer
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.", //string of the description
+	  "shortDescription":"Everyone loves a good lasagna, right? It’s a great way to feed a crowd and a perfect dish to bring to a potluck. It freezes well. It reheats well. Leftovers will keep you happy for days.",
     "dishIngredients": ["Italian Sausage", "Ground Beef", "Onion", "Garlic", "Tomatoes", "Tomato Paste", "Water", "Sugar", "Basil", "Salt", "Pepper", "Ricotta Cheese", "Egg", "Mozzarella Cheese", "Parmesn Cheese", "Wheat Flour"], //array of ingredients for filtering 
     "dishAllergens": ["Pork", "Gluten", "Milk"],
     "dishImage": "Images/Dishes/Lasagna.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["Great for the money.", "I would buy it again. Amazing.", "The delivery guy was rude and my food arrived cold. However, it was tasty so I will give the highest rating because of that."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "23", //integer for easy access to data
+    "id": "20", //integer for easy access to data
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Classic Tomato Spaghetti", //name of the dish
     "dishPrice": "11", // dishs price in integer
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "This is an easy and delicious meal for a classic spaghetti sauce with a homemade taste. Great for introducing young children to fresh ingredients and vegetables.", //string of the description
+	    "shortDescription":"This is an easy and delicious meal for a classic spaghetti sauce with a homemade taste. Great for introducing young children to fresh ingredients and vegetables.",
     "dishIngredients": ["Basil", "Onion", "Garlic", "Tomato", "Olive Oil", "Red Wine", "Balsamic Vinegar", "Parmesan Cheese", "Wheat Flour", "Egg", "Water"], //array of ingredients for filtering 
     "dishAllergens": ["Eggs", "Gluten", "Milk"],
     "dishImage": "Images/Dishes/Classic tomato spaghetti.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["The food wasn't anything special. The delivery guy was rude and my food arrived cold. I wouldn't recommend it.", "I didn't get my delivery.", "Lovely. It is my favourite."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "24", //integer for easy access to data
+    "id": "21", //integer for easy access to data
     "dishRegion":"Italian", //for basic filtering
     "dishName": "Tortellini with Ham and Cream", //name of the dish
     "dishPrice": "11", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Whether you want a hot appetizer for a party or a tasty, comforting weeknight meal option, double the order because everyone is going to love it!", //string of the description
+	  "shortDescription":"Whether you want a hot appetizer for a party or a tasty, comforting weeknight meal option, double the order because everyone is going to love it!",
     "dishIngredients": ["Butter", "Ham", "Heavy Cream", "Pepper", "Parmigiano Reggiano Cheese", "Wheat Flour", "Eggs", "Salt", "Olive Oil", "Ricotta"], //array of ingredients for filtering 
     "dishAllergens": ["Pork", "Eggs", "Gluten", "Milk"],
     "dishImage": "Images/Dishes/Tortellini with Ham and Cream.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["It was delivered warm.", "I would highly recommend. The dish was warm, the delivery fast and everyone was friendly. ", "Great for the money."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "25", //integer for easy access to data
+    "id": "22", //integer for easy access to data
     "dishRegion":"Japanese", //for basic filtering
     "dishName": "Tonkatsu", //name of the dish
     "dishPrice": "13", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "If you’re like me who loves deep-fried foods, precisely panko coated crispy foods, you will love Japanese pork cutlet called Tonkatsu (豚カツ). And I’m here to make you the best possible Tonkatsu ", //string of the description
+	  "shortDescription":"If you’re like me who loves deep-fried foods, precisely panko coated crispy foods, you will love Japanese pork cutlet called Tonkatsu (豚カツ). And I’m here to make you the best possible Tonkatsu",
     "dishIngredients": ["Pork Loin", "Salt", "Pepper", "Wheat Flour", "Egg", "Vegetable Oil", "Panko", "Ketchup", "Worcestershire Sauce", "Oyster Sauce", "Sugar"], //array of ingredients for filtering 
     "dishAllergens": ["Pork", "Eggs", "Gluten", "Molluscs"],
     "dishImage": "Images/Dishes/Tonkatsu.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["Amazing dish.", "It was tasty.", "Lovely. It is my favourite."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "26", //integer for easy access to data
+    "id": "23", //integer for easy access to data
     "dishRegion":"Japanese", //for basic filtering
     "dishName": "Yakitori", //name of the dish
     "dishPrice": "13", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Glazed in a savory-sweet sauce, these Japanese chicken and scallion skewers are hard to resist! ", //string of the description
+	  "shortDescription":"Glazed in a savory-sweet sauce, these Japanese chicken and scallion skewers are hard to resist!",
     "dishIngredients": ["Chicken", "Onion", "Vegetable Oil", "Soy Sauce", "Mirin", "Sake", "Water", "Brown Sugar"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Soya", "Eggs", "Gluten"],
     "dishImage": "Images/Dishes/Yakitori.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["Very delicious.", "It was okay but I wouldn't buy it again.", "It was perfect."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "27", //integer for easy access to data
+    "id": "24", //integer for easy access to data
     "dishRegion":"Japanese", //for basic filtering
     "dishName": "Sushi and Nigiri", //name of the dish
     "dishPrice": "8", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables.", //string of the description
+	  "shortDescription":"Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables.",
     "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot", "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
     "dishAllergens": ["Fish", "Soya"],
     "dishImage": "Images/Dishes/Sushi and Nigiri.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["Lovely. It is my favourite.", "I would highly recommend. The dish was warm, the delivery fast and everyone was friendly. ", "The meal was fine. However, the delivery took way too long and the guy who delivered my food was rude."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "28", //integer for easy access to data
-    "dishRegion":"Japanese", //for basic filtering
-    "dishName": "Sushi and Nigiri", //name of the dish
-    "dishPrice": "8", // dishs price in integer
-    "dishRating": "4", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables.", //string of the description
-    "dishIngredients": ["Nori (Seaweed)", "Rice", "Mirin", "Rice Vinegar", "Salmon", "Avocado", "Cucumber", "Carrot", "Soy Sauce", "Raw Tuna", "Wasabi"], //array of ingredients for filtering 
-    "dishAllergens": ["Fish", "Soya"],
-    "dishImage": "Images/Dishes/Sushi and Nigiri.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "29", //integer for easy access to data
+    "id": "25", //integer for easy access to data
     "dishRegion":"Japanese", //for basic filtering
     "dishName": "Chicken Ramen", //name of the dish
     "dishPrice": "10", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "My version is on the table in less than an hour – and half that if you opt for store-bought chicken – and while it might not be completely authentic, it’s a flavorful, comforting soup just in time for the unmistakably crisp, chilly autumn weather that these first days of October have ushered in.", //string of the description
+	   "shortDescription":"My version is on the table in less than an hour – and half that if you opt for store-bought chicken – and while it might not be completely authentic, it’s a flavorful, comforting soup...",
     "dishIngredients": ["Butter", "Vegetable Oil", "Ginger", "Garlic", "Soy Sauce", "Mirin", "Chicken Broth", "Mushroom", "Salt", "Eggs", "Scallions", "Noodles", "Jalapeno"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Milk", "Eggs"],
     "dishImage": "Images/Dishes/Chicken Ramen.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["I would highly recommend. It is amazing ramen.", "Great for the money.", "I loved it."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "30", //integer for easy access to data
-    "dishRegion":"Japanese", //for basic filtering
-    "dishName": "Chicken Ramen", //name of the dish
-    "dishPrice": "10", // dishs price in integer
-    "dishRating": "4", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "My version is on the table in less than an hour – and half that if you opt for store-bought chicken – and while it might not be completely authentic, it’s a flavorful, comforting soup just in time for the unmistakably crisp, chilly autumn weather that these first days of October have ushered in.", //string of the description
-    "dishIngredients": ["Butter", "Vegetable Oil", "Ginger", "Garlic", "Soy Sauce", "Mirin", "Chicken Broth", "Mushroom", "Salt", "Eggs", "Scallions", "Noodles", "Jalapeno"], //array of ingredients for filtering 
-    "dishAllergens": ["Poultry", "Milk", "Eggs"],
-    "dishImage": "Images/Dishes/Chicken Ramen.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "31", //integer for easy access to data
+    "id": "26", //integer for easy access to data
     "dishRegion":"Japanese", //for basic filtering
     "dishName": "Veggie Sushi 4 Ways", //name of the dish
     "dishPrice": "10", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Sushi is definitely a family favorite. When our kids were younger there was this hole-in-the-wall Japanese restaurant in town we loved. The only problem with taking our kids out for sushi was that they inhaled it. This homemade sushi will allow you to eat until you are full and then some!", //string of the description
+	   "shortDescription":"Sushi is definitely a family favorite. When our kids were younger there was this hole-in-the-wall Japanese restaurant in town we loved. The only problem with taking our kids out for sushi was that they inhaled it...",
     "dishIngredients": ["Rice Vinegar", "Sugar", "Salt", "Sushi Rice", "Nori", "Sesame Oil", "Mushroom", "Garlic Powder", "Spinach", "Cucumber", "Carrot", "Vegetable Oil", "Wheat Flour", "Sweet Potato", "Avocado", "Mango", "Bell Pepper", "Tofu"], //array of ingredients for filtering 
     "dishAllergens": ["Sesame", "Gluten", "Eggs"],
     "dishImage": "Images/Dishes/Veggie sushi 4 ways.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+     "dishTopReviews": ["It was perfect. The food was amazing and the delivery was fast.", "It was delivered warm.", "The food was delivered on time and it was delicious."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "32", //integer for easy access to data
+    "id": "27", //integer for easy access to data
     "dishRegion":"Lebanese", //for basic filtering
     "dishName": "Kibbeh", //name of the dish
     "dishPrice": "18", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A traditional dish made by bulgur wheat pounded together with meat into a fine paste and formed into balls, with toasted pine nuts and spices. You can have that one as a main dish or started.", //string of the description
+	   "shortDescription":"A traditional dish made by bulgur wheat pounded together with meat into a fine paste and formed into balls, with toasted pine nuts and spices. You can have that one as a main dish or started.",
     "dishIngredients": ["Cat Meat", "Spices", "Nuts", "Wheat"], //array of ingredients for filtering 
     "dishAllergens": ["Nut", "Gluten", "Cats"],
     "dishImage": "Images/Dishes/Kibbeh.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["I would highly recommend. The dish was warm, the delivery fast and everyone was friendly. ", "Amazing dish.", "The delivery was fast. The meal was tasty."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "33", //integer for easy access to data
-    "dishRegion":"Lebanese", //for basic filtering
-    "dishName": "Manakish", //name of the dish
-    "dishPrice": "9", // dishs price in integer
-    "dishRating": "3", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "Manakish, also called “Lebanese pizza” is made of thyme, sumac, olive oil and sesame seeds on bread. It is our traditional breakfast but if you like you can enjoy it during the whole day.", //string of the description
-    "dishIngredients": ["Thyme", "Sumac" , "Olive Oil", "Wheat Flour", "Sesame"], //array of ingredients for filtering 
-    "dishAllergens": ["Vegan", "Sesame", "Gluten"],
-    "dishImage": "Images/Dishes/", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "34", //integer for easy access to data
+    "id": "28", //integer for easy access to data
     "dishRegion":"Lebanese", //for basic filtering
     "dishName": "Fattoush", //name of the dish
     "dishPrice": "9", // dishs price in integer
     "dishRating": "3", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "This salad is made of fried pieces of khubz (Lebanese bread), tomatoes, radishes and mixed greens.You can have it as a starter before the main meal.", //string of the description
+	   "shortDescription":"This salad is made of fried pieces of khubz (Lebanese bread), tomatoes, radishes and mixed greens.You can have it as a starter before the main meal.",
     "dishIngredients": ["Wheat Flour", "Tomatoes", "Radishes", "Mixed Greens"], //array of ingredients for filtering 
     "dishAllergens": ["Vegan", "Gluten"],
     "dishImage": "Images/Dishes/Fattous.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["It was okay but I wouldn't buy it again.", "Great for the money.", "It arrived 1h after the estimated delivery"] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "35", //integer for easy access to data
+    "id": "29", //integer for easy access to data
     "dishRegion":"Lebanese", //for basic filtering
     "dishName": "Baba Ghanoush", //name of the dish
     "dishPrice": "6", // dishs price in integer
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Baba ghanoush is an appetiser of tahini, olive oil and different seasonings mixed together in mashed cooked eggplant.",//string of the description
+	   "shortDescription":"Baba ghanoush is an appetiser of tahini, olive oil and different seasonings mixed together in mashed cooked eggplant.",
     "dishIngredients": ["Eggplant", "Olive Oil", "Tahini"], //array of ingredients for filtering 
     "dishAllergens": ["Vegan", "Sesame", "Gluten"],
     "dishImage": "Images/Dishes/Baba ghanoush.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["Lovely. I'm going to buy again.", "It tasted so good. I would definitely order again.", "It is my favourite. I would highly recommend."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "36", //integer for easy access to data
-    "dishRegion":"Lebanese", //for basic filtering
-    "dishName": "Sfouf", //name of the dish
-    "dishPrice": "8", // dishs price in integer
-    "dishRating": "4", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "Sfouf is the perfect dessert. It is a cake made of semolina flour flavoured, turmeric, eggs, sugar, sesame paste, baking powder, aniseed and pine nuts. Perfect for birthdays.",//string of the description
-    "dishIngredients": ["Wheat Flour", "Turmeric", "Eggs", "Sugar", "Sesame Paste", "Baking Powder", "Aniseed", "Pine Nuts"], //array of ingredients for filtering 
-    "dishAllergens": ["Eggs", "Sesame", "Nuts", "Gluten"],
-    "dishImage": "Images/Dishes/", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "37", //integer for easy access to data
-    "dishRegion":"Lebanese", //for basic filtering
-    "dishName": "Sfouf", //name of the dish
-    "dishPrice": "8", // dishs price in integer
-    "dishRating": "4", //int between 0-5
-    "dishFav": "", //0 or 1 to specify if its a favorite
-    "dishDescription": "Sfouf is the perfect dessert. It is a cake made of semolina flour flavoured, turmeric, eggs, sugar, sesame paste, baking powder, aniseed and pine nuts. Perfect for birthdays.",//string of the description
-    "dishIngredients": ["Wheat Flour", "Turmeric", "Eggs", "Sugar", "Sesame Paste", "Baking Powder", "Aniseed", "Pine Nuts"], //array of ingredients for filtering 
-    "dishAllergens": ["Eggs", "Sesame", "Nuts", "Gluten"],
-    "dishImage": "Images/Dishes/", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
-  },
-  {
-    "id": "38", //integer for easy access to data
+    "id": "30", //integer for easy access to data
     "dishRegion":"South Korean", //for basic filtering
     "dishName": "Samgyetang (Ginseng Chicken Soup)", //name of the dish
     "dishPrice": "8", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A common dish particularly during the summer, samgyetang is a traditional soup made of chicken, garlic, rice, scallion, Korean jujube, Korean ginseng, and spices. It is known to have a high nutritional value. Not only is it known for its healthy contents, but it also is popular simply for its creamy and meaty flavour.",//string of the description
+	    "shortDescription":"A common dish particularly during the summer, samgyetang is a traditional soup made of chicken, garlic, rice, scallion, Korean jujube, Korean ginseng, and spices. It is known to have a high nutritional...",
     "dishIngredients": ["Chicken", "Shrimp", "Water", "Lemongrass", "Chunk Of Galangal", "Kaffir Lime Leaves", "Thai Chilies", "Garlic", "Oyster Mushrooms", "Tomatoes", "White Onions", "Sugar", "Oyster Sauce", "Lime Juice", "Coriander"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Crustaceans", "Molluscs"],
     "dishImage": "Images/Dishes/Samgyetang (ginseng chicken soup).jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+     "dishTopReviews": ["It tasted so good. I would definitely order again.", "It was so tasty. I would definitely tell my friends about your cooking skills.", "Great dish. I would buy it again."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "39", //integer for easy access to data
+    "id": "31", //integer for easy access to data
     "dishRegion":"South Korean", //for basic filtering
     "dishName": "Bulgogi (Marinated Beef Barbecue)", //name of the dish
     "dishPrice": "7", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "A juicy, savoury dish of grilled marinated beef, bulgogi is one of the most popular Korean meat dishes throughout the world, and was ranked as the 23rd most delicious food in the world according to CNN Travel’s reader’s poll in 2011. It is often grilled with garlic and sliced onions to add flavour to the meat. The meat is usually wrapped in lettuce and it is also traditionally eaten with ssamjang (a thick, red spicy paste).",//string of the description
+	    "shortDescription":"A juicy, savoury dish of grilled marinated beef, bulgogi is one of the most popular Korean meat dishes throughout the world, and was ranked as the 23rd most delicious food in the world...",
     "dishIngredients": ["Coconut Milk", "Bamboo Shoots", "Chicken", "Red Chilli", "Red Curry Paste", "Thai Sweet Basil", "Oyster Sauce", "Salt", "Palm Sugar"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Molluscs"],
     "dishImage": "Images/Dishes/Bulgogi (marinated beef barbecue).jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["I am happy with my order.", "Great dish.", "Great job. The dish was amazing."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "40", //integer for easy access to data
+    "id": "32", //integer for easy access to data
     "dishRegion":"South Korean", //for basic filtering
     "dishName": "Kimchi (Fermented Vegetables)", //name of the dish
     "dishPrice": "4", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "One of the oldest and probably the most essential dishes in Korean cuisine, kimchi is a spicy and sour dish made up of fermented vegetables. It is prepared with various kinds of ingredients, but the most common main ingredient is cabbage. Kimchi is popular among foreigners for its unique flavour, as well as its high nutritional value, fibre content and low-calorie content. However, for Koreans, it is most popular due to its significant cultural value. Without kimchi, dinner is considered incomplete.",//string of the description
+	  "shortDescription":"One of the oldest and probably the most essential dishes in Korean cuisine, kimchi is a spicy and sour dish made up of fermented vegetables. It is prepared with various kinds of ingredients...",
     "dishIngredients": ["Tamarind Puree", "Sugar", "Peanuts", "Oyster Sauce", "Chilli Powder", "Onion", "Garlic", "Chicken", "Egg", "Beansprouts", "Rice Noodles", "Lime Wedges", "Cayenne Pepper", "Garlic Chives"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Molluscs", "Peanuts", "Eggs"],
     "dishImage": "Images/Dishes/Kimchi (fermented vegetables).jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["The meal was tasty but it arrived 1h after the estimated delivery", "Lovely. It is my favourite.", "I would highly recommend. The dish was warm, the delivery fast and everyone was friendly. "] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "41", //integer for easy access to data
+    "id": "33", //integer for easy access to data
     "dishRegion":"South Korean", //for basic filtering
     "dishName": "Bibimbap (Mixed Rice)", //name of the dish
     "dishPrice": "13", // dishs price in integer
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Bibimbap is essentially a bowl of mixed ingredients including, but not limited to, rice, namul (seasoned and sautéed vegetables), mushrooms, beef, soy sauce, gochujang (chili pepper paste), and a fried egg. The ingredients found in bibimbap vary by region, and the most famous versions of the dish are found in Jeonju, Tongyeong, and Jinju.",//string of the description
+	  "shortDescription":"Bibimbap is essentially a bowl of mixed ingredients including, but not limited to, rice, namul (seasoned and sautéed vegetables), mushrooms, beef, soy sauce, gochujang (chili pepper paste)...",
     "dishIngredients": ["Egg", "Green Curry Paste", "Chicken", "Chilies", "Thai Eggplant", "Bamboo Shoot", "Thai Basil", "Coconut Milk", "Lemongrass", "Kaffir Lime Leaves", "Galangal", "Cumin", "Fish Sauce", "Soy Sauce", "Vegetable Oil", "Sugar", "Coriander", "Lime Juice"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Molluscs", "Soya", "Eggs", "Fish"],
     "dishImage": "Images/Dishes/Bibimbap (mixed rice).jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  "dishTopReviews": ["I am happy with my order.", "The only thing I can say is PERFECT.", "It was delivered warm."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "42", //integer for easy access to data
+    "id": "34", //integer for easy access to data
     "dishRegion":"South Korean", //for basic filtering
     "dishName": "Korean Dumplings (Mandoo or Mandu)", //name of the dish
     "dishPrice": "8", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Mandoo is a symbol of good luck when prepared as part of Korean Lunar New Year festivities. Korean dumplings (mandoo or mandu) can be added to a beef broth or anchovy broth (mandu guk) and served with a traditional cylindrical rice cake (tteok manu guk).",//string of the description
+	   "shortDescription":"Mandoo is a symbol of good luck when prepared as part of Korean Lunar New Year festivities. Korean dumplings (mandoo or mandu) can be added to a beef broth or anchovy broth (mandu guk) and served...",
     "dishIngredients": ["Cardamom", "Cumin", "Cloves", "White Peppercorn", "Dried Chilli", "Groundnut Oil", "Peanuts", "Garlic", "Lime Leaves", "Galangal", "Lemongrass", "Shrimp Paste", "Fish Sauce", "Nutmeg", "Palm Sugar", "Water", "Chicken Breast", "Red Onion", "Potato", "Fresh Chilli", "Chicken Stock", "Star Anise", "Fish Sauce", "Soy Sauce", "Lime", "Thai Sweet Basil", "Coconut Milk", "Vegetable Oil"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Molluscs", "Fish", "Soya", "Nuts"],
-    "dishImage": "Images/Dishes/Korean Dumplings (Mandoo or Mandu)", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishImage": "Images/Dishes/korean-dumpling-mandoo.jpg", //link to images folder with the image 
+   "dishTopReviews": ["Lovely. It is my favourite.", "It tasted so good. I would definitely order again.", "Great dish"] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "43", //integer for easy access to data
+    "id": "35", //integer for easy access to data
     "dishRegion":"Thai", //for basic filtering
     "dishName": "Tom Yum Goong (Spicy Shrimp Soup)", //name of the dish
     "dishPrice": "7", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The quintessential Thai aroma! A bold, refreshing blend of fragrant lemongrass, chili, galangal, lime leaves, shallots, lime juice and fish sauce shapes this classic soup, giving it its legendary herbal kick. Succulent fresh prawns and straw mushrooms lend it body. A versatile dish that can fit within virtually any meal, the distinctive smell reminds you of exotic perfume, while it’s invigorating sour-spicy-hot taste just screams ‘Thailand’!",//string of the description
+	  "shortDescription":"The quintessential Thai aroma! A bold, refreshing blend of fragrant lemongrass, chili, galangal, lime leaves, shallots, lime juice and fish sauce shapes this classic soup, giving it its legendary herbal kick...",
     "dishIngredients": ["Shrimp", "Water", "Lemongrass", "Chunk Of Galangal", "Kaffir Lime Leaves", "Thai Chilies", "Garlic", "Oyster Mushrooms", "Tomatoes", "White Onions", "Sugar", "Fish Sauce", "Lime Juice", "Coriander"], //array of ingredients for filtering 
     "dishAllergens": ["Crustaceans", "Molluscs", "Fish"],
     "dishImage": "Images/Dishes/Tom Yum Goong.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+  "dishTopReviews": ["It was delivered warm.", "Lovely. I'm going to buy again.", "It was good but it didn't arrive on time."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "44", //integer for easy access to data
+    "id": "36", //integer for easy access to data
     "dishRegion":"Thai", //for basic filtering
     "dishName": "Gaeng Daeng (Red Curry)", //name of the dish
     "dishPrice": "12", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Made with morsels of meat, red curry paste, smooth coconut milk and topped off with a sprinkling of finely sliced kaffir lime leaves, this rich, aromatic curry always gets those taste buds tingling. At its best when the meat is stunningly tender, it could be likened to a beautiful woman: it’s mild, sweet and delicately fragrant. And like all true love affairs, absence makes the heart grow fonder.",//string of the description
+	   "shortDescription":"Made with morsels of meat, red curry paste, smooth coconut milk and topped off with a sprinkling of finely sliced kaffir lime leaves, this rich, aromatic curry always gets those taste buds tingling...",
     "dishIngredients": ["Coconut Milk", "Bamboo Shoots", "Chicken", "Red Chilli", "Red Curry Paste", "Thai Sweet Basil", "Fish Sauce", "Salt", "Palm Sugar"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Fish"],
     "dishImage": "Images/Dishes/Thai Red Curry.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["The meal was tasty. However, the delivery took way too long and the guy who delivered my food was rude.", "It was delivered warm.", "I would highly recommend it. You won't regret."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "45", //integer for easy access to data
+    "id": "37", //integer for easy access to data
     "dishRegion":"Thai", //for basic filtering
     "dishName": "Pad Thai (Thai style Fried Noodles)", //name of the dish
     "dishPrice": "10", // dishs price in integer
     "dishRating": "4", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "The default international Thai dish! Dropped in a searing hot wok, fistfuls of small, thin or wide noodles (you choose) do a steamy minute-long dance alongside crunchy beansprouts, onion and egg, before disembarking for the nearest plate. A truly interactive eating experience.",//string of the description
+	  "shortDescription":"The default international Thai dish! Dropped in a searing hot wok, fistfuls of small, thin or wide noodles (you choose) do a steamy minute-long dance alongside crunchy beansprouts, onion and egg,...",
     "dishIngredients": ["Tamarind Puree", "Sugar", "Peanuts", "Fish Sauce", "Chilli Powder", "Oyster Sauce", "Onion", "Garlic", "Chicken", "Eggs", "Beansprouts", "Rice Noodles", "Lime wedges", "Cayenne Pepper", "Garlic Chives"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Fish", "Peanuts", "Molluscs"],
     "dishImage": "Images/Dishes/Chicken-Pad-Thai.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+     "dishTopReviews": ["I am happy with my order.", "Lovely. It is my favourite.", "It tasted so good. I would definitely order again."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "46", //integer for easy access to data
+    "id": "38", //integer for easy access to data
     "dishRegion":"Thai", //for basic filtering
     "dishName": "Gaeng Keow Wan (Green Curry)", //name of the dish
     "dishPrice": "14", // dishs price in integer
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Originating from central Thailand, green curry is the spiciest of them all, with a perfect balance of sweet from the added coconut milk. Green curry is made from some of the most mouth-watering ingredients, including fresh green chillies, ginger, eggplant, and, of course, plenty coconut milk. Eat with lots of steamed rice to bring down the spice level.",//string of the description
+	  "shortDescription":"Originating from central Thailand, green curry is the spiciest of them all, with a perfect balance of sweet from the added coconut milk. Green curry is made from some of the most mouth-watering...",
     "dishIngredients": ["Coconut Milk", "Bamboo Shoots", "Chicken", "Red Chilli", "Green Curry Paste", "Thai Eggplant", "Thai Sweet Basil", "Fish Sauce", "Salt", "Palm Sugar", "Coriander"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Fish"],
     "dishImage": "Images/Dishes/green-curry.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+   "dishTopReviews": ["Great dish", "Lovely. It is my favourite.", "It was so tasty. I would definitely tell my friends about your cooking skills."] //3 top comments for that dish (a few words each)
   },
   {
-    "id": "47", //integer for easy access to data
+    "id": "39", //integer for easy access to data
     "dishRegion":"Thai", //for basic filtering
     "dishName": "Thai Massaman Curry", //name of the dish
     "dishPrice": "16", // dishs price in integer
     "dishRating": "5", //int between 0-5
     "dishFav": "", //0 or 1 to specify if its a favorite
     "dishDescription": "Massaman curry is a fusion of Thai- and Indian-style curries, utilizing both a red-style curry paste (Thai influence) and dry whole spices like cumin, coriander, cinnamon, and nutmeg (Indian influence). Another essential ingredient is roasted peanuts, which add an extra layer of richness and texture to the curry.",//string of the description
+	  "shortDescription":"Massaman curry is a fusion of Thai- and Indian-style curries, utilizing both a red-style curry paste (Thai influence) and dry whole spices like cumin, coriander, cinnamon, and nutmeg (Indian influence)...",
     "dishIngredients": ["Cardamom", "Cumin", "Cloves", "White Peppercorn", "Dried Chilli", "Groundnut Oil", "Peanuts", "Garlic", "Lime Leaves", "Galangal", "Lemongrass", "Shrimp Paste", "Fish Sauce", "Nutmeg", "Palm Sugar", "Water", "Chicken Breast", "Red Onion", "Potato", "Fresh Chilli", "Chicken Stock", "Star Anise", "Fish Sauce", "Soy Sauce", "Lime", "Thai Sweet Basil", "Coconut Milk", "Vegetable Oil"], //array of ingredients for filtering 
     "dishAllergens": ["Poultry", "Molluscs", "Fish", "Soya", "Nuts"],
     "dishImage": "Images/Dishes/Massaman-Curry.jpg", //link to images folder with the image 
-    "dishTopReviews": ["", "", ""] //3 top comments for that dish (a few words each)
+    "dishTopReviews": ["It was delivered warm.", "I would highly recommend. The dish was warm, the delivery fast and everyone was friendly.", "Lovely dish"] //3 top comments for that dish (a few words each)
   },
 ],
   "cooks": [
@@ -898,14 +835,16 @@
 		
 		var printedDishes = "";
 		
-		printedDishes+=printDishes(printThis);
+		for(var i in data.dishes){
+				printedDishes+= printDishes(i);
+			};
 		
 		$("#foundDishes").append(printedDishes);
 		
 		function printDishes(i){
 			var output="";
 			output+="<div class='dishContainer'>";
-			output+="<img src'";
+			output+="<img src='";
 			output+=data.dishes[i].dishImage;
 			output+="' alt='";
 			output+=data.dishes[i].dishName;
@@ -926,13 +865,15 @@
 			output+=ratingOutput;
 			output+="</div>";
 			output+="<div class='dishDesInSearch'>";
-			output+=data.dishes[i].dishDescription;	
+			output+=data.dishes[i].shortDescription;	
 			output+="</div>";
 			output+="<div class='favBTNInSearch'><a href='#' class='ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-c'>No text</a></div>";
 			output+="<div class='dishPriceInSearch'>£";
 			output+=data.dishes[i].dishPrice;
 			output+="</div>";
-			output+="<div class='addBTNInSearch'><a href='#' class='ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext  ui-btn-b ui-corner-all plusBTNinSearch'>No text</a></div>"
+			output+="<div class='addBTNInSearch'><a href='#' class='ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext  ui-btn-b ui-corner-all plusBTNinSearch' id='";
+			output+=data.dishes[i].id;
+			output+="'>No text</a></div>"
 			output+="</div>";
 			
 			return output;
