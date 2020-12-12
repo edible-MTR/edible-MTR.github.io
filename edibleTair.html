@@ -175,7 +175,7 @@
         </div>
       </div>
       <div data-role="popup" id="popupRate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px; min-width: 500px;">     
-        <div role="main" class="ui-content"> <a href="#" class="ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
+        <div role="main" class="ui-content"> <a href="#" class="closeRatingBTN ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
           <h1>Review dish</h1>
           <select id="dishRating">
             <option value="Any" selected>Rate the Dish</option>
@@ -947,8 +947,23 @@
 	//////DISH PAGE FUNCTIONS////////////////////////
 		$(".submitBTN").on("click", function(){
 		var userRating= $("select#dishRating").children("option:selected").val();
-		alert(userRating);
-		data.dishes[dishID].dishRating=userRating;
+		alert("Thanks for your rating of "+userRating+ " stars");
+		var newUserRating = userRating;
+			$(".closeRatingBTN").on("click", function(){
+				//create new dish rating in star form
+				var ratingOutput ="";
+				for(j=0; j<userRating ; j++){
+				ratingOutput+="&#9733;";
+				}
+				var emptyStarNumbers = 5-userRating;
+				if(emptyStarNumbers>0){
+				//add an empty star to reach 5
+				for(k=0; k<emptyStarNumbers ; k++){
+				ratingOutput+="&#9734;";}}
+				//reprint the new dish rating in red
+				$(".dishRatingDisplay").empty();
+				$(".dishRatingDisplay").append("<span style='color:#ec6f61'>"+ratingOutput+"</span>");
+			})	
 		});
 
 		
