@@ -567,15 +567,15 @@
     "id": "0", //integer for easy access to data
     "cookName": "Dom", //name of the cook
     "cookIntro": "Expect my dish to be Big, Bold and Delicious!", // cooks short intro (U.S.A)
-    "cookImage": "Images/Cooks/imageName.jpg", //link to images folder with the image 
-    "cookVideoURL": "" //link to cook intro video on youtube
+    "cookImage": "Images/Cooks/Dom.jpeg", //link to images folder with the image 
+    "cookVideoURL": "https://www.youtube.com/embed/H8ea7VdiZZ0" //link to cook intro video on youtube
   },
 	{
     "id": "1", //integer for easy access to data
     "cookName": "Phoebe", //name of the cook
     "cookIntro": "Chinese food has always been my passion and I can't wait to share it with you", // cooks short intro (Chinese)
-    "cookImage": "Images/Cooks/imageName.jpg", //link to images folder with the image 
-    "cookVideoURL": "" //link to cook intro video on youtube
+    "cookImage": "Images/Cooks/Phoebe.png", //link to images folder with the image 
+    "cookVideoURL": "https://www.youtube.com/embed/blATX6_qoLM" //link to cook intro video on youtube
   },
 			{
     "id": "2", //integer for easy access to data

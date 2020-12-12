@@ -37,23 +37,118 @@
     </script>
 </head>
 <body>
-<div role="main" class="ui-content">
+<div role="main" class="ui-content"> 
+  <!----------------------------- SEARCH PAGE ------------------------------->
+  <div data-role="page" id="searchPage">
+    <div data-role="header" data-position="fixed" them> <img src="Images/logo-06-06.png" alt="logo" class="logo"> </div>
+    <div role="main" class="ui-content">
+      <form id="filterForm">
+            
+        <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
+          <legend></legend>
+          <label for="checkbox1" class="cuisinesLabels"><img src="Images/Flags/united-states-of-america.png" alt="USAflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox1" class="cuisineCheckBox" value="U.S.A">
+          </label>
+          <label for="checkbox2" class="cuisinesLabels"><img src="Images/Flags/china.png" alt="chinaflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox2" class="cuisineCheckBox" value="Chinese">
+          </label>
+          <label for="checkbox3" class="cuisinesLabels"><img src="Images/Flags/france.png" alt="frenchflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox3" class="cuisineCheckBox" value="French">
+          </label>
+          <label for="checkbox4" class="cuisinesLabels"><img src="Images/Flags/india.png" alt="indiaflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox4" class="cuisineCheckBox" value="Indian">
+          </label>
+          <label for="checkbox5" class="cuisinesLabels"><img src="Images/Flags/italy.png" alt="italyflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox5" class="cuisineCheckBox" value="Italian">
+          </label>
+          <label for="checkbox6" class="cuisinesLabels"><img src="Images/Flags/japan.png" alt="japanflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox6" class="cuisineCheckBox" value="Japanese">
+          </label>
+          <label for="checkbox7" class="cuisinesLabels"><img src="Images/Flags/south-korea.png" alt="koreanflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox7" class="cuisineCheckBox" value="South Korean">
+          </label>
+          <label for="checkbox8" class="cuisinesLabels"><img src="Images/Flags/lebanon.png" alt="lebanonflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox8" class="cuisineCheckBox" value="Lebanese">
+          </label>
+          <label for="checkbox9" class="cuisinesLabels"><img src="Images/Flags/thailand.png" alt="thaiflag">
+            <input type="checkbox" name="cuisineCheckBox" id="checkbox9" class="cuisineCheckBox" value="Thai">
+          </label>
+        </fieldset>
+        <fieldset data-role="controlgroup" data-type="horizontal" class="dietaryBTNS">
+          <legend></legend>
+          <label for="checkbox1" class="dietaryLabels"><img src="Images/Flags/Diet_Veg.png" alt="veggie">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox1D" class="dietaryCheckBox" value="Veggie">
+          </label>
+          <label for="checkbox2" class="dietaryLabels"><img src="Images/Flags/Diet_Vegan.png" alt="vegan">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox2D" class="dietaryCheckBox" value="vegan">
+          </label>
+          <label for="checkbox3" class="dietaryLabels"><img src="Images/Flags/Diet_Dairy.png" alt="dairy">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox3D" class="dietaryCheckBox" value="dairy">
+          </label>
+          <label for="checkbox4" class="dietaryLabels"><img src="Images/Flags/Diet_Gluten.png" alt="gluten">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox4D" class="dietaryCheckBox" value="gluten">
+          </label>
+          <label for="checkbox5" class="dietaryLabels"><img src="Images/Flags/Diet_Egg.png" alt="egg">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox5D" class="dietaryCheckBox" value="egg">
+          </label>
+          <label for="checkbox6" class="dietaryLabels"><img src="Images/Flags/Diet_Nut.png" alt="nut">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox6D" class="dietaryCheckBox" value="nut">
+          </label>
+          <label for="checkbox7" class="dietaryLabels"><img src="Images/Flags/Diet_Kosher.png" alt="kosher">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox7D" class="dietaryCheckBox" value="kosher">
+          </label>
+          <label for="checkbox8" class="dietaryLabels"><img src="Images/Flags/Diet_Halal.png" alt="halal">
+            <input type="checkbox" name="dietaryCheckBox" id="checkbox8D" class="dietaryCheckBox" value="halal">
+          </label>
+        </fieldset>
+      </form>
+      <div class="searchBTNSDiv">
+        <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="showAll">Show all</button>
+        <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="search">Filter</button>
+        <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="clear">Clear</button>
+      </div>
+      <div id="foundDishes"> 
+        <!--  <div class="dishContainer"> 
+		<img src="Images/Dishes/applePie.jpg" alt="ApplepieImage" class="dishImageInSearch">
+          <p class="dishTitleInSearch">Apple Pie</p>
+          <div class="dishRatingInSearch">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="dishDesInSearch">The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.</div>
+          <div class="favBTNInSearch"><a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-c " >No text</a></div>
+          <div class="dishPriceInSearch">£12</div>
+          <div class="addBTNInSearch"><a href="#" class="ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext  ui-btn-b ui-corner-all plusBTNinSearch" >No text</a></div>
+        </div> --> 
+      </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="B">
+      <footer data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
+          <li><a href="#checkout"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+          <li><a href="#favourites"><i class="far fa-heart fa-2x"></i></a></li>
+          <li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+  
+  <!----------------------------- DISH PAGE ------------------------------->
   <div data-role="page" id="dishPage">
     <div data-role="header" data-position="fixed" them> <img src="Images/logo-06-06.png" alt="logo" class="logo"> </div>
-    <div role="main" class="ui-content"> <a href="#" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN" >No text</a>
+    <div role="main" class="ui-content"> <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN" >No text</a>
       <div class="square">
         <div class="content"> </div>
       </div>
       <div class="dishInfo">
         <h1 class="dishName" data-theme></h1>
-        <p class="dishPrice">£</p>
+        <p class="dishPrice"></p>
         <div class="dishRatingDisplay"></div>
         <div class="dishDes"></div>
         <hr class="dishLine">
         <div class="dishIng"></div>
         <div class="dishExtrasContainer"> 
           <!--<img src="Images/Cooks/Tair.png" alt="Cook Image" class="cookIMG">-->
-          <p class="cookName">Made by </p>
+          <p class="cookName"></p>
           <a href="ARpage_text.html" rel="external" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN" id="qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN" id="infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN" id="mapBTN">Anchor</a> <a href="#popupRate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN" id="reviewBTN">Anchor</a> </div>
       </div>
       <div data-role="footer" data-position="fixed" data-theme="B">
@@ -99,95 +194,9 @@
     </div>
   </div>
   
-  <!----------------------------- SEARCH PAGE ------------------------------->
-  <div data-role="page" id="searchPage">
-    <div data-role="header" data-position="fixed" them> <img src="Images/logo-06-06.png" alt="logo" class="logo"> </div>
-    <div role="main" class="ui-content">
-      <form>
-            
-        <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
-          <legend></legend>
-          <label for="checkbox1" class="cuisinesLabels"><img src="Images/Flags/united-states-of-america.png" alt="USAflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox1" class="cuisineCheckBox" value="American">
-          </label>
-          <label for="checkbox2" class="cuisinesLabels"><img src="Images/Flags/china.png" alt="chinaflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox2" class="cuisineCheckBox" value="Chinese">
-          </label>
-          <label for="checkbox3" class="cuisinesLabels"><img src="Images/Flags/france.png" alt="frenchflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox3" class="cuisineCheckBox" value="French">
-          </label>
-          <label for="checkbox4" class="cuisinesLabels"><img src="Images/Flags/india.png" alt="indiaflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox4" class="cuisineCheckBox" value="Indian">
-          </label>
-          <label for="checkbox5" class="cuisinesLabels"><img src="Images/Flags/italy.png" alt="italyflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox5" class="cuisineCheckBox" value="Italian">
-          </label>
-          <label for="checkbox6" class="cuisinesLabels"><img src="Images/Flags/japan.png" alt="japanflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox6" class="cuisineCheckBox" value="Japanese">
-          </label>
-          <label for="checkbox7" class="cuisinesLabels"><img src="Images/Flags/south-korea.png" alt="koreanflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox7" class="cuisineCheckBox" value="Korean">
-          </label>
-          <label for="checkbox8" class="cuisinesLabels"><img src="Images/Flags/lebanon.png" alt="lebanonflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox8" class="cuisineCheckBox" value="Labanese">
-          </label>
-          <label for="checkbox9" class="cuisinesLabels"><img src="Images/Flags/thailand.png" alt="thaiflag">
-            <input type="checkbox" name="cuisineCheckBox" id="checkbox9" class="cuisineCheckBox" value="Thai">
-          </label>
-        </fieldset>
-        <fieldset data-role="controlgroup" data-type="horizontal" class="dietaryBTNS">
-          <legend></legend>
-          <label for="checkbox1" class="dietaryLabels"><img src="Images/Flags/Diet_Veg.png" alt="veggie">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox1D" class="dietaryCheckBox" value="Veggie">
-          </label>
-          <label for="checkbox2" class="dietaryLabels"><img src="Images/Flags/Diet_Vegan.png" alt="vegan">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox2D" class="dietaryCheckBox" value="vegan">
-          </label>
-          <label for="checkbox3" class="dietaryLabels"><img src="Images/Flags/Diet_Dairy.png" alt="dairy">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox3D" class="dietaryCheckBox" value="dairy">
-          </label>
-          <label for="checkbox4" class="dietaryLabels"><img src="Images/Flags/Diet_Gluten.png" alt="gluten">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox4D" class="dietaryCheckBox" value="gluten">
-          </label>
-          <label for="checkbox5" class="dietaryLabels"><img src="Images/Flags/Diet_Egg.png" alt="egg">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox5D" class="dietaryCheckBox" value="egg">
-          </label>
-          <label for="checkbox6" class="dietaryLabels"><img src="Images/Flags/Diet_Nut.png" alt="nut">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox6D" class="dietaryCheckBox" value="nut">
-          </label>
-          <label for="checkbox7" class="dietaryLabels"><img src="Images/Flags/Diet_Kosher.png" alt="kosher">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox7D" class="dietaryCheckBox" value="kosher">
-          </label>
-          <label for="checkbox8" class="dietaryLabels"><img src="Images/Flags/Diet_Halal.png" alt="halal">
-            <input type="checkbox" name="dietaryCheckBox" id="checkbox8D" class="dietaryCheckBox" value="halal">
-          </label>
-        </fieldset>
-      </form>
-      <div id="foundDishes"> 
-        <!--  <div class="dishContainer"> 
-		<img src="Images/Dishes/applePie.jpg" alt="ApplepieImage" class="dishImageInSearch">
-          <p class="dishTitleInSearch">Apple Pie</p>
-          <div class="dishRatingInSearch">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <div class="dishDesInSearch">The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.</div>
-          <div class="favBTNInSearch"><a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-c " >No text</a></div>
-          <div class="dishPriceInSearch">£12</div>
-          <div class="addBTNInSearch"><a href="#" class="ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext  ui-btn-b ui-corner-all plusBTNinSearch" >No text</a></div>
-        </div> --> 
-      </div>
-    </div>
-    <div data-role="footer" data-position="fixed" data-theme="B">
-      <footer data-role="navbar">
-        <ul>
-          <li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
-          <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
-          <li><a href="#checkout"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
-          <li><a href="#favourites"><i class="far fa-heart fa-2x"></i></a></li>
-          <li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
-        </ul>
-      </footer>
-    </div>
-  </div>
-  <script>
+	
+	
+	<script>
 	var data = {
   "dishes": [
   {
@@ -758,15 +767,15 @@
     "id": "0", //integer for easy access to data
     "cookName": "Dom", //name of the cook
     "cookIntro": "Expect my dish to be Big, Bold and Delicious!", // cooks short intro (U.S.A)
-    "cookImage": "Images/Cooks/imageName.jpg", //link to images folder with the image 
-    "cookVideoURL": "" //link to cook intro video on youtube
+    "cookImage": "Images/Cooks/Dom.jpeg", //link to images folder with the image 
+    "cookVideoURL": "https://www.youtube.com/embed/H8ea7VdiZZ0" //link to cook intro video on youtube
   },
 	{
     "id": "1", //integer for easy access to data
     "cookName": "Phoebe", //name of the cook
     "cookIntro": "Chinese food has always been my passion and I can't wait to share it with you", // cooks short intro (Chinese)
-    "cookImage": "Images/Cooks/imageName.jpg", //link to images folder with the image 
-    "cookVideoURL": "" //link to cook intro video on youtube
+    "cookImage": "Images/Cooks/Phoebe.png", //link to images folder with the image 
+    "cookVideoURL": "https://www.youtube.com/embed/blATX6_qoLM" //link to cook intro video on youtube
   },
 			{
     "id": "2", //integer for easy access to data
@@ -833,14 +842,6 @@
 		
 		var printThis = 0;
 		
-		var printedDishes = "";
-		
-		for(var i in data.dishes){
-				printedDishes+= printDishes(i);
-			};
-		
-		$("#foundDishes").append(printedDishes);
-		
 		function printDishes(i){
 			var output="";
 			output+="<div class='dishContainer'>";
@@ -871,7 +872,7 @@
 			output+="<div class='dishPriceInSearch'>£";
 			output+=data.dishes[i].dishPrice;
 			output+="</div>";
-			output+="<div class='addBTNInSearch'><a href='#' class='ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext  ui-btn-b ui-corner-all plusBTNinSearch' id='";
+			output+="<div class='addBTNInSearch'><a href='#dishPage' class='plusBTNinSearch ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b ' id='";
 			output+=data.dishes[i].id;
 			output+="'>No text</a></div>"
 			output+="</div>";
@@ -879,15 +880,66 @@
 			return output;
 		}
 		
-
+		$("#showAll").on("click", function(){
+			//when show all button is clicked empty the dishes div
+			$("#foundDishes").fadeOut(100).empty();
+			var output = "";
+			//loop through dishes and print
+			for(var i in data.dishes){
+					output+= printDishes(i);
+				};
+			//append into the div
+			$("#foundDishes").append(output).hide().fadeIn("slow");
+			//when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN					
+			$(".plusBTNinSearch").on("click", function(){ 
+				var dishID = $(this).attr('id');
+				printDishInfo(dishID);
+				var cookID;
+				//assign cook according to cuisine and print cook info
+				setCookId(dishID);
+			});
+		});
 		
-		//////////////////////////////////////
-		var dishID = 12;
-		var cookID;
-		//assign cook according to cuisine	
-		setCookId(dishID);
-		printDishInfo(dishID);
-		printCookInfo(cookID);
+		$("#search").on("click", function(){
+			//when search button is clicked empty the dishes div
+			$("#foundDishes").fadeOut(100).empty();
+			//create an array with all the cuisines chosen
+			var userCuisinesSearch = $("input[name ='cuisineCheckBox']:checked").map(function(){
+					return this.value;
+					}).get();
+				
+				var searchOutput = "";
+			//loop through all the dishes
+				for (var i in data.dishes){
+					for (var j in userCuisinesSearch){
+						//for each dish loop through the user selected cuisines to see if they match
+						if (data.dishes[i].dishRegion==userCuisinesSearch[j]){
+							//if they match print current dish and print
+							searchOutput+=printDishes(i);
+						}
+					}
+				}
+			//append all printed dishes into the dishes div
+			$("#foundDishes").append(searchOutput).hide().fadeIn("slow");
+			
+			//when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN					
+			$(".plusBTNinSearch").on("click", function(){ 
+				var dishID = $(this).attr('id');
+				printDishInfo(dishID);
+				var cookID;
+				//assign cook according to cuisine and print cook info
+				setCookId(dishID);
+			});
+		});
+		
+		$("#clear").on("click", function(){
+			//when clear button is clicked empty the dishes div
+			$("#foundDishes").fadeOut(100).empty();
+			//clear all selectins in the form
+			document.getElementById("filterForm").reset();
+		});
+		
+		
 	//////DISH PAGE FUNCTIONS////////////////////////
 		$(".submitBTN").on("click", function(){
 		var userRating= $("select#dishRating").children("option:selected").val();
@@ -902,8 +954,12 @@
 			imageOutput += "' alt='";
 			imageOutput += data.dishes[i].dishName;
 			imageOutput += "' class='dishIMG'>";
+			$(".content").empty();
 			$(".content").append(imageOutput);
+			$(".dishName").empty();
 			$(".dishName").append(data.dishes[i].dishName);
+			$(".dishPrice").empty();
+			$(".dishPrice").append("£");
 			$(".dishPrice").append(data.dishes[i].dishPrice);
 			var ratingOutput ="";
 			for(j=0; j<data.dishes[i].dishRating ; j++){
@@ -914,8 +970,9 @@
 			//add an empty star to reach 5
 			for(k=0; k<emptyStarNumbers ; k++){
 			ratingOutput+="&#9734;";}}
-
+			$(".dishRatingDisplay").empty();
 			$(".dishRatingDisplay").append(ratingOutput);
+			$(".dishDes").empty();
 			$(".dishDes").append(data.dishes[i].dishDescription);
 		    var ingredients = ""
 			for(var j in data.dishes[i].dishIngredients){
@@ -928,8 +985,49 @@
 				ingredients+= " ,";
 			}
 			ingredients+= "</b>";
+			$(".dishIng").empty();
 			$(".dishIng").append(ingredients);
 		};
+		
+	function setCookId(i){
+		if (i>=0 && i<=4){
+			//USA
+			cookID = 0;
+		}
+		else if (i>=5 && i<=9){
+			//China
+			cookID = 1;
+		}
+		else if (i>=10 && i<=14){
+			//France
+			cookID = 2;
+		}
+		else if (i>=15 && i<=16){
+			//India
+			cookID = 3;
+		}
+		else if (i>=17 && i<=21){
+			//Italy
+			cookID = 4;
+		}
+		else if (i>=22 && i<=26){
+			//Japan
+			cookID = 5;
+		}
+		else if (i>=27 && i<=29){
+			//Lebanon
+			cookID = 6;
+		}
+		else if (i>=30 && i<=34){
+			//South Korea
+			cookID = 7;
+		}
+		else if (i>=35 && i<=39){
+			//Thai
+			cookID = 8;
+		}
+		printCookInfo(cookID);
+	}
 		
 	function printCookInfo(i){
 		var imageOutput ="<img src='";
@@ -938,8 +1036,11 @@
 			imageOutput += data.cooks[i].cookName;
 			imageOutput += "' class='cookIMG'>";
 		$(".dishExtrasContainer").append(imageOutput);
-		$(".cookName").append(data.cooks[i].cookName);
+		$(".cookName").empty();
+		$(".cookName").append("Made by " + data.cooks[i].cookName);
+		$(".cookNamePOP").empty();
 		$(".cookNamePOP").append(data.cooks[i].cookName);
+		$(".cookDesPOP").empty();
 		$(".cookDesPOP").append(data.cooks[i].cookIntro);
 		var imageOutput ="<img src='";
 			imageOutput += data.cooks[i].cookImage;
@@ -952,47 +1053,11 @@
 		 	cookVideoOutput += "<iframe class='cookVideo'  src='";
 		 	cookVideoOutput += data.cooks[i].cookVideoURL;
 			cookVideoOutput += "' frameborder='0' allowfullscreen></iframe>";
+		$(".video").empty();
 		$(".video").append(cookVideoOutput);
 	}
 
-	function setCookId(dishID){
-		if (dishID>=0 && dishID<=4){
-			//USA
-			cookID = 0;
-		}
-		else if (dishID>=5 && dishID<=9){
-			//China
-			cookID = 1;
-		}
-		else if (dishID>=10 && dishID<=14){
-			//France
-			cookID = 2;
-		}
-		else if (dishID>=15 && dishID<=16){
-			//India
-			cookID = 3;
-		}
-		else if (dishID>=17 && dishID<=21){
-			//Italy
-			cookID = 4;
-		}
-		else if (dishID>=22 && dishID<=26){
-			//Japan
-			cookID = 5;
-		}
-		else if (dishID>=27 && dishID<=29){
-			//Lebanon
-			cookID = 6;
-		}
-		else if (dishID>=30 && dishID<=34){
-			//South Korea
-			cookID = 7;
-		}
-		else if (dishID>=35 && dishID<=39){
-			//Thai
-			cookID = 8;
-		}
-	}
+	
 							   
 	})
 </script> 
