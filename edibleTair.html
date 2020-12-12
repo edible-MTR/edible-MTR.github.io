@@ -3,18 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Edible Dish Page</title>
-<link rel="stylesheet" href="tairCSS.css">
-<link rel="stylesheet" href="https://use.typekit.net/jgl1fny.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet"	href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
-<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<title>Edible Search Page</title>
+<!-- Jquery Mobile -->
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="tairCSS.css">
+<link rel="stylesheet" href="https://use.typekit.net/jgl1fny.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 <link rel="stylesheet" href="Edible Theme/themes/Edible.css">
+
+<!-- Other sciprts --> 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script> 
 <script>
@@ -107,23 +110,16 @@
         <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="search">Filter</button>
         <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="clear">Clear</button>
       </div>
+		<!-- Dishes will be printed here -->
       <div id="foundDishes"> 
-        <!--  <div class="dishContainer"> 
-		<img src="Images/Dishes/applePie.jpg" alt="ApplepieImage" class="dishImageInSearch">
-          <p class="dishTitleInSearch">Apple Pie</p>
-          <div class="dishRatingInSearch">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <div class="dishDesInSearch">The apple pie is a pie made of apples coated in some sugar, cinnamon, nutmeg which are covered between two layers of pastry. It’s the perfect dessert for family holidays, birthday parties or holidays.</div>
-          <div class="favBTNInSearch"><a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-c " >No text</a></div>
-          <div class="dishPriceInSearch">£12</div>
-          <div class="addBTNInSearch"><a href="#" class="ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext  ui-btn-b ui-corner-all plusBTNinSearch" >No text</a></div>
-        </div> --> 
+        
       </div>
     </div>
     <div data-role="footer" data-position="fixed" data-theme="B">
       <footer data-role="navbar">
         <ul>
-          <li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
-          <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
+          <li><a href="#home" ><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="#searchPage" class="ui-btn-active"><i class="fas fa-search fa-2x"></i></a></li>
           <li><a href="#checkout"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
           <li><a href="#favourites"><i class="far fa-heart fa-2x"></i></a></li>
           <li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
@@ -132,6 +128,7 @@
     </div>
   </div>
   
+  <!-----------------------------------------------------------------------> 
   <!----------------------------- DISH PAGE ------------------------------->
   <div data-role="page" id="dishPage">
     <div data-role="header" data-position="fixed" them> <img src="Images/logo-06-06.png" alt="logo" class="logo"> </div>
@@ -194,9 +191,9 @@
     </div>
   </div>
   
-	
-	
-	<script>
+  <!-----------------------------------------------------------------------> 
+  
+  <script>
 	var data = {
   "dishes": [
   {
@@ -837,22 +834,25 @@
   <script>
 	$(document).ready(function(){
 		
-
 		//////SEARCH PAGE FUNCTIONS///////////////
 		
 		var printThis = 0;
 		
 		function printDishes(i){
+			//write a div with the current dish
 			var output="";
+			//attach correct image url
 			output+="<div class='dishContainer'>";
 			output+="<img src='";
 			output+=data.dishes[i].dishImage;
 			output+="' alt='";
 			output+=data.dishes[i].dishName;
 			output+="' class='dishImageInSearch'>";
+			// add a p with the dish title
 			output+="<p class='dishTitleInSearch'>";
 			output+=data.dishes[i].dishName;
 			output+="</p>"
+			// create stars according to the dishh rating
 			output+="<div class='dishRatingInSearch'>";
 				var ratingOutput ="";
 				for(j=0; j<data.dishes[i].dishRating ; j++){
@@ -865,13 +865,17 @@
 				ratingOutput+="&#9734;";}}
 			output+=ratingOutput;
 			output+="</div>";
+			// write dish description
 			output+="<div class='dishDesInSearch'>";
 			output+=data.dishes[i].shortDescription;	
 			output+="</div>";
+			// add a Fav button in the dish div
 			output+="<div class='favBTNInSearch'><a href='#' class='ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-c'>No text</a></div>";
 			output+="<div class='dishPriceInSearch'>£";
+			// write dish price
 			output+=data.dishes[i].dishPrice;
 			output+="</div>";
+			//add a "Add" button to the dish with the same id as the dishes id. This will later connect to the dish page
 			output+="<div class='addBTNInSearch'><a href='#dishPage' class='plusBTNinSearch ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b ' id='";
 			output+=data.dishes[i].id;
 			output+="'>No text</a></div>"
@@ -949,6 +953,7 @@
 
 		
 	function printDishInfo(i){
+		//empty previous info and append correct dish information to the dish page according to which add button was pressed before
 			var imageOutput ="<img src='";
 			imageOutput += data.dishes[i].dishImage;
 			imageOutput += "' alt='";
@@ -990,6 +995,7 @@
 		};
 		
 	function setCookId(i){
+		// Every cook cooks one cuisine so the cook is set according to the dishes id and cuisine
 		if (i>=0 && i<=4){
 			//USA
 			cookID = 0;
@@ -1026,10 +1032,13 @@
 			//Thai
 			cookID = 8;
 		}
+		
+		// once the cook id is set print the cooks info on page and popup
 		printCookInfo(cookID);
 	}
 		
 	function printCookInfo(i){
+		///once cook id is set, empty previous info and print cook info 
 		var imageOutput ="<img src='";
 			imageOutput += data.cooks[i].cookImage;
 			imageOutput += "' alt='";
