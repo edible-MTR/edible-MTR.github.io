@@ -17,6 +17,7 @@
 	
 	<link rel="stylesheet" href="Edible Theme/themes/Edible.css">
 	<link rel="stylesheet" type="text/css" href="css/mediaCss.css">
+	<link rel="stylesheet" type="text/css" href="css/favourites.css">
 </head>
 <body>
 	<!-- Home Page --> 
@@ -84,14 +85,13 @@
 				</header>
 				<div class="dishList"> 
 					<div class="dishList" class="ui-bar ui-bar-c ui-corner-all">
-						<a class="ui-btn" href="https://edible-mtr.github.io/edibleTair.html" target="_blank">
+						<a class="ui-btn ui-btn-a" href="https://edible-mtr.github.io/edibleTair.html" target="_blank">
 							<i class="fas fa-utensils"></i> Tair's Dish Page
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Footer is consistent accross all devices -->
 		<footer data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
@@ -105,7 +105,100 @@
 	<!-- Filtered Search Page --> 
 	<!-- Checkout Page --> 
 	<!-- Favourites Page -->
-	<!-- QR Scanner Page --> 
-</body>
+	<div data-role="page" id="favourites">
+		<!-- Portrait or Narrow Viewport Only Class -->
+		<section class="landscapeDevice ui-grid-a ui-content " role="main">
+			<div class="ui-block-a sideBar ui-body-a" >
+				<div class="ui-bar">
+					<img class="logo" alt="Edible Logo">
+					<div id="edibleBadge">
+						<p id="badgeDescriptor">empty</p>
+						<div id="badgeTitle" class="clLight">no content</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui-block-b contentArea">
+				<header class="pageTitle">
+					<h1>Favourites</h1>
+					<div class="pageTitleHR"></div>
+				</header>
+				<div class="favDishList"> 
+					<div class="favItem" dishId="">
+						<div class="favImage" src="./images/v718_3831.png"></div>
+						<div class="textCenter">
+							<h2 class="favTitle">Spaghetti carbonara</h2>
+							<p class="favText">A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a
+								simple Sunday night dinner on the couch yet works just as well as a classy dish to
+							pull out...</p>
+						</div>
+						<h3 class="favCost">£12</h3>
+						<div class="rightIcons">
+							<div class="favChartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
+							<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Portrait or Narrow Viewport Only Class -->
+		<section class="portraitDevice ui-content" role="main">
+			<header class="ui-bar ui-bar-a">
+				<img class="logo" alt="Edible Logo">
+			</header>
+			<div role="main" class="ui-content">
+				<header class="pageTitle">
+					<h1>Favourites</h1>
+					<div class="pageTitleHR"></div>
+				</header>
+				<div class="favDishList"> 
+				</div>
+			</div>
+		</section>
+		<!-- Footer is consistent accross all devices -->
+		<footer data-role="navbar">
+				<ul>
+					<li><a href="#home" ><i class="fas fa-home fa-2x"></i></a></li>
+					<li><a href="#filteredSearch"><i class="fas fa-search fa-2x"></i></a></li>
+					<li><a href="#checkout"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+					<li><a href="#favourites" class="ui-btn-active"><i class="far fa-heart fa-2x"></i></a></li>
+					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
+				</ul>
+		</footer>
+	</div>
 
+	<!-- QR Scanner Page --> 
+	<script type="text/javascript" src="edibleData.json"></script>
+	<script type="text/javascript">
+		var idOfFavourites = [];
+		function getFavourites() {
+				$(".favItem").remove();
+				for(id in idOfFavourites){
+					innerHtmlString = `<div class="favItem" dishId="` + id +`">
+						<img class="favImage" src="`+ data.dishes[id].dishImage +`" alt="Image of " `+ data.dishes[id].dishName+`>
+						<div class="textCenter">
+							<h2 class="favTitle">`+ data.dishes[id].dishName +`</h2>
+							<p class="favText">`+ data.dishes[id].dishDescription.substring(0, 100) +`...</p>
+						</div>
+						<h3 class="favCost">£`+ data.dishes[id].dishPrice +`</h3>
+						<div class="rightIcons">
+							<div class="favChartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
+							<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
+						</div>
+					</div>`; //string litteral representation of inner div
+					$(".favDishList").append(innerHtmlString);
+				}
+		}; 
+		$().ready(function(){
+	        for(item in data.dishes){
+	        	if(data.dishes[item].dishFav  == 1){
+	        		idOfFavourites.push(data.dishes[item].id);
+	        	}
+	        }
+		    getFavourites();
+	    });
+	    $(".favRemoveBtn").trigger('click', function(){
+	    	alert("Remove Clicked")
+	    });
+	    
+	</script>
 </html>

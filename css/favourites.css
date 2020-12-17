@@ -1,0 +1,105 @@
+* {
+  margin: 0px !important;
+}
+.favDishList {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  left: calc((100% - 600px)/2);
+}
+.favItem  {
+  display: flex;
+  width: 600px;
+  height: 126px;
+  margin-top: 1em;
+  margin-bottom:  1em;
+  background-color: #05223D;
+  border-radius: 26px;
+  align-self: center;
+  align-items: stretch;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-bottom: 1em !important;
+}
+.favImage {
+  float: left;
+  border-radius: 23px;
+  position: relative;
+  height: calc(100% - 20px);
+  width: calc((100%/5) - 10px);
+  margin: 10px !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0.01880207657814026, 0.1328042596578598, 0.23749999701976776, 0.5);
+  overflow: hidden;
+}
+.textCenter{
+  display: flex;  
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: calc((100%/5) * 2.5);
+  float:left;
+  padding-top: 10px !important;  
+  padding-bottom: 10px !important;
+  
+}
+.favTitle{
+  color: #f7f7f7;
+  text-align: left;
+  overflow: hidden;
+}
+.favText{
+  color: #f7f7f7;
+  text-align: left;
+  overflow: hidden;
+}
+.favCost {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: stretch;
+  width: calc((100%/3)* 0.5);
+  color: #EC6F61;
+  vertical-align: middle;
+  float: left;
+}
+.rightIcons{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90px;
+  float: right;
+}
+.favChartBtn{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: stretch;
+  vertical-align: middle;
+  height: 50%;
+  width: 100%;
+  background-color: #55BC9B;
+  color: #f7f7f7;
+}
+.favRemoveBtn{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: stretch;
+  vertical-align: middle;
+  height: 50%;
+  width: 100%;
+  background-color: #EC6F61;
+  color: #f7f7f7;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: stretch;
+  vertical-align: middle;
+}
