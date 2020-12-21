@@ -337,3 +337,8 @@ label.dietaryLabels img {
   margin-top: 50px !important;
   margin-left: 5px !important;
 }
+
+#breakComments{
+	width:100%;
+	 border-top: 2px solid #f7f7f7;
+}

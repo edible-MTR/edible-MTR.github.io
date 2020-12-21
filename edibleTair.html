@@ -176,7 +176,16 @@
       </div>
       <div data-role="popup" id="popupRate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px; min-width: 500px;">     
         <div role="main" class="ui-content"> <a href="#" class="closeRatingBTN ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
-          <h1>Review dish</h1>
+			 <h2 class="reviewRating"></h2>
+    		 <p class="reviewComments"></p>
+			<!--the add button
+    		<a href="#" class="addReviewsBTN ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-plus">Add Comment</a>-->
+			<hr id="breakComments">
+			<label for="addComment"><h2>Add comment:</h2></label>
+  			<input type="text" id="addComment" name="addComment">
+     		 <div id="AddReview"></div>
+      			 <!-- the form that later on should be displayed -->
+          <h2>Review dish</h2>
           <select id="dishRating">
             <option value="Any" selected>Rate the Dish</option>
             <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
@@ -186,6 +195,7 @@
             <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
           </select>
           <button class="ui-btn ui-btn-c submitBTN">Submit</button>
+
         </div>
       </div>
     </div>
@@ -946,9 +956,11 @@
 		
 	//////DISH PAGE FUNCTIONS////////////////////////
 		$(".submitBTN").on("click", function(){
+			//once the user submits the new rating the get feedback
 		var userRating= $("select#dishRating").children("option:selected").val();
-		alert("Thanks for your rating of "+userRating+ " stars");
+		alert("Thanks you for your rating of "+userRating+ " stars");
 		var newUserRating = userRating;
+			//once the user closes the popup the new rating will be displayed
 			$(".closeRatingBTN").on("click", function(){
 				//create new dish rating in star form
 				var ratingOutput ="";
@@ -1007,6 +1019,12 @@
 			ingredients+= "</b>";
 			$(".dishIng").empty();
 			$(".dishIng").append(ingredients);
+		
+		// Rosie code to show comments 
+		$(".reviewComments").empty();
+      $(".reviewComments").append(data.dishes[i].dishTopReviews);
+      $(".reviewRating").empty();
+      $(".reviewRating").append("<span style='color:#ec6f61'>" + ratingOutput +"</span>");
 		};
 		
 	function setCookId(i){
@@ -1079,6 +1097,7 @@
 			cookVideoOutput += "' frameborder='0' allowfullscreen></iframe>";
 		$(".video").empty();
 		$(".video").append(cookVideoOutput);
+		
 	}
 
 	
