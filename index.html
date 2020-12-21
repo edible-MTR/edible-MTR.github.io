@@ -8,7 +8,8 @@
 	<!-- Jquery Mobile -->
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 	<!-- Stylesheets -->
 	
@@ -132,7 +133,7 @@
 						</div>
 						<h3 class="favCost">£12</h3>
 						<div class="rightIcons">
-							<div class="favCartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
+							<div class="favChartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
 							<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
 						</div>
 					</div>
@@ -170,53 +171,34 @@
 	<script type="text/javascript">
 		var idOfFavourites = [];
 		function getFavourites() {
-			idOfFavourites = []; //Empty array before repopulating
-			for(item in data.dishes){ //populate my favourites array with ids of dishes
-					if(data.dishes[item].dishFav  == 1){
-						idOfFavourites.push(data.dishes[item].id);
-					}
-				}
-			for(id in idOfFavourites){ //create html of the favourites add to list
-				innerHtmlString = `<div class="favItem" dishId="` + idOfFavourites[id] +`">
-				<img class="favImage" src="`+ data.dishes[idOfFavourites[id]].dishImage +`" alt="Image of " `+ data.dishes[idOfFavourites[id]].dishName+`>
-				<div class="textCenter">
-				<h2 class="favTitle">`+ data.dishes[idOfFavourites[id]].dishName +`</h2>
-				<p class="favText">`+ data.dishes[idOfFavourites[id]].dishDescription.substring(0, 100) +`...</p>
-				</div>
-				<h3 class="favCost">£`+ data.dishes[idOfFavourites[id]].dishPrice +`</h3>
-				<div class="rightIcons">
-				<div class="favCartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
-				<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
-				</div>
+				$(".favItem").remove();
+				for(id in idOfFavourites){
+					innerHtmlString = `<div class="favItem" dishId="` + id +`">
+						<img class="favImage" src="`+ data.dishes[id].dishImage +`" alt="Image of " `+ data.dishes[id].dishName+`>
+						<div class="textCenter">
+							<h2 class="favTitle">`+ data.dishes[id].dishName +`</h2>
+							<p class="favText">`+ data.dishes[id].dishDescription.substring(0, 100) +`...</p>
+						</div>
+						<h3 class="favCost">£`+ data.dishes[id].dishPrice +`</h3>
+						<div class="rightIcons">
+							<div class="favChartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
+							<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
+						</div>
 					</div>`; //string litteral representation of inner div
-					$(".favDishList").append(innerHtmlString); //attach the favourites to the dom
+					$(".favDishList").append(innerHtmlString);
 				}
-			};
-		function removeFavourite(idToRemove){
-			var newArrayOfIds = idOfFavourites.filter(
-				item => item != idToRemove
-				);
-			idOfFavourites = newArrayOfIds;
-			data.dishes[idToRemove].dishFav = 0;
-		}
-		$(document).on('pagecontainerbeforehide', 'body', function(event, ui) {
-			if(ui.nextPage.attr('id') == "favourites"){
-				$(".favItem").remove(); //remove the contents of the favourites list
-				getFavourites();
-				$(".favRemoveBtn").on('vclick', function(){
-					removeFavourite($(this).closest(".favItem").attr("dishid"));
-					$(this).closest(".favItem").remove();
-				});
-				$(".favCartBtn").on('vclick', function(){
-					alert("Add to basket clicked");
-				});
-			}
-		});		    
+		}; 
 		$().ready(function(){
-			$("#favourites").on("beforeshow", "body", function(event, ui) {
-				alert("page before show called");// body...
-			});
-		});
+	        for(item in data.dishes){
+	        	if(data.dishes[item].dishFav  == 1){
+	        		idOfFavourites.push(data.dishes[item].id);
+	        	}
+	        }
+		    getFavourites();
+	    });
+	    $(".favRemoveBtn").trigger('click', function(){
+	    	alert("Remove Clicked")
+	    });
+	    
 	</script>
-</body>
 </html>
