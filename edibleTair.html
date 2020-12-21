@@ -958,7 +958,7 @@
 		$(".submitBTN").on("click", function(){
 			//once the user submits the new rating the get feedback
 		var userRating= $("select#dishRating").children("option:selected").val();
-		alert("Thanks for your comment: '"+addComment+ "', and for rating the dish with "+userRating+ " stars");
+		alert("Thanks you for your rating of "+userRating+ " stars");
 		var newUserRating = userRating;
 			//once the user closes the popup the new rating will be displayed
 			$(".closeRatingBTN").on("click", function(){
