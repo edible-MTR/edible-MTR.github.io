@@ -22,6 +22,7 @@
   vertical-align: middle;
   overflow: hidden;
   margin-bottom: 1em !important;
+
 }
 .favImage {
   float: left;
@@ -35,6 +36,7 @@
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0.01880207657814026, 0.1328042596578598, 0.23749999701976776, 0.5);
   overflow: hidden;
+  object-fit: cover; 
 }
 .textCenter{
   display: flex;  
