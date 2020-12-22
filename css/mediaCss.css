@@ -136,8 +136,8 @@ and (max-device-width : 2048px)  {
 	}
 	.ui-grid-a> .sideBar {
 		width: 27%;
+		height: 100vh;
 		border-radius: 0px 32px 0px 0px;
-
 	}
 	.ui-grid-a> .contentArea{
 		width: 73%;
