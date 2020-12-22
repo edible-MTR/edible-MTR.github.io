@@ -136,6 +136,10 @@
 							<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
 						</div>
 					</div>
+					
+				</div>
+				<div class="emailFavList">
+					<i class="icon fas fa-envelope-open-text fa-2x"></i>
 				</div>
 			</div>
 		</section>
@@ -151,6 +155,9 @@
 				</header>
 				<div class="favDishList"> 
 				</div>
+				<div class="emailFavList">
+					<i class="icon fas fa-envelope-open-text fa-2x"></i>
+				</div>
 			</div>
 		</section>
 		<!-- Footer is consistent accross all devices -->
@@ -164,10 +171,15 @@
 				</ul>
 		</footer>
 	</div>
-
 	<!-- QR Scanner Page --> 
 	<script type="text/javascript" src="edibleData.json"></script>
 	<script type="text/javascript">
+		//Important Jquery Css fix for sidebar
+		//Must be called after the elements have been added
+		function setSidebar(){//only for the landscape sidebar
+			$(".ui-grid-a> .sideBar").css("height", $("#favourites").height());
+		};
+		//End of Important Jquery Css fixes
 		var idOfFavourites = [];
 		function getFavourites() {
 			idOfFavourites = []; //Empty array before repopulating
@@ -185,13 +197,14 @@
 				</div>
 				<h3 class="favCost">£`+ data.dishes[idOfFavourites[id]].dishPrice +`</h3>
 				<div class="rightIcons">
-				<div class="favCartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
-				<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
+				<div class="favCartBtn"><i class="icon fas fa-shopping-cart fa-lg"></i></div>
+				<div class="favRemoveBtn"><i class="icon fas fa-times fa-lg"></i></div>
 				</div>
 					</div>`; //string litteral representation of inner div
 					$(".favDishList").append(innerHtmlString); //attach the favourites to the dom
-				}
-			};
+			}
+			setSidebar();
+		};
 		function removeFavourite(idToRemove){
 			var newArrayOfIds = idOfFavourites.filter(
 				item => item != idToRemove
@@ -213,9 +226,8 @@
 			}
 		});		    
 		$().ready(function(){
-			$("#favourites").on("beforeshow", "body", function(event, ui) {
-				alert("page before show called");// body...
-			});
+			$(".favItem").remove();
+			getFavourites();
 		});
 	</script>
 </body>

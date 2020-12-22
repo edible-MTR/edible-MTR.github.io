@@ -1,24 +1,27 @@
 /*Font imports and Application*/
 @import url("https://use.typekit.net/pxb0mzl.css");
-
+* {
+  margin: 0px !important;
+  text-shadow: 0px 0px !important;
+}
 h1, h2, h3, h4, h5, h6{
 	font-family: agenda, sans-serif;
 	font-weight: 600;
 	font-style: normal;
-	text-shadow: 0px 0px !important;
+
 }
 body, p{
 	font-family: agenda, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 16px;
-	text-shadow: 0px 0px !important;
 }
 #badgeTitle{
 	font-family: agenda-condensed, sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 24px;
+
 }
 /*Color Swatch Classes*/
 .clrContrast{
@@ -36,6 +39,7 @@ body, p{
 	font-weight: 300;
 	font-style: normal;
 	color: #05223D;
+	text-shadow: 0px 0px !important;
 }
 .btnIcText{
 	font-family: agenda-condensed, sans-serif;
@@ -114,6 +118,9 @@ footer{
 	overflow: hidden;
 
 }
+.ui-body-a{
+	border-color: #05223D;
+}
 
 
 /*Media Queries*/
@@ -129,7 +136,6 @@ and (max-device-width : 2048px)  {
 	}
 	.ui-grid-a> .sideBar {
 		width: 27%;
-		height: 100vh;
 		border-radius: 0px 32px 0px 0px;
 
 	}
