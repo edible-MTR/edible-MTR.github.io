@@ -83,6 +83,7 @@
   width: 100%;
   background-color: #55BC9B;
   color: #f7f7f7;
+  cursor: pointer;
 }
 .favRemoveBtn{
   display: flex;
@@ -94,6 +95,7 @@
   width: 100%;
   background-color: #EC6F61;
   color: #f7f7f7;
+  cursor: pointer;
 }
 .icon{
   display: flex;

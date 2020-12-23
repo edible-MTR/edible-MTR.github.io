@@ -16,6 +16,7 @@
 	
 	<link rel="stylesheet" href="Edible Theme/themes/Edible.css">
 	<link rel="stylesheet" type="text/css" href="css/mediaCss.css">
+	<link rel="stylesheet" type="text/css" href="css/discover.css">
 	<link rel="stylesheet" type="text/css" href="css/favourites.css">
 	<link rel="stylesheet" type="text/css" href="css/basket.css">
 </head>
@@ -35,29 +36,63 @@
 			</div>
 			<div class="ui-block-b contentArea">
 				<div class="homeContent">
-					<div id="keywordSearch" class="ui-bar">
-						<div data-role="controlgroup" data-type="horizontal">
-							<input type="text" id="WordSearch" data-wrapper-class="controlgroup-textinput ui-btn ui-btn-a ui-corner-all" name="wordString" placeholder="Keyword Search">
-							<button class="">
-								<i class="fas fa-search fa-2x"></i>
-							</button>
-						</div>
-					</div>
 					<h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all">
 						Welcome to Edible! We bring the homemade goodness to you. You click and we cook!
 					</h1>
 				</div>
 				<header class="pageTitle">
-					<h1>Top Dishes</h1>
+					<h1>Discover Edibile</h1>
 					<div class="pageTitleHR"></div>
 				</header>
-				<div class="dishList"> 
-					<div class="dishList" class="ui-bar ui-bar-c ui-corner-all">
-						<a class="ui-btn" href="https://edible-mtr.github.io/edibleTair.html" target="_blank">
-							<i class="fas fa-utensils"></i> Tair's Dish Page
-						</a>
+				<div class="discoverList">
+					<div class="discoverItem">				
+						<div class="discoverInfo">
+							<h2 class="discoverTitle">Some Text</h2>
+							<p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+						</div>
+						<div class="discoverRight">
+							<img class="discoverImage" src="" alt="SomeImage">
+							<div class="discoverAbove">
+								<div class="discoverBtn">
+									<i class="icon fas fa-eye fa-lg"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="discoverItem">
+						<img class="discoverImage" src="" alt="SomeImage">
+						<div class="textCenter">
+							<h2 class="discoverTitle">Some Text</h2>
+							<p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+						</div>
+						<div class="discoverBtn">
+							<i class="icon fas fa-eye fa-lg"></i>
+						</div>
+					</div>
+					<div class="discoverItem">
+						<img class="discoverImage" src="" alt="SomeImage">
+						<div class="textCenter">
+							<h2 class="discoverTitle">Some Text</h2>
+							<p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+						</div>
+						<div class="discoverBtn">
+							<i class="icon fas fa-eye fa-lg"></i>
+						</div>
+					</div>
+					<div class="discoverItem">
+						<img class="discoverImage" src="" alt="SomeImage">
+						<div class="textCenter">
+							<h2 class="discoverTitle">Some Text</h2>
+							<p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+						</div>
+						<div class="discoverBtn">
+							<i class="icon fas fa-eye fa-lg"></i>
+						</div>
 					</div>
 				</div>
+				<a class="ui-btn" href="https://edible-mtr.github.io/edibleTair.html" target="_blank">
+						<i class="fas fa-utensils"></i> Tair's Dish Page
+					</a>
 			</div>
 		</section>
 		<!-- Portrait or Narrow Viewport Only Class -->
@@ -67,14 +102,6 @@
 			</header>
 			<div role="main" class="ui-content">
 				<div class="homeContent">
-					<div id="keywordSearch" class="ui-bar">
-						<div data-role="controlgroup" data-type="horizontal">
-							<input type="text" id="WordSearch" data-wrapper-class="controlgroup-textinput ui-btn ui-btn-a ui-corner-all" name="wordString" placeholder="Keyword Search">
-							<button class="">
-								<i class="fas fa-search fa-2x"></i>
-							</button>
-						</div>
-					</div>
 					<h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all">
 						Welcome to Edible! We bring the goodness of homemade meals to you. You click and we cook!
 					</h1>
@@ -103,7 +130,6 @@
 		</footer>
 	</div>
 	<!-- Filtered Search Page --> 
-	<!-- Checkout Page -->
 	<!-- Basket Page -->
 	<div data-role="page" id="basket">
 		<!-- Portrait or Narrow Viewport Only Class -->
@@ -123,26 +149,7 @@
 					<div class="pageTitleHR"></div>
 				</header>
 				<div class="basketDishList"> 
-					<div class="basketItem" dishId="">
-						<img class="basketImage" src="./images/v718_3831.png"></img>
-						<div class="textCenter">
-							<h2 class="basketTitle">Spaghetti carbonara</h2>
-							<p class="basketText">A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a
-								simple Sunday night dinner on the couch yet works just as well as a classy dish to
-							pull out...</p>
-						</div>
-						<div class="basketCost">
-							<div class="favoured">
-								<i class="icon far fa-heart fa-2x"></i>	
-							</div>
-							
-							<h3 class="price">£12</h3>
-						</div>
-						<div class="rightIcons">
-							<div class="basketRemoveBtn"><i class="icon fas fa-times fa-lg"></i></div>
-						</div>
-					</div>
-					
+					<span class='basketMessage'>No items in your basket yet.</span>
 				</div>
 				<div class="checkoutBtn">
 					<div class="icon" href="#Checkout">Checkout</div>
@@ -156,13 +163,14 @@
 			</header>
 			<div role="main" class="ui-content">
 				<header class="pageTitle">
-					<h1>Favourites</h1>
+					<h1>Basket</h1>
 					<div class="pageTitleHR"></div>
 				</header>
-				<div class="favDishList"> 
+				<div class="basketDishList">
+					<span class='basketMessage'>No items in your basket yet.</span>
 				</div>
-				<div class="emailFavList">
-					<i class="icon fas fa-envelope-open-text fa-2x"></i>
+				<div class="checkoutBtn">
+					<div class="icon" href="#Checkout">Checkout</div>
 				</div>
 			</div>
 		</section>
@@ -177,6 +185,7 @@
 				</ul>
 		</footer>
 	</div>
+	<!-- Checkout Page -->
 	<!-- Favourites Page -->
 	<div data-role="page" id="favourites">
 		<!-- Portrait or Narrow Viewport Only Class -->
@@ -196,6 +205,7 @@
 					<div class="pageTitleHR"></div>
 				</header>
 				<div class="favDishList">
+					<span class='favMessage'>No favourites yet, browse through our dishes to select your favourites.</span>
 				</div>
 				<div class="emailFavList">
 					<i class="icon fas fa-envelope-open-text fa-2x"></i>
@@ -212,7 +222,8 @@
 					<h1>Favourites</h1>
 					<div class="pageTitleHR"></div>
 				</header>
-				<div class="favDishList"> 
+				<div class="favDishList">
+					<span class='favMessage'>No favourites yet, browse through our dishes to select your favourites.</span>
 				</div>
 				<div class="emailFavList">
 					<i class="icon fas fa-envelope-open-text fa-2x"></i>

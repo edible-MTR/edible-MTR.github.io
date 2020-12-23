@@ -169,7 +169,8 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 	.portraitDevice{
-		display: block;
+		display: flex;
+		flex-direction: column;
 	}
 	.landscapeDevice{
 		display: none;

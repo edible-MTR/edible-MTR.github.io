@@ -1436,5 +1436,37 @@ var data = {
             ""
          ]
       }
+   ],
+   "discover":[
+      {
+         "id":"0",
+         "title":"About Edible",
+         "description" : "The story about the app that started a trend. Its humble beginnings imagined by its 4 developers to the inspiring stories of the cooks who bring you their homemade cuisine.",
+         "image": "Images/Discover/sqj_1701_aoe_essay_13.jpg",
+      },
+      {
+         "id":"1",
+         "title":"Dietary Requirements",
+         "description" : "Food businesses need to tell customers if any food they provide contain any of the listed allergens as an ingredient. Consumers may be allergic or have intolerance to other ingredients, but only the 14 allergens are required to be declared as allergens by food law.<br> The 14 allergens are: celery, cereals containing gluten (such as barley and oats), crustaceans (such as prawns, crabs and lobsters), eggs, fish, lupin, milk, molluscs (such as mussels and oysters), mustard, peanuts, sesame, soybeans, sulphur dioxide and sulphites (if they are at a concentration of more than ten parts per million) and tree nuts (such as almonds, hazelnuts, walnuts, brazil nuts, cashews, pecans, pistachios and macadamia nuts). This also applies to additives, processing aids and any other substances which are present in the final product.",
+         "image": "Images/Discover/ingredients_fr.4.full.jpg",
+      },
+      {
+         "id":"2",
+         "title":"Cuisine We Now Know",
+         "description" : "The relish on my plate is Sicilian, a tangy blend of sweet and sour flavors. I can pick out some of the ingredients—eggplant, capers, celery—right away. I haven’t a clue, however, about the forces that came together to create this exquisite vegetable dish.<br>Gaetano Basile, a writer and lecturer on the food and culture of Sicily, does know. He has invited me to Lo Scudiero, a family-run restaurant in Palermo, as a tasty introduction to the island’s food and its history. He explains that the appetizer I am eating, caponata, exists because of transformative events that took place more than a thousand years ago. It was then that Arab forces invaded, bringing new crops, agricultural know-how, and other innovations that were far above the standards of medieval Europe.<br> On the first day of the conquest, in June, 827 a.d., ten thousand men arrived from Tunisia. “They were not led by a general as you might think,” Basile says, “but by a jurist, an expert in law. What was their business here? They were Aghlabids from Tunisia and Fatimids from Egypt. These guys came here for a simple operation of religious conquest.” But along with that mission they brought “so many things I can’t even list all of them,” Basile adds. “Hard grain, without which we could not make pasta, and sugarcane. Sugar alone would have already been enough, since it means having a powdered sweetener with which wonderful things could be made.”<br> We are sitting at a table, formally set with a starched tablecloth, sparkling glasses, silver chargers under the plates, and a menu of traditional Sicilian dishes. I think to myself that Basile has thoughtfully chosen Lo Scudiero, meaning squire, because it, too, reflects the cultural history I am eager to understand. Chargers, he says, were characteristic of the Sicilian aristocracy, and place settings were thought to have been introduced with the arrival of Jewish families who came with Spanish Muslims in the early ninth century. “They were the only ones to have tablecloths and napkins in an epoch when many here were eating on the floor.”<br> A succession of invaders came—among them Greeks, Phoenicians, Carthaginians, followed by the Islamic army of Arabs, Berbers, Moors, and Cretans. Then the Normans and other outsiders arrived, until 1860, when Sicily became part of the united Kingdom of Italy. These conquests left culinary marks, as foreign explorations and invasions usually do. Basile starts ticking off a long list: pecorino cheese made from sheep’s milk has Greek origins (the cheesemaking of the Cyclops in Homer’s Odyssey, he points out, is set in Sicily); Arabs introduced the grain dish couscous, still a specialty of the western Sicilian city of Trapani; rice, also an Arab import, stars in arancini di risu, or rice croquettes, typically Sicilian. And the Normans? “The Normans were a bunch of barbarians,” says Basile. “By the time they invaded southern Italy, they already had a reputation as robbers, murderers, rapists, and horse thieves.” But they didn’t come with nothing: They brought salted cod, or baccala, a dish most commonly associated with Portugal and Spain.",
+         "image": "Images/Discover/sqj_1701_aoe_essay_02.jpg",
+      },
+      {
+         "id":"3",
+         "title":"Cooking During Lockdown",
+         "description" : "Communities and individuals all over the UK are getting involved in the delivery, preparation or cooking of food for friends, neighbours or organisations such as the NHS in an unprecedented way. If you’re looking to set something up, either on your own or as part of a group, it isn’t as hard as you might think, but you do need to adhere to strict safety guidelines.  ",
+         "image": "Images/Discover/communityFood.jpg",
+      },
+      {
+         "id":"4",
+         "title":"Macus Rashford Campaign",
+         "description" : "Footballer Marcus Rashford has formed a taskforce with some of the UK's biggest food brands to try to help reduce child food poverty.The 22-year-old Manchester United forward successfully campaigned to extend free school meals this summer.He has written to MPs, outlining the help he feels some families still need.They include expanding the numbers who are eligible for free school meals - and offer them free food and activities during school holidays in England.<br> Mr Rashford has spoken about his own experiences of using a food voucher scheme as a child and was praised for pressing the government into a U-turn on the issue.The group of supermarkets, businesses and charities - including Aldi, Asda, Co-op, Deliveroo, FareShare, Food Foundation, Iceland, Kellogg's, Lidl, Sainsbury's, Tesco and Waitrose - have formed a taskforce and backed proposals from the National Food Strategy, an independent review of UK food policy.",
+         "image": "Images/Discover/mrash3.jpg",
+      },
    ]
 }
