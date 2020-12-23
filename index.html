@@ -17,12 +17,13 @@
 	<link rel="stylesheet" href="Edible Theme/themes/Edible.css">
 	<link rel="stylesheet" type="text/css" href="css/mediaCss.css">
 	<link rel="stylesheet" type="text/css" href="css/favourites.css">
+	<link rel="stylesheet" type="text/css" href="css/basket.css">
 </head>
 <body>
 	<!-- Home Page --> 
 	<div data-role="page" id="home">
 		<!-- Portrait or Narrow Viewport Only Class -->
-		<section class="landscapeDevice ui-grid-a ui-content " role="main">
+		<section class="landscapeDevice ui-grid-a ui-content" role="main">
 			<div class="ui-block-a sideBar ui-body-a" >
 				<div class="ui-bar">
 					<img class="logo" alt="Edible Logo">
@@ -95,14 +96,87 @@
 				<ul>
 					<li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
 					<li><a href="#filteredSearch"><i class="fas fa-search fa-2x"></i></a></li>
-					<li><a href="#checkout"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+					<li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
 					<li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
 					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
 				</ul>
 		</footer>
 	</div>
 	<!-- Filtered Search Page --> 
-	<!-- Checkout Page --> 
+	<!-- Checkout Page -->
+	<!-- Basket Page -->
+	<div data-role="page" id="basket">
+		<!-- Portrait or Narrow Viewport Only Class -->
+		<section class="landscapeDevice ui-grid-a ui-content " role="main">
+			<div class="ui-block-a sideBar ui-body-a" >
+				<div class="ui-bar">
+					<img class="logo" alt="Edible Logo">
+					<div id="edibleBadge">
+						<p id="badgeDescriptor">empty</p>
+						<div id="badgeTitle" class="clLight">no content</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui-block-b contentArea">
+				<header class="pageTitle">
+					<h1>Basket</h1>
+					<div class="pageTitleHR"></div>
+				</header>
+				<div class="basketDishList"> 
+					<div class="basketItem" dishId="">
+						<img class="basketImage" src="./images/v718_3831.png"></img>
+						<div class="textCenter">
+							<h2 class="basketTitle">Spaghetti carbonara</h2>
+							<p class="basketText">A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a
+								simple Sunday night dinner on the couch yet works just as well as a classy dish to
+							pull out...</p>
+						</div>
+						<div class="basketCost">
+							<div class="favoured">
+								<i class="icon far fa-heart fa-2x"></i>	
+							</div>
+							
+							<h3 class="price">£12</h3>
+						</div>
+						<div class="rightIcons">
+							<div class="basketRemoveBtn"><i class="icon fas fa-times fa-lg"></i></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="checkoutBtn">
+					<div class="icon" href="#Checkout">Checkout</div>
+				</div>
+			</div>
+		</section>
+		<!-- Portrait or Narrow Viewport Only Class -->
+		<section class="portraitDevice ui-content" role="main">
+			<header class="ui-bar ui-bar-a">
+				<img class="logo" alt="Edible Logo">
+			</header>
+			<div role="main" class="ui-content">
+				<header class="pageTitle">
+					<h1>Favourites</h1>
+					<div class="pageTitleHR"></div>
+				</header>
+				<div class="favDishList"> 
+				</div>
+				<div class="emailFavList">
+					<i class="icon fas fa-envelope-open-text fa-2x"></i>
+				</div>
+			</div>
+		</section>
+		<!-- Footer is consistent accross all devices -->
+		<footer data-role="navbar">
+				<ul>
+					<li><a href="#home" ><i class="fas fa-home fa-2x"></i></a></li>
+					<li><a href="#filteredSearch"><i class="fas fa-search fa-2x"></i></a></li>
+					<li><a href="#basket"class="ui-btn-active"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
+					<li><a href="#favourites" ><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
+					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
+				</ul>
+		</footer>
+	</div>
 	<!-- Favourites Page -->
 	<div data-role="page" id="favourites">
 		<!-- Portrait or Narrow Viewport Only Class -->
@@ -121,22 +195,7 @@
 					<h1>Favourites</h1>
 					<div class="pageTitleHR"></div>
 				</header>
-				<div class="favDishList"> 
-					<div class="favItem" dishId="">
-						<div class="favImage" src="./images/v718_3831.png"></div>
-						<div class="textCenter">
-							<h2 class="favTitle">Spaghetti carbonara</h2>
-							<p class="favText">A well–made carbonara is the ultimate crowd–pleaser. It can be a meal for a
-								simple Sunday night dinner on the couch yet works just as well as a classy dish to
-							pull out...</p>
-						</div>
-						<h3 class="favCost">£12</h3>
-						<div class="rightIcons">
-							<div class="favCartBtn"><i class="icon fas fa-shopping-cart fa-2x"></i></div>
-							<div class="favRemoveBtn"><i class="icon fas fa-times fa-2x"></i></div>
-						</div>
-					</div>
-					
+				<div class="favDishList">
 				</div>
 				<div class="emailFavList">
 					<i class="icon fas fa-envelope-open-text fa-2x"></i>
@@ -165,7 +224,7 @@
 				<ul>
 					<li><a href="#home" ><i class="fas fa-home fa-2x"></i></a></li>
 					<li><a href="#filteredSearch"><i class="fas fa-search fa-2x"></i></a></li>
-					<li><a href="#checkout"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+					<li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
 					<li><a href="#favourites" class="ui-btn-active"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
 					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
 				</ul>
@@ -173,90 +232,6 @@
 	</div>
 	<!-- QR Scanner Page --> 
 	<script type="text/javascript" src="edibleData.json"></script>
-	<script type="text/javascript">
-		var idOfFavourites = []; //array to hold favourite items 
-		function getFavourites(){ //sets up the local array of favourites for easy access for notifications and page loading
-			idOfFavourites = []; //Empty array before repopulating
-			for(item in data.dishes){ //populate my favourites array with ids of dishes
-				if(data.dishes[item].dishFav  == 1){
-					idOfFavourites.push(data.dishes[item].id);
-				}
-			}
-		}
-		function setFavourites() { //loads the favourites into html and appends
-			for(id in idOfFavourites){ //create html of the favourites add to list
-				innerHtmlString = `<div class="favItem" dishId="` + idOfFavourites[id] +`">
-				<img class="favImage" src="`+ data.dishes[idOfFavourites[id]].dishImage +`" alt="Image of " `+ data.dishes[idOfFavourites[id]].dishName+`>
-				<div class="textCenter">
-				<h2 class="favTitle">`+ data.dishes[idOfFavourites[id]].dishName +`</h2>
-				<p class="favText">`+ data.dishes[idOfFavourites[id]].dishDescription.substring(0, 100) +`...</p>
-				</div>
-				<h3 class="favCost">£`+ data.dishes[idOfFavourites[id]].dishPrice +`</h3>
-				<div class="rightIcons">
-				<div class="favCartBtn"><i class="icon fas fa-shopping-cart fa-lg"></i></div>
-				<div class="favRemoveBtn"><i class="icon fas fa-times fa-lg"></i></div>
-				</div>
-					</div>`; //string litteral representation of inner div
-					$(".favDishList").append(innerHtmlString); //attach the favourites to the dom
-			}
-			setSidebar();
-			setFavouriteNotice();
-		}
-		function removeFavourite(idToRemove){
-			var newArrayOfIds = idOfFavourites.filter(
-				item => item != idToRemove
-				);
-			idOfFavourites = newArrayOfIds;
-			data.dishes[idToRemove].dishFav = 0;
-			setFavouriteNotice();
-		}
-		function setFavouriteNotice(){
-			//check the length of the favourites list
-			var noOfFavs =  idOfFavourites.length;
-			//check previous notification status
-			var hasFavourite =  $(".favBanner").hasClass("notify");
-			//if greater than 0 update notifications
-			if (noOfFavs > 0){
-				$(".favBanner").html(noOfFavs); //set the notification
-				if (!hasFavourite){ //make the notification visible
-					$(".favBanner").addClass("notify");
-				}
-			}else{
-				$(".favBanner").html(""); //empty the notification
-				if (hasFavourite){ ////make the notification invisible
-					$(".favBanner").removeClass("notify");
-				}
-			}
-		}
-		//Important Jquery Css fix for sidebar
-		//Must be called after the elements have been added
-		function setSidebar(){//only for the landscape sidebar
-			$(".ui-grid-a> .sideBar").css("height", $("#favourites").height()); 
-			//fixes the height programtically
-		};
-		//End of Important Jquery Css fixes
-		$(document).on('pagecontainerbeforehide', 'body', function(event, ui) {
-			if(ui.nextPage.attr('id') == "favourites"){
-				$(".favItem").remove(); //remove all favItems from Dom
-				getFavourites(); //get the most up to date data from the dish data
-				setFavourites(); //load it to the html
-				setFavouriteNotice(); //set notifications  in case of update
-				//bind onclicks
-				$(".favRemoveBtn").on('vclick', function(){ 
-					removeFavourite($(this).closest(".favItem").attr("dishid"));
-					$(this).closest(".favItem").remove();
-				});
-				$(".favCartBtn").on('vclick', function(){
-					alert("Add to basket clicked");
-				});
-			}
-		});		    
-		$().ready(function(){
-			getFavourites(); //initialise the array
-			setFavouriteNotice(); //check for notifications
-			$(".favItem").remove(); //remove default placeholders
-			
-		});
-	</script>
+	<script type="text/javascript" src="js/favbaskmatt.js"></script>
 </body>
 </html>
