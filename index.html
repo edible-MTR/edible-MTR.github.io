@@ -21,6 +21,48 @@
 	<link rel="stylesheet" type="text/css" href="css/basket.css">
 </head>
 <body>
+	<!-- Dish Page Wrapper For Tair line 25 to line 65-->
+	<div data-role="page" id="dishPage">
+		<!-- Portrait or Narrow Viewport Only Class -->
+		<section class="landscapeDevice ui-grid-a ui-content" role="main">
+			<!-- Lanscape side menu -->
+			<div class="ui-block-a sideBar ui-body-a" >
+				<div class="ui-bar">
+					<img class="logo" alt="Edible Logo">
+					<div id="edibleBadge">
+						<p id="badgeDescriptor">empty</p>
+						<div id="badgeTitle" class="clLight">no content</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui-block-b contentArea">
+				<!-- Dish Page Content Goes here for Landscape -->
+			</div>
+		</section>
+		<!-- Portrait or Narrow Viewport Only Class -->
+		<section class="portraitDevice ui-content" role="main">
+			<header class="ui-bar ui-bar-a">
+				<img class="logo" alt="Edible Logo">
+			</header>
+			<div role="main" class="ui-content">
+				<header class="pageTitle">
+					<h1>Not sure if you need this based on styling in figma</h1>
+					<div class="pageTitleHR"></div>
+				</header>
+				<!-- Dish info goes here portrait -- Programatic code should copy content to both sections landscape and portrait--> 
+			</div>
+		</section>
+		<footer data-role="navbar">
+				<ul>
+					<li><a href="#home"><i class="fas fa-home fa-2x"></i></a></li>
+					<!-- UI Class Active for the menu -->
+					<li><a class="ui-btn-active" href="#dishPage"><i class="fas fa-search fa-2x"></i></a></li>
+					<li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
+					<li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
+					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
+				</ul>
+		</footer>
+	</div>
 	<!-- Home Page --> 
 	<div data-role="page" id="home">
 		<!-- Portrait or Narrow Viewport Only Class -->
@@ -122,7 +164,7 @@
 		<footer data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
-					<li><a href="#filteredSearch"><i class="fas fa-search fa-2x"></i></a></li>
+					<li><a href="#dishPage"><i class="fas fa-search fa-2x"></i></a></li>
 					<li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
 					<li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
 					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
@@ -178,7 +220,7 @@
 		<footer data-role="navbar">
 				<ul>
 					<li><a href="#home" ><i class="fas fa-home fa-2x"></i></a></li>
-					<li><a href="#filteredSearch"><i class="fas fa-search fa-2x"></i></a></li>
+					<li><a href="#dishPage"><i class="fas fa-search fa-2x"></i></a></li>
 					<li><a href="#basket"class="ui-btn-active"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
 					<li><a href="#favourites" ><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
 					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
@@ -234,7 +276,7 @@
 		<footer data-role="navbar">
 				<ul>
 					<li><a href="#home" ><i class="fas fa-home fa-2x"></i></a></li>
-					<li><a href="#filteredSearch"><i class="fas fa-search fa-2x"></i></a></li>
+					<li><a href="#dishPage"><i class="fas fa-search fa-2x"></i></a></li>
 					<li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
 					<li><a href="#favourites" class="ui-btn-active"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
 					<li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
