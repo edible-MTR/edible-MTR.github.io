@@ -358,3 +358,15 @@ label.dietaryLabels img {
   font-style: normal;
   font-size: 20px !important;
 }
+
+/* scroll for the displaying comments section */
+.scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin:4px, 4px;
+  padding:4px;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+ }
