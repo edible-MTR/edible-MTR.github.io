@@ -183,7 +183,7 @@
       <!-- Dish Page Protrait -->
       <div role="main" class="ui-content"> 
         <!-- Back and fav button --> 
-        <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN" >No text</a>
+        <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" >No text</a>
         <div class="square">
           <div class="content"> </div>
         </div>
@@ -200,6 +200,8 @@
             <!-- links to different functions --> 
             <a href="ARpage_text.html" rel="external" target="_blank" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN" id="qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN" id="infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN" id="mapBTN">Anchor</a> <a href="#popupRate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN" id="reviewBTN">Anchor</a> </div>
         </div>
+		  
+		  <div><button class="ui-btn ui-btn-inline ui-btn-c addDishBTN" >Add dish</button></div>
       </div>
       <!-- Popup with cooks info including a video -->
       <div data-role="popup" id="popupCook" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px;">     
@@ -631,6 +633,10 @@
       $(".reviewComments").append(reviews);
       $(".reviewRating").empty();
       $(".reviewRating").append("<span style='color:#ec6f61'>" + ratingOutput +"</span>");
+		
+		//give add and fav buttons the id of the current dish as a class
+		$(".addDishBTN").addClass(data.dishes[i].id);
+		$(".favBTNonTOP").addClass(data.dishes[i].id);
 		};
 		
 	function setCookId(i){
