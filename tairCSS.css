@@ -342,3 +342,7 @@ label.dietaryLabels img {
 	width:100%;
 	 border-top: 2px solid #f7f7f7;
 }
+
+.reviewComments{
+	font-size: 20px;
+}
