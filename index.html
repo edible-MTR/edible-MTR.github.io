@@ -61,86 +61,7 @@
     </div>
     <div class="ui-block-b contentArea">
       <!-- search Page Content Goes here for Landscape -->
-      <div role="main" class="ui-content">
-        <header class="pageTitle"> </header>
-        <form id="filterFormL">       
-          <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
-            <legend></legend>
-            <label for="checkbox1L" class="cuisinesLabels"><img src="Images/Flags/united-states-of-america.png" alt="USAflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox1L" class="cuisineCheckBox" value="U.S.A">
-            </label>
-            <label for="checkbox2L" class="cuisinesLabels"><img src="Images/Flags/china.png" alt="chinaflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox2L" class="cuisineCheckBox" value="Chinese">
-            </label>
-            <label for="checkbox3L" class="cuisinesLabels"><img src="Images/Flags/france.png" alt="frenchflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox3L" class="cuisineCheckBox" value="French">
-            </label>
-            <label for="checkbox4L" class="cuisinesLabels"><img src="Images/Flags/india.png" alt="indiaflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox4L" class="cuisineCheckBox" value="Indian">
-            </label>
-            <label for="checkbox5L" class="cuisinesLabels"><img src="Images/Flags/italy.png" alt="italyflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox5L" class="cuisineCheckBox" value="Italian">
-            </label>
-            <label for="checkbox6L" class="cuisinesLabels"><img src="Images/Flags/japan.png" alt="japanflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox6L" class="cuisineCheckBox" value="Japanese">
-            </label>
-            <label for="checkbox7L" class="cuisinesLabels"><img src="Images/Flags/south-korea.png" alt="koreanflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox7L" class="cuisineCheckBox" value="South Korean">
-            </label>
-            <label for="checkbox8L" class="cuisinesLabels"><img src="Images/Flags/lebanon.png" alt="lebanonflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox8L" class="cuisineCheckBox" value="Lebanese">
-            </label>
-            <label for="checkbox9L" class="cuisinesLabels"><img src="Images/Flags/thailand.png" alt="thaiflag">
-              <input type="checkbox" name="cuisineCheckBox" id="checkbox9L" class="cuisineCheckBox" value="Thai">
-            </label>
-          </fieldset>
-          <fieldset data-role="controlgroup" data-type="horizontal" class="dietaryBTNS">
-            <legend></legend>
-            <label for="checkbox1DL" class="dietaryLabels"><img src="Images/Flags/Diet_Veg.png" alt="veggie">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox1DL" class="dietaryCheckBox" value="Veggie">
-            </label>
-            <label for="checkbox2DL" class="dietaryLabels"><img src="Images/Flags/Diet_Vegan.png" alt="vegan">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox2DL" class="dietaryCheckBox" value="vegan">
-            </label>
-            <label for="checkbox3DL" class="dietaryLabels"><img src="Images/Flags/Diet_Dairy.png" alt="dairy">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox3DL" class="dietaryCheckBox" value="dairy">
-            </label>
-            <label for="checkbox4DL" class="dietaryLabels"><img src="Images/Flags/Diet_Gluten.png" alt="gluten">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox4DL" class="dietaryCheckBox" value="gluten">
-            </label>
-            <label for="checkbox5DL" class="dietaryLabels"><img src="Images/Flags/Diet_Egg.png" alt="egg">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox5DL" class="dietaryCheckBox" value="egg">
-            </label>
-            <label for="checkbox6DL" class="dietaryLabels"><img src="Images/Flags/Diet_Nut.png" alt="nut">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox6DL" class="dietaryCheckBox" value="nut">
-            </label>
-            <label for="checkbox7DL" class="dietaryLabels"><img src="Images/Flags/Diet_Kosher.png" alt="kosher">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox7DL" class="dietaryCheckBox" value="kosher">
-            </label>
-            <label for="checkbox8DL" class="dietaryLabels"><img src="Images/Flags/Diet_Halal.png" alt="halal">
-              <input type="checkbox" name="dietaryCheckBox" id="checkbox8DL" class="dietaryCheckBox" value="halal">
-            </label>
-          </fieldset>
-        </form>
-        <div class="searchBTNSDiv">
-          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS showAll" >Show all</button>
-          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS search">Filter</button>
-          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS clear">Clear</button>
-        </div>
-        <!-- Dishes will be printed here once found-->
-        <div class="foundDishes"> </div>
-      </div>
-    </div>
-  </section>
-  <!-- Portrait or Narrow Viewport Only Class -->
-  <section class="portraitDevice ui-content" role="main">
-    <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
-    <div role="main" class="ui-content">
-      <header class="pageTitle"> </header>
-		<!-- SEARCH PAGE CONTENT -->
-      <div role="main" class="ui-content">
-        <!-- Cuisins buttons -->
-        <form class="filterFormP">       
+        <form id="filterForm">       
           <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
             <legend></legend>
             <label for="checkbox1" class="cuisinesLabels"><img src="Images/Flags/united-states-of-america.png" alt="USAflag">
@@ -200,14 +121,84 @@
           </fieldset>
         </form>
         <div class="searchBTNSDiv">
-          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS showAll">Show all</button>
-          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS search">Filter</button>
-          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS clear">Clear</button>
+          <button class="showAll ui-btn ui-btn-inline ui-btn-a searchBTNS">Show all</button>
+          <button class="search ui-btn ui-btn-inline ui-btn-a searchBTNS">Filter</button>
+          <button class="clear ui-btn ui-btn-inline ui-btn-a searchBTNS">Clear</button>
+        </div>
+        <!-- Dishes will be printed here once found-->
+        <div class="foundDishes"></div>
+  </section>
+  <!-- Portrait or Narrow Viewport Only Class -->
+  <section class="portraitDevice ui-content" role="main">
+    <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
+    <!-- SEARCH PAGE CONTENT -->
+        <!-- Cuisins buttons -->
+        <form id="filterForm">       
+          <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
+            <legend></legend>
+            <label for="checkbox1" class="cuisinesLabels"><img src="Images/Flags/united-states-of-america.png" alt="USAflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox1" class="cuisineCheckBox" value="U.S.A">
+            </label>
+            <label for="checkbox2" class="cuisinesLabels"><img src="Images/Flags/china.png" alt="chinaflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox2" class="cuisineCheckBox" value="Chinese">
+            </label>
+            <label for="checkbox3" class="cuisinesLabels"><img src="Images/Flags/france.png" alt="frenchflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox3" class="cuisineCheckBox" value="French">
+            </label>
+            <label for="checkbox4" class="cuisinesLabels"><img src="Images/Flags/india.png" alt="indiaflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox4" class="cuisineCheckBox" value="Indian">
+            </label>
+            <label for="checkbox5" class="cuisinesLabels"><img src="Images/Flags/italy.png" alt="italyflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox5" class="cuisineCheckBox" value="Italian">
+            </label>
+            <label for="checkbox6" class="cuisinesLabels"><img src="Images/Flags/japan.png" alt="japanflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox6" class="cuisineCheckBox" value="Japanese">
+            </label>
+            <label for="checkbox7" class="cuisinesLabels"><img src="Images/Flags/south-korea.png" alt="koreanflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox7" class="cuisineCheckBox" value="South Korean">
+            </label>
+            <label for="checkbox8" class="cuisinesLabels"><img src="Images/Flags/lebanon.png" alt="lebanonflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox8" class="cuisineCheckBox" value="Lebanese">
+            </label>
+            <label for="checkbox9" class="cuisinesLabels"><img src="Images/Flags/thailand.png" alt="thaiflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox9" class="cuisineCheckBox" value="Thai">
+            </label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="horizontal" class="dietaryBTNS">
+            <legend></legend>
+            <label for="checkbox1" class="dietaryLabels"><img src="Images/Flags/Diet_Veg.png" alt="veggie">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox1D" class="dietaryCheckBox" value="Veggie">
+            </label>
+            <label for="checkbox2" class="dietaryLabels"><img src="Images/Flags/Diet_Vegan.png" alt="vegan">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox2D" class="dietaryCheckBox" value="vegan">
+            </label>
+            <label for="checkbox3" class="dietaryLabels"><img src="Images/Flags/Diet_Dairy.png" alt="dairy">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox3D" class="dietaryCheckBox" value="dairy">
+            </label>
+            <label for="checkbox4" class="dietaryLabels"><img src="Images/Flags/Diet_Gluten.png" alt="gluten">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox4D" class="dietaryCheckBox" value="gluten">
+            </label>
+            <label for="checkbox5" class="dietaryLabels"><img src="Images/Flags/Diet_Egg.png" alt="egg">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox5D" class="dietaryCheckBox" value="egg">
+            </label>
+            <label for="checkbox6" class="dietaryLabels"><img src="Images/Flags/Diet_Nut.png" alt="nut">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox6D" class="dietaryCheckBox" value="nut">
+            </label>
+            <label for="checkbox7" class="dietaryLabels"><img src="Images/Flags/Diet_Kosher.png" alt="kosher">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox7D" class="dietaryCheckBox" value="kosher">
+            </label>
+            <label for="checkbox8" class="dietaryLabels"><img src="Images/Flags/Diet_Halal.png" alt="halal">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox8D" class="dietaryCheckBox" value="halal">
+            </label>
+          </fieldset>
+        </form>
+        <div class="searchBTNSDiv">
+          <button class="showAll ui-btn ui-btn-inline ui-btn-a searchBTNS">Show all</button>
+          <button class="search ui-btn ui-btn-inline ui-btn-a searchBTNS">Filter</button>
+          <button class="clear ui-btn ui-btn-inline ui-btn-a searchBTNS">Clear</button>
         </div>
         <!-- Dishes will be printed here once found-->
         <div class="foundDishes"> </div>
-      </div>
-    </div>
   </section>
   <footer data-role="navbar">
     <ul>
@@ -534,119 +525,121 @@
 
 <!--Tairs Javasciprt-->
 <script>
-	$(document).ready(function(){
+	 //////SEARCH PAGE SPECIFIC FUNCTIONS///////////////
+  //Print Function for search
+  function printDishes(i){
+    //write a div with the current dish
+    var output="";
+    //attach correct image url
+    output+="<div class='dishContainer'>";
+    output+="<img src='";
+    output+=data.dishes[i].dishImage;
+    output+="' alt='";
+    output+=data.dishes[i].dishName;
+    output+="' class='dishImageInSearch'>";
+    // add a p with the dish title
+    output+="<p class='dishTitleInSearch'>";
+    output+=data.dishes[i].dishName;
+    output+="</p>"
+    // create stars according to the dishh rating
+    output+="<div class='dishRatingInSearch'>";
+    var ratingOutput ="";
+    for(j=0; j<data.dishes[i].dishRating ; j++){
+      ratingOutput+="&#9733;";
+    }
+    var emptyStarNumbers = 5-data.dishes[i].dishRating;
+    if(emptyStarNumbers>0){
+      //add an empty star to reach 5
+      for(k=0; k<emptyStarNumbers ; k++){
+        ratingOutput+="&#9734;";}}
+        output+=ratingOutput;
+        output+="</div>";
+    // write dish description
+    output+="<div class='dishDesInSearch'>";
+    output+=data.dishes[i].shortDescription;
+    output+="</div>";
 
-		//////SEARCH PAGE FUNCTIONS///////////////
+    output+="<div class='dishPriceInSearch'>£";
+    // write dish price
+    output+=data.dishes[i].dishPrice;
+    output+="</div>";
+    //add a "Add" button to the dish with the same id as the dishes id. This will later connect to the dish page
+    output+="<div class='addBTNInSearch'><a href='#dishPage' class='plusBTNinSearch ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b ' id='";
+    output+=data.dishes[i].id;
+    output+="'>No text</a></div>"
+    output+="</div>";
 
-		var printThis = 0;
+    return output;
+  }
+  //Once the Dom has load do this for the search page
+  $(document).ready(function(){
 
-		function printDishes(i){
-			//write a div with the current dish
-			var output="";
-			//attach correct image url
-			output+="<div class='dishContainer'>";
-			output+="<img src='";
-			output+=data.dishes[i].dishImage;
-			output+="' alt='";
-			output+=data.dishes[i].dishName;
-			output+="' class='dishImageInSearch'>";
-			// add a p with the dish title
-			output+="<p class='dishTitleInSearch'>";
-			output+=data.dishes[i].dishName;
-			output+="</p>"
-			// create stars according to the dishh rating
-			output+="<div class='dishRatingInSearch'>";
-				var ratingOutput ="";
-				for(j=0; j<data.dishes[i].dishRating ; j++){
-				ratingOutput+="&#9733;";
-				}
-				var emptyStarNumbers = 5-data.dishes[i].dishRating;
-				if(emptyStarNumbers>0){
-				//add an empty star to reach 5
-				for(k=0; k<emptyStarNumbers ; k++){
-				ratingOutput+="&#9734;";}}
-			output+=ratingOutput;
-			output+="</div>";
-			// write dish description
-			output+="<div class='dishDesInSearch'>";
-			output+=data.dishes[i].shortDescription;
-			output+="</div>";
+    //var printThis = 0;  <-- Did not see this used anywhere in the code am I right?
 
-			output+="<div class='dishPriceInSearch'>£";
-			// write dish price
-			output+=data.dishes[i].dishPrice;
-			output+="</div>";
-			//add a "Add" button to the dish with the same id as the dishes id. This will later connect to the dish page
-			output+="<div class='addBTNInSearch'><a href='#dishPage' class='plusBTNinSearch ui-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b ' id='";
-			output+=data.dishes[i].id;
-			output+="'>No text</a></div>"
-			output+="</div>";
+    //Bind Show All Button
+    $(".showAll").on("vclick", function(){
+      //when show all button is clicked empty the dishes div
+      $(".foundDishes").fadeOut(100).empty();
+      var output = "";
+      //loop through dishes and print
+      for(var i in data.dishes){
+          output+= printDishes(i);
+        };
+      //append into the div
+      $(".foundDishes").append(output).hide().fadeIn("slow");
+      //when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN
+      $(".plusBTNinSearch").on("vclick", function(){
+        var dishID = $(this).attr('id');
+        printDishInfo(dishID);
+        var cookID;
+        //assign cook according to cuisine and print cook info
+        setCookId(dishID);
+      });
+    });
+    //Bind Search Showall Button
+    $(".search").on("vclick", function(){
+      //when search button is clicked empty the dishes div
+      $(".foundDishes").fadeOut(100).empty();
+      //create an array with all the cuisines chosen
+      var userCuisinesSearch = $("input[name ='cuisineCheckBox']:checked").map(function(){
+          return this.value;
+          }).get();
 
-			return output;
-		}
+        var searchOutput = "";
+      //loop through all the dishes
+        for (var i in data.dishes){
+          for (var j in userCuisinesSearch){
+            //for each dish loop through the user selected cuisines to see if they match
+            if (data.dishes[i].dishRegion==userCuisinesSearch[j]){
+              //if they match print current dish and print
+              searchOutput+=printDishes(i);
+            }
+          }
+        }
+      alert(searchOutput);
+      //append all printed dishes into the dishes div
+      $(".foundDishes").append(searchOutput).hide().fadeIn("slow");
 
-		$(".showAll").on("click", function(){
-			//when show all button is clicked empty the dishes div
-			$(".foundDishes").fadeOut(100).empty();
-			var output = "";
-			//loop through dishes and print
-			for(var i in data.dishes){
-					output+= printDishes(i);
-				};
-			//append into the div
-			$(".foundDishes").append(output).hide().fadeIn("slow");
-			//when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN
-			$(".plusBTNinSearch").on("click", function(){
-				var dishID = $(this).attr('id');
-				printDishInfo(dishID);
-				var cookID;
-				//assign cook according to cuisine and print cook info
-				setCookId(dishID);
-			});
-		});
+      //when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN
+      $(".plusBTNinSearch").on("vclick", function(){
+        var dishID = $(this).attr('id');
+        printDishInfo(dishID);
+        var cookID;
+        //assign cook according to cuisine and print cook info
+        setCookId(dishID);
+      });
+    });
 
-		$(".search").on("click", function(){
-			//when search button is clicked empty the dishes div
-			$(".foundDishes").fadeOut(100).empty();
-			//create an array with all the cuisines chosen
-			var userCuisinesSearch = $("input[name ='cuisineCheckBox']:checked").map(function(){
-					return this.value;
-					}).get();
-
-				var searchOutput = "";
-			//loop through all the dishes
-				for (var i in data.dishes){
-					for (var j in userCuisinesSearch){
-						//for each dish loop through the user selected cuisines to see if they match
-						if (data.dishes[i].dishRegion==userCuisinesSearch[j]){
-							//if they match print current dish and print
-							searchOutput+=printDishes(i);
-						}
-					}
-				}
-			//append all printed dishes into the dishes div
-			$(".foundDishes").append(searchOutput).hide().fadeIn("slow");
-
-			//when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN
-			$(".plusBTNinSearch").on("click", function(){
-				var dishID = $(this).attr('id');
-				printDishInfo(dishID);
-				var cookID;
-				//assign cook according to cuisine and print cook info
-				setCookId(dishID);
-			});
-		});
-
-		$(".clear").on("click", function(){
-			//when clear button is clicked empty the dishes div
-			$(".foundDishes").fadeOut(100).empty();
-			//clear all selectins in the form
-			//document.getElementById("filterFormP").reset();
-			//document.getElementById("filterFormL").reset();
-		});
+    $(".clear").on("vclick", function(){
+      //when clear button is clicked empty the dishes div
+      $(".foundDishes").fadeOut(100).empty();
+      //clear all selectins in the form
+      $(".filterForm").trigger("reset");
+      //document.getElementById("filterForm").reset();
+    });
 
 
-	//////DISH PAGE FUNCTIONS////////////////////////
+  //////DISH PAGE SPECIFIC FUNCTIONS////////////////////////
 		$(".submitBTN").on("click", function(){
 
       //// getting the input from the textarea for comments
