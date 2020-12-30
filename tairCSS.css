@@ -132,19 +132,19 @@ h1 {
 	position: absolute;
 	display: inline-block;*/
 }
-#qrBTN {
+.qrBTN {
   grid-row: 1;
   grid-column: 3;
 }
-#infoBTN {
+.infoBTN {
   grid-row: 1;
   grid-column: 4;
 }
-#mapBTN {
+.mapBTN {
   grid-row: 1;
   grid-column: 5;
 }
-#reviewBTN {
+.reviewBTN {
   grid-row: 1;
   grid-column: 6;
 }
@@ -358,15 +358,3 @@ label.dietaryLabels img {
   font-style: normal;
   font-size: 20px !important;
 }
-
-/* scroll for the displaying comments section */
-.scroll {
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin:4px, 4px;
-  padding:4px;
-  height: 100px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align:justify;
- }
