@@ -228,7 +228,7 @@
       <!-- search Page Content Goes here for Landscape -->
       <div role="main" class="ui-content">
         <header class="pageTitle"> </header>
-		   <!-- Back and fav button -->
+        <!-- Back and fav button -->
         <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" >No text</a>
         <div class="square">
           <div class="content"> </div>
@@ -247,12 +247,12 @@
             <a href="ARpage_text.html" rel="external" target="_blank" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN qrBTN">Anchor</a>
             <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN infoBTN">Anchor</a>
             <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN mapBTN">Anchor</a> <a href="#popupRate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN reviewBTN">Anchor</a> </div>
-        </div>
+          </div>
 
-		  <div><button class="ui-btn ui-btn-inline ui-btn-c addDishBTN" >Add dish</button></div>
-      </div>
-    </div>
-  </section>
+          <div><button class="ui-btn ui-btn-inline ui-btn-c addDishBTN" >Add dish</button></div>
+        </div>
+        
+    </section>
   <!-- Portrait or Narrow Viewport Only Class -->
   <section class="portraitDevice ui-content" role="main">
     <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
@@ -616,7 +616,6 @@
             }
           }
         }
-      alert(searchOutput);
       //append all printed dishes into the dishes div
       $(".foundDishes").append(searchOutput).hide().fadeIn("slow");
 
