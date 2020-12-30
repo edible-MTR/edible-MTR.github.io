@@ -63,6 +63,72 @@
       <!-- search Page Content Goes here for Landscape -->
       <div role="main" class="ui-content">
         <header class="pageTitle"> </header>
+        <form id="filterForm">       
+          <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
+            <legend></legend>
+            <label for="checkbox1" class="cuisinesLabels"><img src="Images/Flags/united-states-of-america.png" alt="USAflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox1" class="cuisineCheckBox" value="U.S.A">
+            </label>
+            <label for="checkbox2" class="cuisinesLabels"><img src="Images/Flags/china.png" alt="chinaflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox2" class="cuisineCheckBox" value="Chinese">
+            </label>
+            <label for="checkbox3" class="cuisinesLabels"><img src="Images/Flags/france.png" alt="frenchflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox3" class="cuisineCheckBox" value="French">
+            </label>
+            <label for="checkbox4" class="cuisinesLabels"><img src="Images/Flags/india.png" alt="indiaflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox4" class="cuisineCheckBox" value="Indian">
+            </label>
+            <label for="checkbox5" class="cuisinesLabels"><img src="Images/Flags/italy.png" alt="italyflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox5" class="cuisineCheckBox" value="Italian">
+            </label>
+            <label for="checkbox6" class="cuisinesLabels"><img src="Images/Flags/japan.png" alt="japanflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox6" class="cuisineCheckBox" value="Japanese">
+            </label>
+            <label for="checkbox7" class="cuisinesLabels"><img src="Images/Flags/south-korea.png" alt="koreanflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox7" class="cuisineCheckBox" value="South Korean">
+            </label>
+            <label for="checkbox8" class="cuisinesLabels"><img src="Images/Flags/lebanon.png" alt="lebanonflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox8" class="cuisineCheckBox" value="Lebanese">
+            </label>
+            <label for="checkbox9" class="cuisinesLabels"><img src="Images/Flags/thailand.png" alt="thaiflag">
+              <input type="checkbox" name="cuisineCheckBox" id="checkbox9" class="cuisineCheckBox" value="Thai">
+            </label>
+          </fieldset>
+          <fieldset data-role="controlgroup" data-type="horizontal" class="dietaryBTNS">
+            <legend></legend>
+            <label for="checkbox1" class="dietaryLabels"><img src="Images/Flags/Diet_Veg.png" alt="veggie">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox1D" class="dietaryCheckBox" value="Veggie">
+            </label>
+            <label for="checkbox2" class="dietaryLabels"><img src="Images/Flags/Diet_Vegan.png" alt="vegan">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox2D" class="dietaryCheckBox" value="vegan">
+            </label>
+            <label for="checkbox3" class="dietaryLabels"><img src="Images/Flags/Diet_Dairy.png" alt="dairy">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox3D" class="dietaryCheckBox" value="dairy">
+            </label>
+            <label for="checkbox4" class="dietaryLabels"><img src="Images/Flags/Diet_Gluten.png" alt="gluten">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox4D" class="dietaryCheckBox" value="gluten">
+            </label>
+            <label for="checkbox5" class="dietaryLabels"><img src="Images/Flags/Diet_Egg.png" alt="egg">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox5D" class="dietaryCheckBox" value="egg">
+            </label>
+            <label for="checkbox6" class="dietaryLabels"><img src="Images/Flags/Diet_Nut.png" alt="nut">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox6D" class="dietaryCheckBox" value="nut">
+            </label>
+            <label for="checkbox7" class="dietaryLabels"><img src="Images/Flags/Diet_Kosher.png" alt="kosher">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox7D" class="dietaryCheckBox" value="kosher">
+            </label>
+            <label for="checkbox8" class="dietaryLabels"><img src="Images/Flags/Diet_Halal.png" alt="halal">
+              <input type="checkbox" name="dietaryCheckBox" id="checkbox8D" class="dietaryCheckBox" value="halal">
+            </label>
+          </fieldset>
+        </form>
+        <div class="searchBTNSDiv">
+          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="showAll">Show all</button>
+          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="search">Filter</button>
+          <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS" id="clear">Clear</button>
+        </div>
+        <!-- Dishes will be printed here once found-->
+        <div id="foundDishes"> </div>
       </div>
     </div>
   </section>
@@ -74,8 +140,7 @@
 		<!-- SEARCH PAGE CONTENT -->
       <div role="main" class="ui-content">
         <!-- Cuisins buttons -->
-        <form id="filterForm">
-             
+        <form id="filterForm">       
           <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
             <legend></legend>
             <label for="checkbox1" class="cuisinesLabels"><img src="Images/Flags/united-states-of-america.png" alt="USAflag">
