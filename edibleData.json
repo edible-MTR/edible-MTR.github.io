@@ -1374,7 +1374,7 @@ var data = {
          "id":"1",
          "cookName":"Phoebe",
          "cookIntro":"Chinese food has always been my passion and I can't wait to share it with you",
-         "cookImage":"Images/Cooks/Phoebe.png",
+         "cookImage":"Images/Cooks/Phoebe.jpg",
          "cookVideoURL":"https://www.youtube.com/embed/blATX6_qoLM"
       },
       {
