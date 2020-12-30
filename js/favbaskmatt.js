@@ -102,6 +102,12 @@ var idOfItemsInBasket =[];
 		setBasketNotice(); //update notifications
 	}
 	//Removes a favourtite based on the id from json and array
+	function setFavourite(idToAdd){
+		idOfFavourites.push(idToAdd);
+		data.dishes[idToAdd].dishFav  = 1;
+		setFavouriteNotice();
+	}
+	//Removes a favourtite based on the id from json and array
 	function removeFavourite(idToRemove){
 		var newArrayOfIds = idOfFavourites.filter(
 			item => item != idToRemove
@@ -204,8 +210,23 @@ var idOfItemsInBasket =[];
 		$(".ui-grid-a> .sideBar").css("height", $("#home").height());
 		$(".ui-grid-a> .sideBar").css("height", $("#favourites").height());
 		$(".ui-grid-a> .sideBar").css("height", $("#basket").height());
+		$(".ui-grid-a> .sideBar").css("height", $("#searchPage").height());
+		$(".ui-grid-a> .sideBar").css("height", $("#dishPage").height());
 		//fixes the height programtically
 	};
+	//Matts Favourite and Basket buttons
+	function dishPageBtns(){
+	  $(".favBTNonTOP").on('vclick', function(){
+	    var id =  $(this).attr("dishid");
+	    if (isFavourite(id)){
+	     	removeFavourite(id);
+	     	$(".favPopup").html("<p>Removed</p>");
+	    }else{
+	    	setFavourite(id);
+	    	$(".favPopup").html("<p>Added</p>");
+	    }
+	  });
+	}
 	//End of Important Jquery Css fixes
 	//Before Navigating Event Handler
 	$(document).on('pagecontainerbeforehide', 'body', function(event, ui) {
@@ -213,6 +234,9 @@ var idOfItemsInBasket =[];
 		//check the attribute for the page.. do following
 			case "home":
 				getDiscoveries();
+				break;
+			case "dishPage":
+				dishPageBtns();
 				break;
 			case "favourites":
 				$(".favItem").remove(); //remove all favItems from Dom

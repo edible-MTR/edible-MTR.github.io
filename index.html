@@ -234,7 +234,8 @@
       <div role="main" class="ui-content">
         <header class="pageTitle"> </header>
 		   <!-- Back and fav button -->
-        <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" >No text</a>
+        <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#dishPagePopL" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" dishId="" data-transition="pop" data-rel="popup" data-position-to="origin">No text</a>
+        <div id="dishPagePopL" class="favPopup" data-role="popup"></div>
         <div class="square">
           <div class="content"> </div>
         </div>
@@ -266,7 +267,8 @@
       <!-- Dish Page Protrait -->
       <div role="main" class="ui-content">
         <!-- Back and fav button -->
-        <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" >No text</a>
+        <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#dishPagePopP" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" dishId=""data-transition="pop" data-rel="popup" data-position-to="origin">No text</a>
+        <div id="dishPagePopP" class="favPopup" data-role="popup"></div>
         <div class="square">
           <div class="content"> </div>
         </div>
@@ -286,7 +288,7 @@
             <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN mapBTN">Anchor</a> <a href="#popupRate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN reviewBTN">Anchor</a> </div>
         </div>
 
-		  <div><button class="ui-btn ui-btn-inline ui-btn-c addDishBTN" >Add dish</button></div>
+		  <div><button class="ui-btn ui-btn-inline ui-btn-c addDishBTN" dishId="">Add dish</button></div>
       </div>
       <!-- Popup with cooks info including a video -->
       <div data-role="popup" id="popupCook" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px;">     
@@ -348,83 +350,83 @@
 </div>
 <!-- Home Page -->
 <div data-role="page" id="home">
-<!-- Portrait or Narrow Viewport Only Class -->
-<section class="landscapeDevice ui-grid-a ui-content" role="main">
-  <div class="ui-block-a sideBar ui-body-a" >
-    <div class="ui-bar"> <img class="logo" alt="Edible Logo">
-      <div id="edibleBadge">
-        <p id="badgeDescriptor">empty</p>
-        <div id="badgeTitle" class="clLight">no content</div>
+  <!-- Portrait or Narrow Viewport Only Class -->
+  <section class="landscapeDevice ui-grid-a ui-content" role="main">
+    <div class="ui-block-a sideBar ui-body-a" >
+      <div class="ui-bar"> <img class="logo" alt="Edible Logo">
+        <div id="edibleBadge">
+          <p id="badgeDescriptor">empty</p>
+          <div id="badgeTitle" class="clLight">no content</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="ui-block-b contentArea">
-    <div class="homeContent">
-      <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the homemade goodness to you. You click and we cook! </h1>
-    </div>
-    <header class="pageTitle">
-      <h1>Discover Edibile</h1>
-      <div class="pageTitleHR"></div>
-    </header>
-    <div class="discoverList">
-      <div class="discoverItem">
-        <div class="discoverInfo">
-          <h2 class="discoverTitle">Some Text</h2>
-          <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
-        </div>
-        <div class="discoverRight"> <img class="discoverImage" src="" alt="SomeImage">
-          <div class="discoverAbove">
-            <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
+    <div class="ui-block-b contentArea">
+      <div class="homeContent">
+        <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the homemade goodness to you. You click and we cook! </h1>
+      </div>
+      <header class="pageTitle">
+        <h1>Discover Edibile</h1>
+        <div class="pageTitleHR"></div>
+      </header>
+      <div class="discoverList">
+        <div class="discoverItem">
+          <div class="discoverInfo">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverRight"> <img class="discoverImage" src="" alt="SomeImage">
+            <div class="discoverAbove">
+              <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
-        <div class="textCenter">
-          <h2 class="discoverTitle">Some Text</h2>
-          <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
+          <div class="textCenter">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
         </div>
-        <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
-      </div>
-      <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
-        <div class="textCenter">
-          <h2 class="discoverTitle">Some Text</h2>
-          <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
+          <div class="textCenter">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
         </div>
-        <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
-      </div>
-      <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
-        <div class="textCenter">
-          <h2 class="discoverTitle">Some Text</h2>
-          <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
+          <div class="textCenter">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
         </div>
-        <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
       </div>
+      <a class="ui-btn" href="https://edible-mtr.github.io/edibleTair.html" target="_blank"> <i class="fas fa-utensils"></i> Tair's Dish Page </a> </div>
+    </section>
+    <!-- Portrait or Narrow Viewport Only Class -->
+    <section class="portraitDevice ui-content" role="main">
+      <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
+      <div role="main" class="ui-content">
+        <div class="homeContent">
+          <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the goodness of homemade meals to you. You click and we cook! </h1>
+        </div>
+        <header class="pageTitle">
+          <h1>Top Dishes</h1>
+          <div class="pageTitleHR"></div>
+        </header>
+        <div class="discoverList"></div>
+      </section>
+      <footer data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
+          <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
+          <li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
+          <li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
+        </ul>
+      </footer>
     </div>
-    <a class="ui-btn" href="https://edible-mtr.github.io/edibleTair.html" target="_blank"> <i class="fas fa-utensils"></i> Tair's Dish Page </a> </div>
-</section>
-<!-- Portrait or Narrow Viewport Only Class -->
-<section class="portraitDevice ui-content" role="main">
-  <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
-  <div role="main" class="ui-content">
-    <div class="homeContent">
-      <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the goodness of homemade meals to you. You click and we cook! </h1>
-    </div>
-    <header class="pageTitle">
-      <h1>Top Dishes</h1>
-      <div class="pageTitleHR"></div>
-    </header>
-    <div class="discoverList"></div>
-</section>
-<footer data-role="navbar">
-  <ul>
-    <li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
-    <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
-    <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
-    <li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-    <li><a href="#qrScanner"><i class="fas fa-qrcode fa-2x"></i></a></li>
-  </ul>
-</footer>
-</div>
 <!-- Filtered Search Page -->
 <!-- Basket Page -->
 <div data-role="page" id="basket">
@@ -618,7 +620,8 @@
 				}
 			//append all printed dishes into the dishes div
 			$(".foundDishes").append(searchOutput).hide().fadeIn("slow");
-
+      //toReset the length of the sidebar
+      $(".ui-grid-a> .sideBar").css("height", $("#searchPage").height());
 			//when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN
 			$(".plusBTNinSearch").on("click", function(){
 				var dishID = $(this).attr('id');
@@ -673,7 +676,7 @@
 
 	function printDishInfo(i){
 		//empty previous info and append correct dish information to the dish page according to which add button was pressed before
-			var imageOutput ="<img src='";
+      var imageOutput ="<img src='";
 			imageOutput += data.dishes[i].dishImage;
 			imageOutput += "' alt='";
 			imageOutput += data.dishes[i].dishName;
@@ -727,8 +730,11 @@
       $(".reviewRating").append("<span style='color:#ec6f61'>" + ratingOutput +"</span>");
 
 		//give add and fav buttons the id of the current dish as a class
-		$(".addDishBTN").addClass(data.dishes[i].id);
-		$(".favBTNonTOP").addClass(data.dishes[i].id);
+		//$(".addDishBTN").addClass(data.dishes[i].id);
+		//$(".favBTNonTOP").addClass(data.dishes[i].id);
+    //Makes more sense to do this as an attribute
+    $(".addDishBTN").attr("dishid", data.dishes[i].id);
+    $(".favBTNonTOP").attr("dishid", data.dishes[i].id);
 		};
 
 	function setCookId(i){
@@ -803,9 +809,6 @@
 		$(".video").append(cookVideoOutput);
 
 	}
-
-
-
 	})
 </script>
 </body>
