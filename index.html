@@ -61,7 +61,6 @@
     </div>
     <div class="ui-block-b contentArea">
       <!-- search Page Content Goes here for Landscape -->
-      <div role="main" class="ui-content">
         <header class="pageTitle"> </header>
         <form id="filterFormL">       
           <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
@@ -129,7 +128,6 @@
         </div>
         <!-- Dishes will be printed here once found-->
         <div class="foundDishes"> </div>
-      </div>
     </div>
   </section>
   <!-- Portrait or Narrow Viewport Only Class -->
@@ -138,7 +136,6 @@
     <div role="main" class="ui-content">
       <header class="pageTitle"> </header>
 		<!-- SEARCH PAGE CONTENT -->
-      <div role="main" class="ui-content">
         <!-- Cuisins buttons -->
         <form class="filterFormP">       
           <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
@@ -206,7 +203,6 @@
         </div>
         <!-- Dishes will be printed here once found-->
         <div class="foundDishes"> </div>
-      </div>
     </div>
   </section>
   <footer data-role="navbar">
@@ -417,11 +413,7 @@
       <h1>Top Dishes</h1>
       <div class="pageTitleHR"></div>
     </header>
-    <div class="dishList">
-      <div class="dishList" class="ui-bar ui-bar-c ui-corner-all">
-      <a class="ui-btn ui-btn-a" href="https://edible-mtr.github.io/edibleTair.html" target="_blank"> <i class="fas fa-utensils"></i> Tair's Dish Page </a> </div>
-  </div>
-  </div>
+    <div class="discoverList"></div>
 </section>
 <footer data-role="navbar">
   <ul>
@@ -641,6 +633,7 @@
 			//when clear button is clicked empty the dishes div
 			$(".foundDishes").fadeOut(100).empty();
 			//clear all selectins in the form
+      $(".filterForm").trigger("reset");
 			//document.getElementById("filterFormP").reset();
 			//document.getElementById("filterFormL").reset();
 		});
