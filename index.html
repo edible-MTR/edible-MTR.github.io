@@ -479,7 +479,81 @@
     </ul>
   </footer>
 </div>
-<!-- Checkout Page --> 
+<!-- Checkout Page -->
+<div data-role="page" id="checkout">
+ <section class="landscapeDevice ui-grid-a ui-content " role="main">
+  <div class="ui-block-a sideBar ui-body-a" >
+    <div class="ui-bar"> <img class="logo" alt="Edible Logo">
+      <div id="edibleBadge">
+        <p id="badgeDescriptor"></p>
+        <div id="badgeTitle" class="clLight"></div>
+      </div>
+    </div>
+  </div>
+  <div class="ui-block-b contentArea">
+    <header class="pageTitle">
+      <h1>Checkout Basket</h1>
+      <div class="pageTitleHR"></div>
+    </header>
+    <div class="checkoutTable">
+      <table data-role="table"  id="tallyBasket" class="basketTallyTable table-stripe">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Quantity</th>
+            <th>Dish Name</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="tallyData">
+        </tbody>
+      </table>
+    </div>
+    <div class="payBtn">
+      <div class="icon">Payment</div>
+    </div>
+  </div>
+</section>
+<!-- Portrait or Narrow Viewport Only Class -->
+<section class="portraitDevice ui-content" role="main">
+  <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
+  <div role="main" class="ui-content">
+    <header class="pageTitle">
+      <h1>Basket</h1>
+      <div class="pageTitleHR"></div>
+    </header>
+    <div class="checkoutTable">
+      <table data-role="table"  id="tallyBasket" class="basketTallyTable table-stripe">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Quantity</th>
+            <th>Dish Name</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="tallyData">
+        </tbody>
+      </table>
+    </div>
+    <div class="payBtn">
+      <div class="icon">Payment</div>
+    </div>
+  </div>
+</section>
+  <!-- Footer is consistent accross all devices -->
+  <footer data-role="navbar">
+    <ul>
+      <li><a href="#home" ><i class="fas fa-home fa-2x"></i></a></li>
+      <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
+      <li><a href="#basket"class="ui-btn-active"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
+      <li><a href="#favourites" ><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
+      
+    </ul>
+  </footer>  
+</div>
 <!-- Favourites Page -->
 <div data-role="page" id="favourites"> 
   <!-- Portrait or Narrow Viewport Only Class -->

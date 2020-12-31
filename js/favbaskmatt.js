@@ -1,5 +1,6 @@
 var idOfFavourites = []; //array to hold favourite items
 var idOfItemsInBasket =[];
+var total = 0;
 	///Discover Page JS
 	function randomDish(){
 		var noDishes = data.dishes.length;
@@ -107,6 +108,45 @@ var idOfItemsInBasket =[];
 		data.dishes[idToAdd].dishFav  = 1;
 		setFavouriteNotice();
 	}
+	//Creates the table on the Checkout page
+	function setCheckout(){
+		var tallyBasket = {};
+		total = 0;
+		$(".tallyData").empty();
+		idOfItemsInBasket.forEach(
+			x => tallyBasket[x] = (tallyBasket[x] || 0) + 1
+			);
+		console.log(tallyBasket);
+		var rows = "";
+		for (item in tallyBasket){
+			rows += `<tr>
+            <td></td>
+            <td>`+tallyBasket[item]+`</td>
+            <td>`+data.dishes[item].dishName+`</td>
+            <td>`+(Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]))+`</td>
+            <td></td>
+            </tr>`;
+            total += (Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]));
+		}
+		rows +=`<tr>
+			<td></td>
+			<td></td>
+            <td>Delivery Cost</td>
+            <td>£4</td>
+            <td></td>
+            </tr>
+		`;
+		total += 4;
+		rows +=`<tr>
+			<td></td>
+			<td></td>
+            <td>Total Cost</td>
+            <td>£`+ total +`</td>
+            <td></td>
+            </tr>
+		`;
+		$(".tallyData").append(rows);
+	}
 	//Removes a favourtite based on the id from json and array
 	function removeFavourite(idToRemove){
 		var newArrayOfIds = idOfFavourites.filter(
@@ -196,12 +236,15 @@ var idOfItemsInBasket =[];
 		});
 		//Basket page buttons
 		$(".favoured").on('vclick', function(){ 
-			alert("Not yet set!");
+			alert("Easter Egg!");
 		}); //toggles the favourite status of an item in the basket
 		$(".basketRemoveBtn").on('vclick', function(){
 			removeBasketItem($(this).closest(".basketItem").attr("dishid"));
 			$(this).closest(".basketItem").remove();
 			//WARNING LOGIC ERROR - wont remove the element from the opposite device orientation
+		});
+		$(".checkoutBtn").on("vclick", function(){
+			location.hash = "checkout";
 		});
 	}
 	//Important Jquery Css fix for sidebar
@@ -248,10 +291,12 @@ var idOfItemsInBasket =[];
 				$(".basketItem").remove();
 				setBasket();
 				break;
+			case "checkout":
+				setCheckout();
+				break;
 			default:
 				break;
 			}
-
 		});
 	//Once the dom loads call these functions to set the basics	    
 	$().ready(function(){
