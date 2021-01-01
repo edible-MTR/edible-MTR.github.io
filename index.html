@@ -7,8 +7,8 @@
 <title>Home - Welcome to Edible</title>
 <!-- Jquery Mobile -->
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 <!-- Stylesheets -->
 
@@ -22,9 +22,9 @@
 <link rel="stylesheet" type="text/css" href="css/favourites.css">
 <link rel="stylesheet" type="text/css" href="css/basket.css">
 
-<!-- Map script --> 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script> 
+<!-- Map script -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_QI_aiSHA_PyNtmhLR59yf7qP6DQa3c&callback=initMap" defer ></script>
 <script>
       // Initialize and add the map
       function initMap() {
@@ -120,14 +120,14 @@
           <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
           <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
           <li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-          
+
         </ul>
       </footer>
     </div>
 <!-- Search Page -->
-<div data-role="page" id="searchPage"> 
+<div data-role="page" id="searchPage">
   <!-- Landscape or Wide Viewport Only Class -->
-  <section class="landscapeDevice ui-grid-a ui-content" role="main"> 
+  <section class="landscapeDevice ui-grid-a ui-content" role="main">
     <!-- Lanscape side menu -->
     <div class="ui-block-a sideBar ui-body-a" >
       <div class="ui-bar"> <img class="logo" alt="Edible Logo">
@@ -137,8 +137,8 @@
         </div>
       </div>
     </div>
-    <div class="ui-block-b contentArea"> 
-<!----------------------------------- SEARCH PAGE CONTENT ------------------------------> 
+    <div class="ui-block-b contentArea">
+<!----------------------------------- SEARCH PAGE CONTENT ------------------------------>
 		<header class="pageTitle"> </header>
       <form id="filterFormL">
            
@@ -214,7 +214,7 @@
     <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
     <div role="main" class="ui-content">
       <header class="pageTitle"> </header>
-      <!----------------------------------- SEARCH PAGE CONTENT ------------------------------> 
+      <!----------------------------------- SEARCH PAGE CONTENT ------------------------------>
       <!-- Cuisins buttons -->
       <form id="filterFormP">
            
@@ -292,14 +292,14 @@
       <li><a class="ui-btn-active" href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
       <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
       <li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-      
+
     </ul>
   </footer>
 </div>
 <!-- Dish Page -->
-<div data-role="page" id="dishPage"> 
+<div data-role="page" id="dishPage">
   <!-- Landscape or Wide Viewport Only Class -->
-  <section class="landscapeDevice ui-grid-a ui-content" role="main"> 
+  <section class="landscapeDevice ui-grid-a ui-content" role="main">
     <!-- Lanscape side menu -->
     <div class="ui-block-a sideBar ui-body-a" >
       <div class="ui-bar"> <img class="logo" alt="Edible Logo">
@@ -309,11 +309,11 @@
         </div>
       </div>
     </div>
-    <div class="ui-block-b contentArea"> 
+    <div class="ui-block-b contentArea">
       <!-- search Page Content Goes here for Landscape -->
       <div role="main" class="ui-content">
         <header class="pageTitle"> </header>
-        <!-- Back and fav button --> 
+        <!-- Back and fav button -->
         <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#dishPagePopL" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" dishId="" data-transition="pop" data-rel="popup" data-position-to="origin">No text</a>
         <div id="dishPagePopL" class="favPopup" data-role="popup"></div>
         <div class="square">
@@ -329,8 +329,8 @@
           <div class="dishExtrasContainer">
 			  <div class="cookImage"></div>
             <p class="cookName"></p>
-            
-            <!-- links to different functions --> 
+
+            <!-- links to different functions -->
             <a href="ARpage_text.html" rel="external" target="_blank" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN mapBTN">Anchor</a> <a href="#popupRate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN reviewBTN">Anchor</a> </div>
         </div>
         <div>
@@ -345,8 +345,8 @@
     <div role="main" class="ui-content">
       <header class="pageTitle"> </header>
       <!-- Dish Page Protrait -->
-      <div role="main" class="ui-content"> 
-        <!-- Back and fav button --> 
+      <div role="main" class="ui-content">
+        <!-- Back and fav button -->
         <a href="#searchPage" class=" ui-btn ui-icon-back ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b leftBTN" >No text</a> <a href="#dishPagePopP" class="ui-btn ui-icon-heart ui-btn-inline ui-btn-icon-notext ui-corner-all ui-btn-b rightBTN favBTNonTOP" dishId=""data-transition="pop" data-rel="popup" data-position-to="origin">No text</a>
         <div id="dishPagePopP" class="favPopup" data-role="popup"></div>
         <div class="square">
@@ -362,8 +362,8 @@
           <div class="dishExtrasContainer">
 			   <div class="cookImage"></div>
             <p class="cookName"></p>
-            
-            <!-- links to different functions --> 
+
+            <!-- links to different functions -->
             <a href="ARpage_text.html" rel="external" target="_blank" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-camera dishBTN qrBTN">Anchor</a> <a href="#popupCook" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-info dishBTN infoBTN">Anchor</a> <a href="#popupMap" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-location dishBTN mapBTN">Anchor</a> <a href="#popupRate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-icon-edit dishBTN reviewBTN">Anchor</a> </div>
         </div>
         <div>
@@ -382,14 +382,14 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Popup of map -->
       <div data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px; min-width: 500px;">     
         <div role="main" class="ui-content"> <a href="#" class="ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
           <div id="map"></div>
         </div>
       </div>
-      
+
       <!-- Popup to read comments and rate the dish -->
       <div data-role="popup" id="popupRate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px; min-width: 500px;">     
         <div role="main" class="ui-content"> <a href="#" class="closeRatingBTN ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
@@ -399,10 +399,10 @@
             </div>
           </div>
           <hr id="breakComments">
-          <label for="addComment">
+          <label for="addComments">
           <h2>Add comment:</h2>
           </label>
-          <textarea name="Text1"  id="addComment" cols="10" rows="5">
+          <textarea name="Text-Comments"  id="addComment" cols="10" rows="5">
           </textarea>
           <div id="AddReview"></div>
           <!-- the form that later on should be displayed -->
@@ -426,12 +426,12 @@
       <li><a class="ui-btn-active" href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
       <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
       <li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-      
+
     </ul>
   </footer>
 </div>
 <!-- Basket Page -->
-<div data-role="page" id="basket"> 
+<div data-role="page" id="basket">
   <!-- Landscape or Wide Viewport Only Class -->
   <section class="landscapeDevice ui-grid-a ui-content " role="main">
     <div class="ui-block-a sideBar ui-body-a" >
@@ -474,7 +474,7 @@
       <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
       <li><a href="#basket"class="ui-btn-active"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
       <li><a href="#favourites" ><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-      
+
     </ul>
   </footer>
 </div>
@@ -549,12 +549,12 @@
       <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
       <li><a href="#basket"class="ui-btn-active"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
       <li><a href="#favourites" ><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-      
+
     </ul>
-  </footer>  
+  </footer>
 </div>
 <!-- Favourites Page -->
-<div data-role="page" id="favourites"> 
+<div data-role="page" id="favourites">
   <!-- Portrait or Narrow Viewport Only Class -->
   <section class="landscapeDevice ui-grid-a ui-content " role="main">
     <div class="ui-block-a sideBar ui-body-a" >
@@ -593,16 +593,16 @@
       <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
       <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
       <li><a href="#favourites" class="ui-btn-active"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-      
+
     </ul>
   </footer>
 </div>
-<!-- QR Scanner Page --> 
+<!-- QR Scanner Page -->
 
-<script type="text/javascript" src="edibleData.json"></script> 
-<script type="text/javascript" src="js/favbaskmatt.js"></script> 
+<script type="text/javascript" src="edibleData.json"></script>
+<script type="text/javascript" src="js/favbaskmatt.js"></script>
 
-<!--Tairs Javasciprt--> 
+<!--Tairs Javasciprt-->
 <script>
 	$(document).ready(function(){
 
@@ -696,7 +696,7 @@
 			$(".foundDishes").append(searchOutput).hide().fadeIn("slow");
       //toReset the length of the sidebar
       $(".ui-grid-a> .sideBar").css("height", $("#searchPage").height());
-			
+
 			//when add button is clicked on a dish it sends the button id to the dish page which then dynamicly fills the dish page with the correct info from the JOSN
 		   	$(".plusBTNinSearch").on("click", function(){
 				var dishID = $(this).attr('id');
@@ -718,23 +718,26 @@
 
 
 	////////////////////DISH PAGE FUNCTIONS////////////////////////
-		
+
 		//checks wether the user has submitted a new rating for the dish
 		var newRatingSubmitted ;
-		
+
 	$(".submitBTN").on("click", function(){
 		//Rosies comment code
       //// getting the input from the textarea for comments
       var userComment = document.getElementById("addComment").value;
-      /// add the comment to the container
-      document.getElementById("Review_container").append(userComment);
-		
+      for (x in data.dishes.dishTopReviews){
+        userComment+= data.dishes.dishTopReviews[x];
+      }
+      $(".reviewComments").append(userComment);
+    //  $(".addComment").val("");
+
 		//Tairs rating code
 		newRatingSubmitted=true;
 		//once the user submits the new rating they get feedback
 		var userRating= $("select#dishRating").children("option:selected").val();
 		alert("Thanks you for your "+userRating+ " star rating!");
-		
+
 		if(newRatingSubmitted=true){
 		///if there is a new user rating display it on dish page in red
 			var ratingOutput ="";
@@ -749,7 +752,7 @@
 			//reprint the new dish rating in red
 			$(".dishRatingDisplay").empty();
 			$(".dishRatingDisplay").append("<span style='color:#ec6f61'>"+ratingOutput+"</span>");}
-		
+
 		});
 
 
@@ -811,7 +814,7 @@
 		//give add and fav buttons the id of the current dish as a class
     $(".addDishBTN").attr("dishid", data.dishes[i].id);
     $(".favBTNonTOP").attr("dishid", data.dishes[i].id);
-		
+
 		//no new user rating has been submitted so the boolean is set to false
 		newRatingSubmitted=false;
 		};
@@ -866,7 +869,7 @@
 			imageOutput += "' alt='";
 			imageOutput += data.cooks[i].cookName;
 			imageOutput += "' class='cookIMG'>";
-		
+
 		$(".cookImage").empty();
 		$(".cookImage").append(imageOutput);
 		$(".cookName").empty();
