@@ -209,7 +209,7 @@ h1 {
 	margin-left: 40% !important;
 }
 .cuisineBTNS {
-  margin-left: 10% !important;
+  margin-left: 14% !important;
   margin-bottom: 0px !important;
   background: rgba(85, 188, 155, 0.5);
   width: 560px;
@@ -232,7 +232,7 @@ label.cuisinesLabels img {
   filter: drop-shadow(2px 2px 2px rgba(85, 68, 102, 0.25));
 }
 .dietaryBTNS {
-  margin-left: 16% !important;
+  margin-left: 20% !important;
   margin-top: 0px !important;
   background: rgba(85, 188, 155, 0.5);
   border-radius: 0px 0px 20px 20px !important;
@@ -256,7 +256,7 @@ label.dietaryLabels img {
   filter: drop-shadow(2px 2px 2px rgba(85, 68, 102, 0.25));
 }
 .searchBTNSDiv {
-  margin-left: 30% !important;
+  margin-left: 35% !important;
 }
 .searchBTNS {
   box-shadow: 4px 4px 4px rgba(21, 70, 115, 0.25);
@@ -277,7 +277,7 @@ label.dietaryLabels img {
   border-radius: 26px;
   padding: 0px;
   padding-left: 10px;
-  margin-left: 8% !important;
+  margin-left: 13% !important;
   margin-top: 20px !important;
 }
 .dishImageInSearch {

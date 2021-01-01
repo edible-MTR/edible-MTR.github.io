@@ -46,6 +46,84 @@
 </head>
 
 <body>
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <!-- Portrait or Narrow Viewport Only Class -->
+  <section class="landscapeDevice ui-grid-a ui-content" role="main">
+    <div class="ui-block-a sideBar ui-body-a" >
+      <div class="ui-bar"> <img class="logo" alt="Edible Logo">
+        <div id="edibleBadge">
+          <p id="badgeDescriptor"></p>
+          <div id="badgeTitle" class="clLight"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-block-b contentArea">
+      <div class="homeContent">
+        <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the homemade goodness to you. You click and we cook! </h1>
+      </div>
+      <header class="pageTitle">
+        <h1>Discover Edibile</h1>
+        <div class="pageTitleHR"></div>
+      </header>
+      <div class="discoverList">
+        <div class="discoverItem">
+          <div class="discoverInfo">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverRight"> <img class="discoverImage" src="" alt="SomeImage">
+            <div class="discoverAbove">
+              <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
+            </div>
+          </div>
+        </div>
+        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
+          <div class="textCenter">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
+        </div>
+        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
+          <div class="textCenter">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
+        </div>
+        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
+          <div class="textCenter">
+            <h2 class="discoverTitle">Some Text</h2>
+            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
+          </div>
+          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portrait or Narrow Viewport Only Class -->
+    <section class="portraitDevice ui-content" role="main">
+      <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
+      <div role="main" class="ui-content">
+        <div class="homeContent">
+          <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the goodness of homemade meals to you. You click and we cook! </h1>
+        </div>
+        <header class="pageTitle">
+          <h1>Discover Edibile</h1>
+          <div class="pageTitleHR"></div>
+        </header>
+        <div class="discoverList"></div>
+      </section>
+      <footer data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
+          <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
+          <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
+          <li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
+          
+        </ul>
+      </footer>
+    </div>
 <!-- Search Page -->
 <div data-role="page" id="searchPage"> 
   <!-- Landscape or Wide Viewport Only Class -->
@@ -60,8 +138,8 @@
       </div>
     </div>
     <div class="ui-block-b contentArea"> 
-      <!-- search Page Content Goes here for Landscape -->
-      <header class="pageTitle"> </header>
+<!----------------------------------- SEARCH PAGE CONTENT ------------------------------> 
+		<header class="pageTitle"> </header>
       <form id="filterFormL">
            
         <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
@@ -124,7 +202,7 @@
       </form>
       <div class="searchBTNSDiv">
         <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS showAll" >Show all</button>
-        <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS search">Filter</button>
+        <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS filter">Filter</button>
         <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS clear">Clear</button>
       </div>
       <!-- Dishes will be printed here once found-->
@@ -136,9 +214,9 @@
     <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
     <div role="main" class="ui-content">
       <header class="pageTitle"> </header>
-      <!-- SEARCH PAGE CONTENT --> 
+      <!----------------------------------- SEARCH PAGE CONTENT ------------------------------> 
       <!-- Cuisins buttons -->
-      <form class="filterFormP">
+      <form id="filterFormP">
            
         <fieldset data-role="controlgroup" data-type="horizontal" class="cuisineBTNS">
           <legend></legend>
@@ -200,7 +278,7 @@
       </form>
       <div class="searchBTNSDiv">
         <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS showAll">Show all</button>
-        <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS search">Filter</button>
+        <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS filter">Filter</button>
         <button class="ui-btn ui-btn-inline ui-btn-a searchBTNS clear">Clear</button>
       </div>
       <!-- Dishes will be printed here once found-->
@@ -352,85 +430,6 @@
     </ul>
   </footer>
 </div>
-<!-- Home Page -->
-<div data-role="page" id="home">
-  <!-- Portrait or Narrow Viewport Only Class -->
-  <section class="landscapeDevice ui-grid-a ui-content" role="main">
-    <div class="ui-block-a sideBar ui-body-a" >
-      <div class="ui-bar"> <img class="logo" alt="Edible Logo">
-        <div id="edibleBadge">
-          <p id="badgeDescriptor"></p>
-          <div id="badgeTitle" class="clLight"></div>
-        </div>
-      </div>
-    </div>
-    <div class="ui-block-b contentArea">
-      <div class="homeContent">
-        <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the homemade goodness to you. You click and we cook! </h1>
-      </div>
-      <header class="pageTitle">
-        <h1>Discover Edibile</h1>
-        <div class="pageTitleHR"></div>
-      </header>
-      <div class="discoverList">
-        <div class="discoverItem">
-          <div class="discoverInfo">
-            <h2 class="discoverTitle">Some Text</h2>
-            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
-          </div>
-          <div class="discoverRight"> <img class="discoverImage" src="" alt="SomeImage">
-            <div class="discoverAbove">
-              <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
-            </div>
-          </div>
-        </div>
-        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
-          <div class="textCenter">
-            <h2 class="discoverTitle">Some Text</h2>
-            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
-          </div>
-          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
-        </div>
-        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
-          <div class="textCenter">
-            <h2 class="discoverTitle">Some Text</h2>
-            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
-          </div>
-          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
-        </div>
-        <div class="discoverItem"> <img class="discoverImage" src="" alt="SomeImage">
-          <div class="textCenter">
-            <h2 class="discoverTitle">Some Text</h2>
-            <p class="discoverText">Lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis</p>
-          </div>
-          <div class="discoverBtn"> <i class="icon fas fa-eye fa-lg"></i> </div>
-        </div>
-      </div>
-    </section>
-    <!-- Portrait or Narrow Viewport Only Class -->
-    <section class="portraitDevice ui-content" role="main">
-      <header class="ui-bar ui-bar-a"> <img class="logo" alt="Edible Logo"> </header>
-      <div role="main" class="ui-content">
-        <div class="homeContent">
-          <h1 id="welcomeBanner" class="ui-bar ui-bar-c ui-corner-all"> Welcome to Edible! We bring the goodness of homemade meals to you. You click and we cook! </h1>
-        </div>
-        <header class="pageTitle">
-          <h1>Discover Edibile</h1>
-          <div class="pageTitleHR"></div>
-        </header>
-        <div class="discoverList"></div>
-      </section>
-      <footer data-role="navbar">
-        <ul>
-          <li><a href="#home" class="ui-btn-active"><i class="fas fa-home fa-2x"></i></a></li>
-          <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
-          <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
-          <li><a href="#favourites"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-          
-        </ul>
-      </footer>
-    </div>
-    <!-- Filtered Search Page --> 
 <!-- Basket Page -->
 <div data-role="page" id="basket"> 
   <!-- Landscape or Wide Viewport Only Class -->
@@ -674,7 +673,7 @@
 			});
 		});
 
-		$(".search").on("click", function(){
+		$(".filter").on("click", function(){
 			//when search button is clicked empty the dishes div
 			$(".foundDishes").fadeOut(100).empty();
 			//create an array with all the cuisines chosen
@@ -711,41 +710,46 @@
 		$(".clear").on("click", function(){
 			//when clear button is clicked empty the dishes div
 			$(".foundDishes").fadeOut(100).empty();
-			//clear all selectins in the form
-			$(".filterForm").trigger("reset");
-			
+			//clear all selections in form both in L and P
+			document.getElementById("filterFormP").reset();
+			document.getElementById("filterFormL").reset();
+
 		});
 
 
-	//////DISH PAGE FUNCTIONS////////////////////////
+	////////////////////DISH PAGE FUNCTIONS////////////////////////
+		
+		//checks wether the user has submitted a new rating for the dish
+		var newRatingSubmitted ;
+		
 	$(".submitBTN").on("click", function(){
-
+		//Rosies comment code
       //// getting the input from the textarea for comments
       var userComment = document.getElementById("addComment").value;
-          /// add the comment to the container
+      /// add the comment to the container
       document.getElementById("Review_container").append(userComment);
-
-
-			//once the user submits the new rating the get feedback
+		
+		//Tairs rating code
+		newRatingSubmitted=true;
+		//once the user submits the new rating they get feedback
 		var userRating= $("select#dishRating").children("option:selected").val();
 		alert("Thanks you for your "+userRating+ " star rating!");
-		var newUserRating = userRating;
-			//once the user closes the popup the new rating will be displayed
-			$(".closeRatingBTN").on("click", function(){
-				//create new dish rating in star form
-				var ratingOutput ="";
-				for(j=0; j<userRating ; j++){
-				ratingOutput+="&#9733;";
-				}
-				var emptyStarNumbers = 5-userRating;
-				if(emptyStarNumbers>0){
-				//add an empty star to reach 5
-				for(k=0; k<emptyStarNumbers ; k++){
-				ratingOutput+="&#9734;";}}
-				//reprint the new dish rating in red
-				$(".dishRatingDisplay").empty();
-				$(".dishRatingDisplay").append("<span style='color:#ec6f61'>"+ratingOutput+"</span>");
-			})
+		
+		if(newRatingSubmitted=true){
+		///if there is a new user rating display it on dish page in red
+			var ratingOutput ="";
+			for(j=0; j<userRating ; j++){
+			ratingOutput+="&#9733;";
+			}
+			var emptyStarNumbers = 5-userRating;
+			if(emptyStarNumbers>0){
+			//add an empty star to reach 5
+			for(k=0; k<emptyStarNumbers ; k++){
+			ratingOutput+="&#9734;";}}
+			//reprint the new dish rating in red
+			$(".dishRatingDisplay").empty();
+			$(".dishRatingDisplay").append("<span style='color:#ec6f61'>"+ratingOutput+"</span>");}
+		
 		});
 
 
@@ -805,11 +809,11 @@
       $(".reviewRating").append("<span style='color:#ec6f61'>" + ratingOutput +"</span>");
 
 		//give add and fav buttons the id of the current dish as a class
-		//$(".addDishBTN").addClass(data.dishes[i].id);
-		//$(".favBTNonTOP").addClass(data.dishes[i].id);
-    //Makes more sense to do this as an attribute
     $(".addDishBTN").attr("dishid", data.dishes[i].id);
     $(".favBTNonTOP").attr("dishid", data.dishes[i].id);
+		
+		//no new user rating has been submitted so the boolean is set to false
+		newRatingSubmitted=false;
 		};
 
 	function setCookId(i){
