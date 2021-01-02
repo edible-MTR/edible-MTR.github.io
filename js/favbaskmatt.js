@@ -286,10 +286,30 @@ var total = 0;
 	});
 	//End of Important Jquery Css fixes
 	///////////////////////////////////
-	// Stripe Payment JS
+	// Stripe Payment JS -- Doesn't work for some reason as all the inputs lie stacked and wont move.
 	///////////////////////////////////
+	//Alternative Card Payment Thing
 	$("paymentForm").card({
 		container: '.cardImage',
+	});
+	//Some Fake Transfer thingy
+	$(".btnPay").on("click", function(){
+		$("#paymentPopup").popup('close');
+		$.mobile.loading("show", {
+			text: "Verifying card information through stripe..",
+			textVisible: true,
+			theme: "b",
+		});
+		setTimeout(function() { 
+			idOfItemsInBasket = [];
+			setBasketNotice();
+			$.mobile.loading("hide");
+			$("#badgeTitle").text("ETA of order 5mins");
+			setTimeout(function(){
+				$("#badgeTitle").text("Order delivered!");
+			}, 100000);
+			location.hash = "home";
+		}, 1500);
 	});
 	//Before Navigating Event Handler
 	$(document).on('pagecontainerbeforehide', 'body', function(event, ui) {
