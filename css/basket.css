@@ -124,3 +124,18 @@
 .green{
   color: #55BC9B !important;
 }
+.squareTable{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  vertical-align: middle;
+  margin-bottom: 3em !important;
+}
+.tableRow{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-self: stretch;
+  vertical-align: middle;
+}

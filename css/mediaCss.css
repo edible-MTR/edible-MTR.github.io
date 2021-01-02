@@ -177,4 +177,8 @@ and (orientation : portrait) {
 	.logo{
 		height: 80px;
 	}
+	.emailFavList, .payBtn, .checkoutBtn{
+		max-width:200px;
+		margin-left: 35%;
+	}
 }

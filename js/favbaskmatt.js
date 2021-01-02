@@ -112,40 +112,33 @@ var total = 0;
 	function setCheckout(){
 		var tallyBasket = {};
 		total = 0;
-		$(".tallyData").empty();
+		$(".squareTable").empty();
 		idOfItemsInBasket.forEach(
 			x => tallyBasket[x] = (tallyBasket[x] || 0) + 1
 			);
-		console.log(tallyBasket);
-		var rows = "";
+		var rows = `<div class="tableRow tbHead">
+          <h3>Qty</h3><h3>Dish Name</h3><h3>Price</h3>
+        </div>`
 		for (item in tallyBasket){
-			rows += `<tr>
-            <td></td>
-            <td>`+tallyBasket[item]+`</td>
-            <td>`+data.dishes[item].dishName+`</td>
-            <td>`+(Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]))+`</td>
-            <td></td>
-            </tr>`;
+			rows += `<div class="tableRow"> 
+            <h4>`+tallyBasket[item]+`</h4>
+            <h4>`+data.dishes[item].dishName+`</h4>
+            <h4>£`+(Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]))+`</h4>
+            </div>`;
             total += (Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]));
 		}
-		rows +=`<tr>
-			<td></td>
-			<td></td>
-            <td>Delivery Cost</td>
-            <td>£4</td>
-            <td></td>
-            </tr>
-		`;
+		rows +=`<div class="tableRow"> 
+			<h3></h3><h3>Delivery Cost</h3>
+            <h3>£4</h3>
+            </div>`;
 		total += 4;
-		rows +=`<tr>
-			<td></td>
-			<td></td>
-            <td>Total Cost</td>
-            <td>£`+ total +`</td>
-            <td></td>
-            </tr>
+		rows +=`<div class="tableRow">
+			<h3></h3>
+			<h3>Total Cost</h3>
+            <h3>£`+ total +`</h3>
+            </div>
 		`;
-		$(".tallyData").append(rows);
+		$(".squareTable").append(rows);
 	}
 	//Removes a favourtite based on the id from json and array
 	function removeFavourite(idToRemove){
