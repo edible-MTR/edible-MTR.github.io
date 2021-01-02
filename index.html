@@ -508,19 +508,6 @@
     <div class="payBtn">
       <div class="icon">Payment</div>
     </a>
-    <div id="paymentPopupL" data-overlay-theme="b" data-theme="b" class="paymentPopup">
-      <div class="cardImage"></div>
-      <div class="form-container active">
-        <paymentForm action="POST">
-          <input placeholder="Card number" type="tel" name="number">
-          <input placeholder="Full name" type="text" name="name">
-          <input placeholder="MM/YY" type="tel" name="expiry">
-          <input placeholder="CVC" type="number" name="cvc">
-          <button class="btnPay" type="submit" value="Submit">Pay</button>
-        </paymentForm>
-      </div>
-    </div>
-
   </div>
 </section>
 <!-- Portrait or Narrow Viewport Only Class -->
@@ -544,6 +531,19 @@
     </div>
   </div>
 </section>
+<div id="paymentPopup" data-overlay-theme="b" data-theme="b" class="paymentPopup">
+  <div class="cardImage"></div>
+  <div class="form-container active">
+    <paymentForm action="POST">
+      <input placeholder="Card number" type="tel" name="number">
+      <input placeholder="Full name" type="text" name="name">
+      <input placeholder="MM/YY" type="tel" name="expiry">
+      <input placeholder="CVC" type="number" name="cvc">
+      <button class="btnPay" type="submit" value="Submit">Pay</button>
+    </paymentForm>
+  </div>
+</div>
+
   <!-- Footer is consistent accross all devices -->
   <footer data-role="navbar">
     <ul>

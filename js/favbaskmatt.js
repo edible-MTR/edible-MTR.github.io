@@ -245,7 +245,7 @@ var total = 0;
 			location.hash = "checkout";
 		});
 		$(".payBtn").on("click", function(){
-			$("#paymentPopupL").popup('open');
+			$("#paymentPopup").popup('open');
 		});
 	}
 	//Important Jquery Css fix for sidebar
@@ -279,7 +279,8 @@ var total = 0;
 			location.hash = "basket";
 		});
 	}
-	$("#paymentPopupL").popup({
+	//Initialise the popup
+	$("#paymentPopup").popup({
 		positionTo: "window",
 		transition: "pop"
 	});
