@@ -39,11 +39,13 @@
   color: #f7f7f7;
   text-align: left;
   overflow: visible;
+  margin: 0 !important;
 }
 .basketText{
   color: #f7f7f7;
   text-align: left;
   overflow: hidden;
+  margin: 0 !important;
 }
 .basketCost{
   display: flex;
@@ -97,7 +99,7 @@
   vertical-align: middle;
   
 }
-.checkoutBtn{
+.payBtn, .checkoutBtn{
   display: flex;
   justify-content: center;
   align-self: center;

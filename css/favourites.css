@@ -44,17 +44,20 @@
   float:left;
   padding-top: 10px !important;  
   padding-bottom: 10px !important;
+  margin: 0 !important;
   
 }
 .favTitle{
   color: #f7f7f7;
   text-align: left;
   overflow: visible;
+  margin: 0 !important;
 }
 .favText{
   color: #f7f7f7;
   text-align: left;
   overflow: hidden;
+  margin: 0 !important;
 }
 .favCost {
   display: flex;
