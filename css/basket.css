@@ -1,3 +1,19 @@
+button, input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  height: 2em;
+  box-shadow: 4px 4px 4px rgba(21, 70, 115, 0.25);
+  border-radius: 10px;
+  border: 0;
+}
+button{
+  background-color: #EC6F61;
+  cursor: pointer;
+  color: #f7f7f7;
+  font-size: 20px;
+}
 .basketDishList {
   display: flex;
   justify-content: center;
@@ -157,4 +173,11 @@
 }
 .rowGreen:hover{
   background-color: #A6D9C9;
+}
+.paymentPopup{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  vertical-align: middle;
 }

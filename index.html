@@ -43,6 +43,9 @@
         });
       }
     </script>
+<!-- Stripe Payment -->
+<script src="https://js.stripe.com/v3/"></script>
+<link rel="stylesheet" type="text/css" href="css/card.css">
 </head>
 
 <body>
@@ -371,7 +374,7 @@
         </div>
       </div>
       <!-- Popup with cooks info including a video -->
-      <div data-role="popup" id="popupCook" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px;">     
+      <div data-role="popup" id="popupCook" data-overlay-theme="b" data-theme="b"  style="max-width:500px;">     
         <div role="main" class="ui-content"> <a href="#" class="ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
           <div class="cookInfoPOP">
 			  <div class="cookInfoPOPImage"></div>
@@ -384,14 +387,14 @@
       </div>
 
       <!-- Popup of map -->
-      <div data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px; min-width: 500px;">     
+      <div data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b"  style="max-width:500px; min-width: 500px;">     
         <div role="main" class="ui-content"> <a href="#" class="ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
           <div id="map"></div>
         </div>
       </div>
 
       <!-- Popup to read comments and rate the dish -->
-      <div data-role="popup" id="popupRate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:500px; min-width: 500px;">     
+      <div data-role="popup" id="popupRate" data-overlay-theme="b" data-theme="b"  style="max-width:500px; min-width: 500px;">     
         <div role="main" class="ui-content"> <a href="#" class="closeRatingBTN ui-btn ui-icon-back  ui-btn-icon-notext ui-corner-all ui-btn-b " data-rel="back"></a>
           <div class="scroll">
             <div id="Review_container">
@@ -504,7 +507,20 @@
     </div>
     <div class="payBtn">
       <div class="icon">Payment</div>
+    </a>
+    <div id="paymentPopupL" data-overlay-theme="b" data-theme="b" class="paymentPopup">
+      <div class="cardImage"></div>
+      <div class="form-container active">
+        <paymentForm action="POST">
+          <input placeholder="Card number" type="tel" name="number">
+          <input placeholder="Full name" type="text" name="name">
+          <input placeholder="MM/YY" type="tel" name="expiry">
+          <input placeholder="CVC" type="number" name="cvc">
+          <button class="btnPay" type="submit" value="Submit">Pay</button>
+        </paymentForm>
+      </div>
     </div>
+
   </div>
 </section>
 <!-- Portrait or Narrow Viewport Only Class -->
@@ -579,13 +595,12 @@
       <li><a href="#searchPage"><i class="fas fa-search fa-2x"></i></a></li>
       <li><a href="#basket"><i class="fas fa-shopping-cart fa-2x"></i><span class="cartBanner"></span></a></li>
       <li><a href="#favourites" class="ui-btn-active"><i class="far fa-heart fa-2x"></i><span class="favBanner"></span></a></li>
-
     </ul>
   </footer>
 </div>
 <!-- QR Scanner Page -->
-
 <script type="text/javascript" src="edibleData.json"></script>
+<script type="text/javascript" src="js/jquery.card.js"></script>
 <script type="text/javascript" src="js/favbaskmatt.js"></script>
 
 <!--Tairs Javasciprt-->

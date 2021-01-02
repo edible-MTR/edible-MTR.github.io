@@ -1,3 +1,5 @@
+//Global Variables 
+var stripe = Stripe('pk_test_51I59sLEA31F0bKjbZeAEa3UtZLgAJXS8oc028XnMtAH4WTPpzYsMfdvZrFAm5kCLgIThHVo0OHdU62xI7TlUQPom00J1sKttdp'); //Stripe Test API Key
 var idOfFavourites = []; //array to hold favourite items
 var idOfItemsInBasket =[];
 var total = 0;
@@ -112,7 +114,8 @@ var total = 0;
 	function setCheckout(){
 		var tallyBasket = {};
 		total = 0;
-		$(".squareTable").empty();
+		$(".squareTable").empty(); //Empty old content
+		$(".btnPay").empty(); //Empty old 
 		idOfItemsInBasket.forEach(
 			x => tallyBasket[x] = (tallyBasket[x] || 0) + 1
 			);
@@ -139,6 +142,7 @@ var total = 0;
             </div>
 		`;
 		$(".squareTable").append(rows);
+		$(".btnPay").html("Pay £"+total);
 	}
 	//Removes a favourtite based on the id from json and array
 	function removeFavourite(idToRemove){
@@ -223,7 +227,7 @@ var total = 0;
 			//WARNING LOGIC ERROR - wont remove the element from the opposite device orientation
 		});
 		//Add Dishes to the Basket
-		$(".favCartBtn").on('vclick', function(){
+		$(".favCartBtn").on('click', function(){
 			idOfItemsInBasket.push($(this).closest(".favItem").attr("dishid"));
 			idOfItemsInBasket.sort(function(a, b){return a - b});
 			setBasketNotice();
@@ -239,6 +243,9 @@ var total = 0;
 		});
 		$(".checkoutBtn").on("vclick", function(){
 			location.hash = "checkout";
+		});
+		$(".payBtn").on("click", function(){
+			$("#paymentPopupL").popup('open');
 		});
 	}
 	//Important Jquery Css fix for sidebar
@@ -272,7 +279,17 @@ var total = 0;
 			location.hash = "basket";
 		});
 	}
+	$("#paymentPopupL").popup({
+		positionTo: "window",
+		transition: "pop"
+	});
 	//End of Important Jquery Css fixes
+	///////////////////////////////////
+	// Stripe Payment JS
+	///////////////////////////////////
+	$("paymentForm").card({
+		container: '.cardImage',
+	});
 	//Before Navigating Event Handler
 	$(document).on('pagecontainerbeforehide', 'body', function(event, ui) {
 		switch (ui.nextPage.attr('id')){ 
@@ -307,3 +324,4 @@ var total = 0;
 		setFavourites(); //in case of refresh of page
 		setBasket();
 	});
+
