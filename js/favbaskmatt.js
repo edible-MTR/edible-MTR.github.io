@@ -117,19 +117,19 @@ var total = 0;
 			x => tallyBasket[x] = (tallyBasket[x] || 0) + 1
 			);
 		var rows = `<div class="tableRow tbHead">
-          <h3>Qty</h3><h3>Dish Name</h3><h3>Price</h3>
+          <h3>&emsp;Qty&emsp;</h3><h3>&emsp;Dish Name&emsp;</h3><h3>&emsp;Price&emsp;</h3>
         </div>`
 		for (item in tallyBasket){
-			rows += `<div class="tableRow"> 
-            <h4>`+tallyBasket[item]+`</h4>
-            <h4>`+data.dishes[item].dishName+`</h4>
-            <h4>£`+(Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]))+`</h4>
+			rows += `<div class="tableRow rowGreen"> 
+            <h4>`+tallyBasket[item]+`x</h4>
+            <h4>`+data.dishes[item].dishName.substring(0, 15)+`</h4>
+            <h4 class="textWhite">£`+(Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]))+`</h4>
             </div>`;
             total += (Number(data.dishes[item].dishPrice) * Number(tallyBasket[item]));
 		}
-		rows +=`<div class="tableRow"> 
-			<h3></h3><h3>Delivery Cost</h3>
-            <h3>£4</h3>
+		rows +=`<div class="tableRow rowGreen"> 
+			<h4></h4><h4>Delivery Cost</h4>
+            <h4 class="textWhite">£4</h4>
             </div>`;
 		total += 4;
 		rows +=`<div class="tableRow">
