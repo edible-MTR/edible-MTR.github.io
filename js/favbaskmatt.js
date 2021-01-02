@@ -229,6 +229,7 @@ var total = 0;
 			$(this).closest(".favItem").remove();
 			//WARNING LOGIC ERROR - wont remove the element from the opposite device orientation
 		});
+		//Add Dishes to the Basket
 		$(".favCartBtn").on('vclick', function(){
 			idOfItemsInBasket.push($(this).closest(".favItem").attr("dishid"));
 			idOfItemsInBasket.sort(function(a, b){return a - b});
@@ -259,16 +260,24 @@ var total = 0;
 	};
 	//Matts Favourite and Basket buttons
 	function dishPageBtns(){
-	  $(".favBTNonTOP").on('vclick', function(){
-	    var id =  $(this).attr("dishid");
-	    if (isFavourite(id)){
-	     	removeFavourite(id);
-	     	$(".favPopup").html("<p>Removed</p>");
-	    }else{
-	    	setFavourite(id);
-	    	$(".favPopup").html("<p>Added</p>");
-	    }
-	  });
+		//Favourites the Dish
+		$(".favBTNonTOP").on('vclick', function(){
+			var id =  $(this).attr("dishid");
+			if (isFavourite(id)){
+				removeFavourite(id);
+				$(".favPopup").html("<p>Removed</p>");
+			}else{
+				setFavourite(id);
+				$(".favPopup").html("<p>Added</p>");
+			}
+		});
+		//Adds the dish to the basket
+		$(".addDishBTN").on('vclick', function(){
+			idOfItemsInBasket.push($(this).attr("dishid"));
+			idOfItemsInBasket.sort(function(a, b){return a - b});
+			setBasketNotice();
+			location.hash = "basket";
+		});
 	}
 	//End of Important Jquery Css fixes
 	//Before Navigating Event Handler
