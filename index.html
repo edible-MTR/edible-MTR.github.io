@@ -801,11 +801,9 @@
 		$(".reviewComments").empty();
 		var reviews ="<h1>Top Reviews:</h1>";
 		for (var m in data.dishes[i].dishTopReviews){
-		var number ;
-		number = parseInt(m)+1;
-		reviews+= number+". ";
 		reviews+= data.dishes[i].dishTopReviews[m];
 		reviews+= "<br>";
+    reviews+= "<br>";
 		}
       $(".reviewComments").append(reviews);
       $(".reviewRating").empty();
