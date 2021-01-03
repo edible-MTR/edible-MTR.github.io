@@ -279,6 +279,18 @@ var total = 0;
 			location.hash = "basket";
 		});
 	}
+	//Email favourite dishes
+	$('.emailFavList').click(function (event) {
+        var email = 'sample@gmail.com';
+        var subject = 'My Favourite Edible Dishes';
+        var emailBody = 'Hello, %0D%0A' +'I have been using edible. Try one of these delightful favourites of mine.';
+        for(item in idOfFavourites){
+        	emailBody += "%0D%0A" + data.dishes[idOfFavourites[item]].dishName;
+        }
+        emailBody += "%0D%0A"+"https://edible-mtr.github.io/";
+        emailBody += "%0D%0A"+"Your friend %0D%0A %0D%0A";
+        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody
+      });
 	//Initialise the popup
 	$("#paymentPopup").popup({
 		positionTo: "window",
@@ -292,7 +304,7 @@ var total = 0;
 	$("paymentForm").card({
 		container: '.cardImage',
 	});
-	//Some Fake Transfer thingy
+	//Some Fo Transfer thingy
 	$(".btnPay").on("click", function(){
 		$("#paymentPopup").popup('close');
 		$.mobile.loading("show", {
