@@ -55,6 +55,10 @@ var total = 0;
 		}
 	}
 	function setFavourites() { //loads the favourites into html and appends
+		//First remove any Favourites & bindings
+		unbindFavouriteBtns();
+		$(".favItem").remove(); //remove all favItems from Dom
+		//Recreate all the items for the favourites list
 		for(id in idOfFavourites){ //create html of the favourites add to list
 			innerHtmlString = `<div class="favItem" dishId="` + idOfFavourites[id] +`">
 			<img class="favImage" src="`+ data.dishes[idOfFavourites[id]].dishImage +`" alt="Image of " `+ data.dishes[idOfFavourites[id]].dishName+`>
@@ -70,11 +74,15 @@ var total = 0;
 				</div>`; //string litteral representation of inner div
 			$(".favDishList").append(innerHtmlString); //attach the favourites to the dom
 		}
-		setBtnBindings();//bind onclicks
-		setSidebar(); //sort the sidebar
+		//All items attached now add bindings for button licks
+		bindFavouriteBtns();
+		setSidebar(); //Set the height of the sidebar
 		setFavouriteNotice(); //update notifications
 	}
 	function setBasket(){
+		//Remove all previous basket items & bindings
+		unbindBasketBtns();
+		$(".basketItem").remove(); //remove all the basket items
 		for (item in idOfItemsInBasket){
 			var favIcon = "";
 			if (isFavourite(idOfItemsInBasket[item])){
@@ -100,14 +108,13 @@ var total = 0;
 				</div>`; //string litteral representation of inner div
 				$(".basketDishList").append(innerHtmlString);
 			}
-		setBtnBindings();//bind onclicks
-		setSidebar(); //sort the sidebar
-		setBasketNotice(); //update notifications
+		bindBasketBtns(); //Attach bindings to new items only
+		setSidebar(); //Set the height of the sidebar
+		setBasketNotice(); //Update notifications
 	}
 	//Removes a favourtite based on the id from json and array
 	function setFavourite(idToAdd){
-		idOfFavourites.push(idToAdd);
-		data.dishes[idToAdd].dishFav  = 1;
+		
 		setFavouriteNotice();
 	}
 	//Creates the table on the Checkout page
@@ -143,23 +150,6 @@ var total = 0;
 		`;
 		$(".squareTable").append(rows);
 		$(".btnPay").html("Pay £"+total);
-	}
-	//Removes a favourtite based on the id from json and array
-	function removeFavourite(idToRemove){
-		var newArrayOfIds = idOfFavourites.filter(
-			item => item != idToRemove
-			);
-		idOfFavourites = newArrayOfIds;
-		data.dishes[idToRemove].dishFav = 0;
-		setFavouriteNotice();
-	}
-	//Removes a favourtite based on the id from *array only!
-	function removeBasketItem(idToRemove){
-		var newArrayOfItems = idOfItemsInBasket.filter(
-			item => item != idToRemove
-			);
-		idOfItemsInBasket = newArrayOfItems;
-		setBasketNotice();
 	}
 	//Boolean determination of whether the dish is in the favourite list
 	function isFavourite(id){
@@ -218,36 +208,96 @@ var total = 0;
 			}
 		}
 	}
-	//All Button Bindings
-	function setBtnBindings(){
-		//Favourite Page Buttons
-		$(".favRemoveBtn").on('vclick', function(){ 
-			removeFavourite($(this).closest(".favItem").attr("dishid"));
-			$(this).closest(".favItem").remove();
-			//WARNING LOGIC ERROR - wont remove the element from the opposite device orientation
-		});
-		//Add Dishes to the Basket
-		$(".favCartBtn").on('click', function(){
-			idOfItemsInBasket.push($(this).closest(".favItem").attr("dishid"));
-			idOfItemsInBasket.sort(function(a, b){return a - b});
-			setBasketNotice();
-		});
-		//Basket page buttons
-		$(".favoured").on('vclick', function(){ 
-			alert("Easter Egg!");
-		}); //toggles the favourite status of an item in the basket
-		$(".basketRemoveBtn").on('vclick', function(){
-			removeBasketItem($(this).closest(".basketItem").attr("dishid"));
-			$(this).closest(".basketItem").remove();
-			//WARNING LOGIC ERROR - wont remove the element from the opposite device orientation
-		});
-		$(".checkoutBtn").on("vclick", function(){
-			location.hash = "checkout";
-		});
-		$(".payBtn").on("click", function(){
-			$("#paymentPopup").popup('open');
-		});
+	/// In Order to ensure click events occur correctly when the user interacts with the content that is added programatically all events must be bound to a handle and then removed when deleted and reinstansiated.
+
+	//Favourites (each fucntion here is attached to the favourites page)
+	//removes the item from the favourites list
+	var removeFavourite = function(){
+		var idToRemove = $(this).closest(".favItem").attr("dishid");
+		var newArrayOfIds = idOfFavourites.filter(
+			item => item != idToRemove
+			); //Removes a favourtite based on the id from json and array
+		idOfFavourites = newArrayOfIds;
+		data.dishes[idToRemove].dishFav = 0;
+		$(this).closest(".favItem").remove();
+		setFavouriteNotice();
 	}
+	//Add favourite to the Basket
+	var addFavouriteToCart = function(){
+		idOfItemsInBasket.push($(this).closest(".favItem").attr("dishid"));
+		idOfItemsInBasket.sort(function(a, b){return a - b});
+		setBasketNotice();
+	}
+	//Favourite Binding functions for programatically created buttons
+	function bindFavouriteBtns(){
+		$(".favRemoveBtn").bind("click", removeFavourite);
+		$(".favCartBtn").bind("click",addFavouriteToCart);
+	}
+	//Favourite Unbinding for programatically removed buttons
+	function unbindFavouriteBtns(){
+		$(".favRemoveBtn").unbind("click", removeFavourite);
+		$(".favCartBtn").unbind("click",addFavouriteToCart);
+	}
+
+	//Basket (each function here is attached to the basket and checkout pages)
+	//Click on the heart in the basket
+	var easter = function (){
+		alert("Easter Egg!");
+	}
+	var removeBasketItem = function(){
+		var idToRemove = $(this).closest(".basketItem").attr("dishid");
+		var newArrayOfItems = idOfItemsInBasket.filter(
+			item => item != idToRemove
+			); //Removes a item based on the id from *array only!
+		idOfItemsInBasket = newArrayOfItems;
+		$(this).closest(".basketItem").remove();
+		setBasketNotice();
+		//
+		//
+	}
+	//Basket Binding functions for programatically created buttons
+	function bindBasketBtns(){
+		$(".favoured").bind("click", easter);
+		$(".basketRemoveBtn").bind("click",removeBasketItem);
+	}
+	//Basket Unbinding for programatically removed buttons
+	function unbindBasketBtns(){
+		$(".favoured").unbind("click", easter);
+		$(".basketRemoveBtn").unbind("click",removeBasketItem);
+	}
+
+	//Regular Buttons present at all times on the DOM
+	$(".checkoutBtn").on("vclick", function(){
+		location.hash = "checkout";
+	});
+	//Opens the payment popup
+	$(".payBtn").on("click", function(){
+		$("#paymentPopup").popup('open');
+	});
+	//Favourites the Dish
+	$(".favBTNonTOP").on('vclick', function(){
+		var favId =  $(this).attr("dishid");
+		if (isFavourite(favId)){
+			var newArrayOfIds = idOfFavourites.filter(
+				item => item != favId
+				); //Removes a favourtite based on the id from json and array
+			idOfFavourites = newArrayOfIds;
+			data.dishes[favId].dishFav = 0;
+			$(".favPopup").html("<p>Removed</p>");
+		}else{
+			idOfFavourites.push(favId);
+			data.dishes[favId].dishFav  = 1;
+			$(".favPopup").html("<p>Added</p>");
+		}
+		setFavouriteNotice();
+	});
+	//Adds the dish to the basket
+	$(".addDishBTN").on('vclick', function(){
+		idOfItemsInBasket.push($(this).attr("dishid"));
+		idOfItemsInBasket.sort(function(a, b){return a - b});
+		setBasketNotice();
+		location.hash = "basket";
+	});
 	//Important Jquery Css fix for sidebar
 	//Must be called after the elements have been added
 	function setSidebar(){//only for the landscape sidebar
@@ -258,27 +308,6 @@ var total = 0;
 		$(".ui-grid-a> .sideBar").css("height", $("#dishPage").height());
 		//fixes the height programtically
 	};
-	//Matts Favourite and Basket buttons
-	function dishPageBtns(){
-		//Favourites the Dish
-		$(".favBTNonTOP").on('vclick', function(){
-			var id =  $(this).attr("dishid");
-			if (isFavourite(id)){
-				removeFavourite(id);
-				$(".favPopup").html("<p>Removed</p>");
-			}else{
-				setFavourite(id);
-				$(".favPopup").html("<p>Added</p>");
-			}
-		});
-		//Adds the dish to the basket
-		$(".addDishBTN").on('vclick', function(){
-			idOfItemsInBasket.push($(this).attr("dishid"));
-			idOfItemsInBasket.sort(function(a, b){return a - b});
-			setBasketNotice();
-			location.hash = "basket";
-		});
-	}
 	//Email favourite dishes
 	$('.emailFavList').click(function (event) {
         var email = 'sample@gmail.com';
@@ -290,7 +319,7 @@ var total = 0;
         emailBody += "%0D%0A"+"https://edible-mtr.github.io/";
         emailBody += "%0D%0A"+"Your friend %0D%0A %0D%0A";
         document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody
-      });
+    });
 	//Initialise the popup
 	$("#paymentPopup").popup({
 		positionTo: "window",
@@ -316,6 +345,12 @@ var total = 0;
 			idOfItemsInBasket = [];
 			setBasketNotice();
 			$.mobile.loading("hide");
+			$.mobile.loading("show", {
+				text: "Approved. Sending order to kitchen..",
+				textVisible: true,
+				theme: "b",
+			});
+			$.mobile.loading("hide");
 			$("#badgeTitle").text("ETA of order 5mins");
 			setTimeout(function(){
 				$("#badgeTitle").text("Order delivered!");
@@ -328,20 +363,16 @@ var total = 0;
 		switch (ui.nextPage.attr('id')){ 
 		//check the attribute for the page.. do following
 			case "home":
-				getDiscoveries();
+				getDiscoveries(); //Update and populate
 				break;
 			case "dishPage":
-				dishPageBtns();
 				break;
 			case "favourites":
-				$(".favItem").remove(); //remove all favItems from Dom
-				getFavourites(); //get the most up to date data from the dish data
-				setFavourites(); //load it to the html
-				setFavouriteNotice(); //set notifications  in case of update
+				getFavourites(); //Update dish data
+				setFavourites(); //Populate the favourites
 				break;
 			case "basket":
-				$(".basketItem").remove();
-				setBasket();
+				setBasket(); //update and set the basket
 				break;
 			case "checkout":
 				setCheckout();
@@ -355,6 +386,6 @@ var total = 0;
 		getDiscoveries();
 		getFavourites(); //initialise the array
 		setFavourites(); //in case of refresh of page
-		setBasket();
+		setBasket(); //in case items are there
 	});
 

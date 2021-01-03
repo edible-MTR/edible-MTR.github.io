@@ -1,4 +1,4 @@
-button, input{
+.cardPaymentsBTNSInputs{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,7 @@ button, input{
   border-radius: 10px;
   border: 0;
 }
-button{
+.cardBtns{
   background-color: #EC6F61;
   cursor: pointer;
   color: #f7f7f7;
